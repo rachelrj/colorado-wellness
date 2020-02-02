@@ -64,20 +64,41 @@ hr {
 }
 .authorName {
     display: block;
+    width: 100%;
     float: left;
     text-decoration: none;
     color: dodgerblue;
-    font-weight: bold
+    font-weight: bold;
 }
-.readMore {
+.blogAuthor {
+    float: left;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.blogAuthorPicture > img {
+    height: 150px;
+}
+
+.readMore, .readMoreBlog {
     display: block;
     float: right;
     text-decoration: none;
     color: dodgerblue;
     font-weight: bold
 }
+.readMore {
+    float: right;
+}
+.readMoreBlog {
+    float: left;
+}
 .blogPost {
     padding-top: 50px;
+    display: block;
+    text-decoration: none;
+}
+a.blogPost:visited {
+  color: black;
 }
 .blogPost > p {
     display: block;
@@ -87,6 +108,12 @@ hr {
     font-weight: bold;
     float: left;
     margin-top: 5px;
+}
+.blogDate {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    text-align: center;
 }
 .footer {
     height: 100px;
@@ -119,6 +146,44 @@ hr {
 #phone, #email {
     padding-left: 10px;
 }
+.moreBlogsPanel {
+    text-align: left;
+}
+.moreBlogsPanel > a {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+}
+.moreBlogsPost {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.categories {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 40px;
+    color: white;
+}
+.category {
+    border-radius: 5px 20px 5px;
+/*    background: #BADA55;*/
+    background: darkgrey;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.writeABlog {
+    margin-top: 200px;
+    padding-right: 40px;
+    font-style: italic;
+}
+.writeABlog > a {
+    margin-top: 20px;
+}
 @media (min-width: 1000px) {
     img.header {
       background-image: url(https://via.placeholder.com/970x250.png);
@@ -136,22 +201,35 @@ hr {
     .listing {
         padding-left: 50px;
     }
-    .listingsDiv {
+    .listingsDiv, .mainBlogContent{
         display: inline-block;
         float: right;
+    }
+    .listingsDiv{
         width: 60%;
     }
-    .blogDiv {
+    .mainBlogContent{
+        width: 75%;
+    }
+    .blogDiv, .moreBlogsPanel {
         display: inline-block;
         float: left;
+    }
+    .blogDiv {
         width: 40%;
+    }
+    .moreBlogsPanel {
+        width: 25%;
     }
     .bodyHolder {
         margin-left: 50px;
         margin-right: 50px;
     }
+    h1.blogPageBlogTitle {
+        font-size: 2em;
+    }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     img.header {
       background-image: url(https://via.placeholder.com/728x90.png);
       width: 728px;
@@ -169,6 +247,9 @@ hr {
     }
 }
 @media (max-width: 800px) {
+    h1.blogPageBlogTitle {
+        font-size: 1.25em;
+    }
     img.header {
       background-image: url(https://via.placeholder.com/320x50.png);
       width: 320px;
@@ -187,19 +268,27 @@ hr {
         margin-left: 30px;
         margin-right: 30px;
     }
-    .blogDiv {
+    .blogDiv, .moreBlogsPanel {
         visibility: visible;
         display: inline-block;
-    }
-    .listingsDiv {
-        display: inline-block;
-        float: right;
-        width: 60%;
-    }
-    .blogDiv {
         display: inline-block;
         float: left;
+    }
+    .blogDiv {
         width: 40%;
+    }
+    .moreBlogsPanel {
+        width: 25%;
+    }
+    .listingsDiv, .mainBlogContent{
+        display: inline-block;
+        float: right;
+    }
+    .listingsDiv{
+        width: 60%;
+    }
+    .mainBlogContent{
+        width: 75%;
     }
 }
 @media (max-width: 600px) {
@@ -212,20 +301,18 @@ hr {
     .listingContentContact {
         flex-wrap: wrap;
     }
-    .blogDiv {
+    .blogDiv, .moreBlogsPanel {
         width: 100%;
         clear: both;
+        visibility: hidden;
+        display: none;
     }
-    .listingsDiv {
+    .listingsDiv, .mainBlogContent{
         width: 100%;
     }
     .bodyHolder {
         margin-left: 20px;
         margin-right: 20px;
-    }
-    .blogDiv {
-        visibility: hidden;
-        display: none;
     }
 }
 @media (max-width: 500px) {
