@@ -97,7 +97,7 @@ hr {
     display: block;
     text-decoration: none;
 }
-a.blogPost:visited {
+a.blogPost:visited, a.blogPost:link {
   color: black;
 }
 .blogPost > p {
