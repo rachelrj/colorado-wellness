@@ -1,6 +1,7 @@
 import React from 'react';
 import {default as config} from './config';
 import Footer from './Footer';
+import Header from './Header';
 import img from './img/photo-placeholder.png';
 
 class Blog extends React.Component {
@@ -36,7 +37,7 @@ class Blog extends React.Component {
 
         return (
             <div className="blogPage">
-                <img className="header"/>
+                <Header/>
                 <div className="bodyHolder">
                     <div className="mainBlogContent">
                         <div className="categories">

@@ -1,6 +1,7 @@
 import React from 'react';
 import {default as config} from './config';
 import img from './img/photo-placeholder.png';
+import DOMPurify from 'dompurify'; 
 
 
 class Listing extends React.Component {
@@ -18,18 +19,18 @@ class Listing extends React.Component {
 
     render() {
 
+        var clean = DOMPurify.sanitize(this.props.description);
+
         return (
             <div className="listing">
                 <div className="listingPicture">
                     <img src={img}/>
                 </div>
                 <div className="listingContent">
-                    <h2>Name</h2>
-                    <div className="listingContentDescription">
-                        <p>I love cheese, especially caerphilly cheese. Smelly cheese blue castello jarlsberg cheesecake bocconcini halloumi bavarian bergkase blue castello. Bocconcini caerphilly everyone loves red leicester cut the cheese cheese and wine dolcelatte hard cheese. Macaroni cheese.</p>
-                        <p>Goat pecorino the big cheese. Boursin paneer emmental cheese strings taleggio babybel halloumi caerphilly. Emmental hard cheese goat babybel port-salut edam bocconcini cow. Mascarpone bavarian bergkase cheese slices blue castello jarlsberg squirty cheese the big cheese babybel. Mozzarella the big cheese.</p>
+                    <h2>{this.props.name}</h2>
+                    <div className="listingContentDescription" dangerouslySetInnerHTML={{__html: clean}}>
                     </div>
-                    <a src="url" className="readMore">Learn More About Name ></a>
+                    <a src="url" className="readMore">Learn More About {this.props.name} ></a>
                 </div>
             </div>
         );
