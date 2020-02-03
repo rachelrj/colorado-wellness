@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Header from './Header';
 import blog from './img/blog-icon-optimized.png';
 import img from './img/change.jpeg';
+import grey from './img/grey.png';
 import { Pagination } from 'react-bootstrap';
 import { Provider } from 'react-redux';
 import store from "./redux/store";
@@ -82,15 +83,22 @@ class Homepage extends React.Component {
                         <BlogPost/>
                     </div>
                     <div className="listingsDiv">
-                        <h2>Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare Services</h2>
-                        <p>
-                            The Health and Wellness relevant drug and alcohol treatment, rehabilitation, support, & aftercare services directory allows users to search, find, interact with and engage appropriate drug and alcohol support services. The directory aims to meet the needs of distressed people seeking relevant information, strategies, potential solutions and support.
-                        </p>
+                        <h2>Services</h2>
                         <hr/>
-                        {listings}
-                        <hr/>
-                        <div className="paginationContainer">
-                            <Pagination>{items}</Pagination>
+                        <div className="listingDiv">
+                            <div class="overlay"></div>
+                            <img src={img} className="serviceImg" width="600px"/>
+                            <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare Services</div>
+                        </div>
+                        <div className="listingDiv">
+                            <div class="overlay"></div>
+                            <img src={grey} className="serviceImg" width="600px" id="tessst"/>
+                            <div className="centered">Title of Another Category</div>
+                        </div>
+                        <div className="listingDiv">
+                            <div class="overlay"></div>
+                            <img src={grey} className="serviceImg" width="600px" id="tessst"/>
+                            <div className="centered">Title of Another Category</div>
                         </div>
                     </div>
                 </div>
