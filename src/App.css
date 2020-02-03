@@ -386,6 +386,15 @@ a.blogPost:visited, a.blogPost:link {
     .listingContent > h2 {
         font-size: 1.5em;
     }
+    .listingDiv {
+        width: 300px;
+    }
+    .serviceImg {
+        width: 300px;
+    }
+    .centered {
+        font-size: 1em;
+    }
 
 }
 @media (max-width: 400px) {
