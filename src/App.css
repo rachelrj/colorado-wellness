@@ -214,6 +214,8 @@ a.blogPost:visited, a.blogPost:link {
 }
 .listingDiv {
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     color: white;
     width: 600px;
