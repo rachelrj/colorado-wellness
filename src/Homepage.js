@@ -88,7 +88,7 @@ class Homepage extends React.Component {
                         <div className="listingDiv">
                             <div class="overlay"></div>
                             <img src={img} className="serviceImg" width="600px"/>
-                            <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare Services</div>
+                            <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare</div>
                         </div>
                         <div className="listingDiv">
                             <div class="overlay"></div>
