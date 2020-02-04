@@ -10,43 +10,63 @@ import grey from './img/grey.png';
 import { Pagination } from 'react-bootstrap';
 import { Provider } from 'react-redux';
 import store from "./redux/store";
-import getComponents from "./redux/reducer"
-import {connect} from "react-redux"
+import getComponents from "./redux/reducer";
+import STORETYPES from "./redux/storeTypes";
+import {connect} from "react-redux";
 
 class Homepage extends React.Component {
-    state = {
-        isLoading: true,
-        cities: [],
-        error: null
-    }
 
     constructor(props) {
         super(props);
     }
 
     componentDidMount() {
-        // this.getData();
     }
 
-    getData() {
-        // fetch(config.BACKEND_SERVICE)
-        //     .then(response => response.json())
-        //     .then(data =>
-        //         this.setState({
-        //             cities: data.cities,
-        //             isLoading: false,
-        //         })
-        //     )
-        //     .catch(error =>
-        //         this.setState({
-        //             error,
-        //             isLoading: false
-        //         })
-        //     );
+    getBlogPosts() {
+        let blogs = [];
+        var d = new Date();
+        var n = d.getMonth();
+        this.props.blogs.map((blog, index) => {
+            if((n+1) == blog.month) {
+                blogs.push(
+                    <BlogPost   key={blog.id}
+                                title={blog.title}
+                                name={blog.authorName}
+                                day={blog.day}
+                                month={blog.month}
+                                year={blog.year}
+                                content={blog.content}
+                                categories={blog.categories}
+                                imgSrc={blog.img}
+                    />
+                )
+            }
+        });
+        let newMonth = n - 1;
+        if(newMonth == 0) {newMonth = 12}
+        if (!blogs.length) {
+            this.props.blogs.map((blog, index) => {
+                if((newMonth) == blog.month) {
+                    blogs.push(
+                        <BlogPost   key={blog.id}
+                                    title={blog.title}
+                                    name={blog.authorName}
+                                    day={blog.day}
+                                    month={blog.month}
+                                    year={blog.year}
+                                    content={blog.content}
+                                    categories={blog.categories}
+                                    imgSrc={blog.img}
+                        />
+                    )
+                }
+            });            
+        }
+        return blogs;
     }
 
     render() {
-        const {isLoading, cities, error} = this.state;
 
         let active = 2;
         let items = [];
@@ -58,7 +78,7 @@ class Homepage extends React.Component {
             );
         };
         let listings = [];
-        this.props.components.map((component, index) => {
+        this.props.providers.map((component, index) => {
             listings.push(
                 <Listing    key={component.id}
                             name={component.name}
@@ -66,6 +86,7 @@ class Homepage extends React.Component {
                 />
             )
         });
+        let blogs = this.getBlogPosts();
 
         return (
             <Provider store = {store}>
@@ -79,8 +100,7 @@ class Homepage extends React.Component {
                     <div className="blogDiv">
                         <h2>Recent Posts</h2>
                         <hr/>
-                        <BlogPost/>
-                        <BlogPost/>
+                        {blogs}
                     </div>
                     <div className="listingsDiv">
                         <h2>Services</h2>
@@ -109,7 +129,10 @@ class Homepage extends React.Component {
 }
 
 const mapStateToProps = state => {
-    const components = getComponents(state);
-    return {components};
+  const components = getComponents(state);
+  return {
+    providers: components.PROVIDERS,
+    blogs: components.BLOGS
+  }
 };
 export default connect(mapStateToProps)(Homepage);

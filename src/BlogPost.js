@@ -8,6 +8,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import DOMPurify from 'dompurify'; 
 
 
 class BlogPost extends React.Component {
@@ -25,13 +26,34 @@ class BlogPost extends React.Component {
 
     render() {
 
+        let dateString = '';
+        switch(this.props.month) {
+          case 1:
+            dateString = dateString + 'Jan ';
+            break;
+          case 2:
+            dateString = dateString + 'Feb ';
+            break;
+          case 3:
+            dateString = dateString + 'March ';
+            break;          
+          case 4:
+            dateString = dateString + 'April ';
+            break;
+          default:
+            break;
+        }
+        dateString = dateString + this.props.day + ', ' + this.props.year;
+
+        var clean = DOMPurify.sanitize(this.props.content);
+
         return (
             <a className="blogPost" href="/blog">
-                <img src="https://via.placeholder.com/200x100.png"/>
-                <h3>Blog Post Title</h3>
-                <a className="authorName" href="/blog">Author Name</a>
-                <p className="date">Jan 20, 2020</p>
-                <p>We need to button up our approach. Peel the onion proceduralize the right info at the right time to the right people for timeframe. Upsell we don't want to boil the ocean. Productize that ipo will be a game-changer</p>
+                <img className="blogPostImg" src={this.props.imgSrc}/>
+                <h3>{this.props.title}</h3>
+                <a className="authorName" href="/blog">{this.props.name}</a>
+                <p className="date">{dateString}</p>
+                <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
                 <a className="readMore" href="/blog">Read More ></a>
             </a>
         );
