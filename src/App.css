@@ -376,8 +376,7 @@ a.blogPost:visited, a.blogPost:link {
     .blogDiv, .moreBlogsPanel {
         width: 100%;
         clear: both;
-        visibility: hidden;
-        display: none;
+        margin-top: 50px;
     }
     .listingsDiv, .mainBlogContent{
         width: 100%;

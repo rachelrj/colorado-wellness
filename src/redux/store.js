@@ -15,11 +15,8 @@ initialState[STORETYPES[0]] = [{
     'day': 3,
     'year': 2020,
     'categories': [
-        'Drug and Alcohol Treatment',
-        'Drug and Alcohol Counselling',
-        'Drug and Alcohol Rehabilitation',
-        'Drug and Alcohol Recovery',
-        'Drug and Alcohol Aftercare',
+        'addiction',
+        'recovery'
     ],
 
 },{

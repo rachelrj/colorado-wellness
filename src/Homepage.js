@@ -97,13 +97,8 @@ class Homepage extends React.Component {
                         <p>Cupcake ipsum dolor sit amet. Tootsie roll fruitcake pie fruitcake chocolate cake carrot cake ice cream marzipan. Jelly beans cheesecake tart danish bear claw soufflé bear claw pudding chocolate bar. Donut bear claw chupa chups marzipan sugar plum donut.</p>
                         <p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>
                     </div>
-                    <div className="blogDiv">
-                        <h2>Recent Posts</h2>
-                        <hr/>
-                        {blogs}
-                    </div>
                     <div className="listingsDiv">
-                        <h2>Services</h2>
+                        <h2>Professional Services</h2>
                         <hr/>
                         <div className="listingDiv">
                             <div class="overlay"></div>
@@ -120,6 +115,11 @@ class Homepage extends React.Component {
                             <img src={grey} className="serviceImg" width="600px" id="tessst"/>
                             <div className="centered">Title of Another Category</div>
                         </div>
+                    </div>
+                    <div className="blogDiv">
+                        <h2>Recent Blog Posts</h2>
+                        <hr/>
+                        {blogs}
                     </div>
                 </div>
                 <Footer/>
