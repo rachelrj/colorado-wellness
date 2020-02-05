@@ -180,6 +180,10 @@ a.blogPost:visited, a.blogPost:link {
     margin-bottom: 15px;
     display: block;
 }
+.moreBlogsPanel h3 {
+    display: block;
+    clear: both;
+}
 .moreBlogsPost {
     margin-block-start: 1em;
     margin-block-end: 1em;
