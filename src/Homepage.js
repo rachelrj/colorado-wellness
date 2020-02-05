@@ -30,7 +30,8 @@ class Homepage extends React.Component {
         this.props.blogs.map((blog, index) => {
             if((n+1) == blog.month) {
                 blogs.push(
-                    <BlogPost   key={blog.id}
+                    <BlogPost   
+                                id={blog.id}
                                 title={blog.title}
                                 name={blog.authorName}
                                 day={blog.day}
@@ -43,13 +44,14 @@ class Homepage extends React.Component {
                 )
             }
         });
-        let newMonth = n - 1;
+        let newMonth = n;
         if(newMonth == 0) {newMonth = 12}
         if (!blogs.length) {
             this.props.blogs.map((blog, index) => {
                 if((newMonth) == blog.month) {
                     blogs.push(
-                        <BlogPost   key={blog.id}
+                        <BlogPost   
+                                    id={blog.id}
                                     title={blog.title}
                                     name={blog.authorName}
                                     day={blog.day}

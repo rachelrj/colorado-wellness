@@ -40,6 +40,8 @@ class BlogPost extends React.Component {
           case 4:
             dateString = dateString + 'April ';
             break;
+          case 5:
+            dateString = dateString + 'May ';
           default:
             break;
         }
@@ -47,14 +49,16 @@ class BlogPost extends React.Component {
 
         var clean = DOMPurify.sanitize(this.props.content);
 
+        const blogHref = "/blog/" + this.props.id;
+
         return (
-            <a className="blogPost" href="/blog">
+            <a className="blogPost" href={blogHref}>
                 <img className="blogPostImg" src={this.props.imgSrc}/>
                 <h3>{this.props.title}</h3>
                 <a className="authorName" href="/blog">{this.props.name}</a>
                 <p className="date">{dateString}</p>
                 <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
-                <a className="readMore" href="/blog">Read More ></a>
+                <a className="readMore" href={blogHref}>Read More ></a>
             </a>
         );
     }

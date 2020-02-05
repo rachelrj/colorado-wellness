@@ -2,59 +2,135 @@ import React from 'react';
 import {default as config} from './config';
 import Footer from './Footer';
 import Header from './Header';
-import img from './img/photo-placeholder.png';
+import { Provider, connect } from 'react-redux';
+import store from "./redux/store";
+import getComponents from "./redux/reducer";
+import DOMPurify from 'dompurify'; 
 
 class Blog extends React.Component {
 
     componentDidMount() {
     }
 
-    getData() {
+    componentWillMount() {
+    }
+
+    getBlogIdParam() {
+        const pathname = this.props.location.pathname;
+        const pathNames = pathname.split('/');
+        let id = pathNames[pathNames.length-1];
+        if (isNaN(id)) {
+            id = this.getMostRecentArticle().id;
+        }
+        return id;
+    }
+
+    getMostRecentArticle() {
+        let mostRecentArtcle;
+        this.props.blogs.map((blog, index) => {
+            if (!mostRecentArtcle) {
+                mostRecentArtcle = blog;
+            }
+            else if(blog.year >= mostRecentArtcle.year && 
+                blog.month >= mostRecentArtcle.month &&
+                blog.day >= mostRecentArtcle.day) {
+                mostRecentArtcle = blog;
+            }
+        })
+        return mostRecentArtcle;
+    }
+
+    getData(id) {
+        return this.props.blogs.filter(obj => {
+            return obj.id == id;
+        })[0]
     }
 
     render() {
 
+        const blogId = this.getBlogIdParam();
+        const article = this.getData(blogId);
+
+
+        let dateString = '';
+        switch(article.month) {
+          case 1:
+            dateString = dateString + 'Jan ';
+            break;
+          case 2:
+            dateString = dateString + 'Feb ';
+            break;
+          case 3:
+            dateString = dateString + 'March ';
+            break;          
+          case 4:
+            dateString = dateString + 'April ';
+            break;
+          case 5:
+            dateString = dateString + 'May ';
+          default:
+            break;
+        }
+        dateString = dateString + article.day + ', ' + article.year;
+
+        var clean = DOMPurify.sanitize(article.content);
+
+        let categories = [];
+        article.categories.map((cat, index) => {
+            categories.push(
+                <div className="category">
+                    {cat}
+                </div>
+            )
+        });
+
+        //Fix this
+        let otherPostsJan = [];
+        let otherPostsFeb = [];
+        this.props.blogs.map((post, index) => {
+            if(post.month == 1 && blogId != post.id) {
+                const blogHref = "/blog/" + post.id;
+                otherPostsJan.push(
+                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
+                )
+            } else if (post.month == 2 && blogId != post.id) {
+                const blogHref = "/blog/" + post.id;
+                otherPostsFeb.push(
+                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
+                )  
+            }
+        });
+
+
         return (
+            <Provider store = {store}>
             <div className="blogPage">
                 <Header/>
                 <div className="bodyHolder">
                     <div className="mainBlogContent">
                         <div className="categories">
-                            <div className="category">
-                                mindfulness
-                            </div>
-                            <div className="category">
-                                self identity
-                            </div>
-                            <div className="category">
-                                anxiety
-                            </div>
-                            <div className="category">
-                                coping
-                            </div>
+                            {categories}
                         </div>
-                        <h1 className="blogPageBlogTitle">10 Intention Setting Journal Prompts for January</h1>
-                            <p className="blogDate">Jan 20, 2020</p>
+                        <h1 className="blogPageBlogTitle">{article.title}</h1>
+                            <p className="blogDate">{dateString}</p>
                             <div className="blogAuthor">
                                 <span className="blogAuthorPicture">
-                                    <img src={img}/>
+                                    <img src={article.authorImgSource}/>
                                 </span>
-                                <a className="authorName" href="url">Author Name</a>
+                                <a className="authorName" href="url">{article.authorName}</a>
                             </div>
-                            <p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home we've ever known. The sky calls to us dream of the mind's eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p>
-                            <p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the mind's eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home we've ever known the carbon in our apple pies concept of the number one.</p>
-                            <p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>
-                            <p>Concept of the number one the sky calls to us globular star cluster inconspicuous motes of rock and gas rings of Uranus at the edge of forever? Citizens of distant epochs trillion gathered by gravity courage of our questions vastness is bearable only through love hearts of the stars? The carbon in our apple pies network of wormholes vanquish the impossible with pretty stories for which there's little good evidence are creatures of the cosmos great turbulent clouds?</p>
-                            <p>White dwarf inconspicuous motes of rock and gas prime number tingling of the spine not a sunrise but a galaxyrise encyclopaedia galactica. Vanquish the impossible another world with pretty stories for which there's little good evidence vanquish the impossible preserve and cherish that pale blue dot stirred by starlight. Bits of moving fluff invent the universe Sea of Tranquility the sky calls to us vastness is bearable only through love star stuff harvesting star light and billions upon billions</p>
+                            <div className="blogPagePost" dangerouslySetInnerHTML={{__html: clean}}></div>  
                     </div>
                     <div className="moreBlogsPanel">
                         <h2 className="moreBlogsPost">More Blog Posts</h2>
                         <h3>Jan, 2020</h3>
-                        <a className="readMoreBlog">The Benefits of Face-to-Face and Online Health Coaching</a>
-                        <a className="readMoreBlog">Be patient and supportive - you dont need to understand my depression</a>
+                        <div>
+                        {otherPostsJan}
+                        </div>
                         <h3>Feb, 2020</h3>
-                        <a className="readMoreBlog">8 Years Sober and Still Growing</a>
-                        <a className="readMoreBlog">How to Avoid the Trap of Family Roles</a>
+                        <div>
+                        {otherPostsFeb}
+                        </div>
                         <p className="writeABlog">Have a health and wellness topic that you'd like to share with the community? Contact us to find out how you can contribute.
                             <a className="readMore">Write a Blog Post ></a>
                         </p>
@@ -62,8 +138,15 @@ class Blog extends React.Component {
                 </div>
                 <Footer/>
             </div>
+            </Provider>
         );
     }
 }
 
-export default Blog;
+const mapStateToProps = state => {
+  const components = getComponents(state);
+  return {
+    blogs: components.BLOGS
+  }
+};
+export default connect(mapStateToProps)(Blog);
