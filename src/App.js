@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Homepage from './Homepage';
 import Blog from './Blog';
+import AddictionServices from './AddictionServices';
 import {Provider} from "react-redux";
 import store from "./redux/store";
 
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={Homepage}/>
             <Route path='/blog/:blogId' component={Blog}/>
+            <Route exact path='/drug-alcohol-treatment-rehabilitation-support-aftercare' component={AddictionServices}/>
           </Switch>
         </Provider>
       </div>

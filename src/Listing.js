@@ -1,6 +1,5 @@
 import React from 'react';
 import {default as config} from './config';
-import img from './img/photo-placeholder.png';
 import DOMPurify from 'dompurify'; 
 
 
@@ -24,7 +23,7 @@ class Listing extends React.Component {
         return (
             <div className="listing">
                 <div className="listingPicture">
-                    <img src={img}/>
+                    <img src={this.props.img}/>
                 </div>
                 <div className="listingContent">
                     <h2>{this.props.name}</h2>

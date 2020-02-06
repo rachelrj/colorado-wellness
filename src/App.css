@@ -42,11 +42,11 @@ hr {
 }
 .listingContent {
     flex: 3;
-    height: 200px;
+    height: 250px;
     padding-left: 10px;
 }
 .listingContentDescription {
-    height: 100px;
+    height: 125px;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 20px;
@@ -273,7 +273,8 @@ a.blogPost:visited, a.blogPost:link {
         font-size: 3.75em;
     }
     .listingPicture > img {
-        height: 175px;
+        max-height: 175px;
+        max-width: 200px;
     }
     .listing {
         padding-left: 50px;
@@ -346,7 +347,15 @@ a.blogPost:visited, a.blogPost:link {
         font-size: 3em;
     }
     .listingPicture > img {
-        height: 130px;
+        max-height: 160px;
+        max-width: 170px;
+        display:block;
+        margin: auto;
+    }
+    .listingPicture {
+        display: block;
+        align-content: center;
+        align-items: center;
     }
     .listing {
         padding-left: 25px;
@@ -428,11 +437,22 @@ a.blogPost:visited, a.blogPost:link {
     h1 {
         font-size: 2em;
     }
-    .listingPicture > img {
-        height: 110px;
+    .listing {
+        display: block;
+        height: 200px;
+        padding-left: 50px;
+        margin-top: 50px;
+        height: 400px;
+        padding: 0;
     }
     .listingContent {
-        width: 50px;
+        width: 90%;
+        margin: 20px;
+    }
+    .listingPicture {
+        display: block;
+        float: none;
+        clear: both;
     }
     .bodyHolder {
         margin-left: 10px;
@@ -441,6 +461,10 @@ a.blogPost:visited, a.blogPost:link {
     .footer {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .paginationContainer {
+        width: 100%;
+        margin-top: 100px;
     }
 }
 

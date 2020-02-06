@@ -119,9 +119,9 @@ initialState[STORETYPES[1]] = [{
         'lat': -37.851785,
         'long': 145.033853
     },
-    'categories': [],
+    'categories': [0],
     'ABN': 123456789,
-    'imgSource': ''
+    'imgSource': '../img/addiction-solutions-victoria-logo.svg'
 }, {
     'id': 2,
     'name': 'Test Solutions',
@@ -133,9 +133,9 @@ initialState[STORETYPES[1]] = [{
         'lat': -37.805913,
         'long': 145.029884
     },
-    'categories': [],
+    'categories': [0],
     'ABN': 123456789,
-    'imgSource': ''
+    'imgSource': '../img/placeholder.png'
 }, {
     'id': 3,
     'name': 'Bobson Dugnutt',
@@ -147,9 +147,14 @@ initialState[STORETYPES[1]] = [{
         'lat': -37.805913,
         'long': 145.029884
     },
-    'categories': [],
+    'categories': [0],
     'ABN': 123456789,
-    'imgSource': ''
+    'imgSource': '../img/bobson.jpg'
 }];
+
+initialState[STORETYPES[2]] = [
+    'addiction'
+    
+]
 
 export default createStore(reducer, initialState);
