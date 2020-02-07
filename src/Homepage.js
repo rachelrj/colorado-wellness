@@ -98,16 +98,20 @@ class Homepage extends React.Component {
                             <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare</div>
                         </div>
                         </a>
+                        <a href="/under-construction">
                         <div className="listingDiv">
                             <div class="overlay"></div>
                             <img src={grey} className="serviceImg" width="600px" id="tessst"/>
-                            <div className="centered">Title of Another Category</div>
+                            <div className="centered">Physical Fitness and Nutrition</div>
                         </div>
+                        </a>
+                        <a href="/under-construction">
                         <div className="listingDiv">
                             <div class="overlay"></div>
                             <img src={grey} className="serviceImg" width="600px" id="tessst"/>
-                            <div className="centered">Title of Another Category</div>
+                            <div className="centered">Holistic Practices, Healing, Treatment and Psychotherapy</div>
                         </div>
+                        </a>
                     </div>
                     <div className="blogDiv">
                         <h2>Recent Blog Posts</h2>
