@@ -15,14 +15,10 @@ class Blog extends React.Component {
     componentWillMount() {
     }
 
-    getBlogIdParam() {
+    getBlogTitleParam() {
         const pathname = this.props.location.pathname;
         const pathNames = pathname.split('/');
-        let id = pathNames[pathNames.length-1];
-        if (isNaN(id)) {
-            id = this.getMostRecentArticle().id;
-        }
-        return id;
+        return pathNames[pathNames.length-1];
     }
 
     getMostRecentArticle() {
@@ -40,16 +36,15 @@ class Blog extends React.Component {
         return mostRecentArtcle;
     }
 
-    getData(id) {
+    getArticleByTitle(title) {
         return this.props.blogs.filter(obj => {
-            return obj.id == id;
+            return obj.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-') == title;
         })[0]
     }
 
     render() {
-
-        const blogId = this.getBlogIdParam();
-        const article = this.getData(blogId);
+        const articleTitle = this.getBlogTitleParam();
+        const article = this.getArticleByTitle(articleTitle);
 
 
         let dateString = '';
@@ -88,13 +83,13 @@ class Blog extends React.Component {
         let otherPostsJan = [];
         let otherPostsFeb = [];
         this.props.blogs.map((post, index) => {
-            if(post.month == 1 && blogId != post.id) {
-                const blogHref = "/blog/" + post.id;
+            if(post.month == 1 && article.id != post.id) {
+                const blogHref = "/blog/" + post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
                 otherPostsJan.push(
                     <a className="readMoreBlog" href={blogHref}>{post.title}</a>
                 )
-            } else if (post.month == 2 && blogId != post.id) {
-                const blogHref = "/blog/" + post.id;
+            } else if (post.month == 2 && article.id != post.id) {
+                const blogHref = "/blog/" + post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
                 otherPostsFeb.push(
                     <a className="readMoreBlog" href={blogHref}>{post.title}</a>
                 )  

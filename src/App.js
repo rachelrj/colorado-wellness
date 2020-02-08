@@ -21,7 +21,7 @@ class App extends React.Component {
         <Provider store = {store}>
           <Switch>
             <Route exact path='/' component={Homepage}/>
-            <Route path='/blog/:blogId' component={Blog}/>
+            <Route path='/blog/:blogTitle' component={Blog}/>
             <Route exact path='/drug-alcohol-treatment-rehabilitation-support-aftercare' component={AddictionServices}/>
             <Route exact path='/under-construction' component={UnderConstruction}/>
           </Switch>

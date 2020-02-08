@@ -49,7 +49,7 @@ class BlogPost extends React.Component {
 
         var clean = DOMPurify.sanitize(this.props.content);
 
-        const blogHref = "/blog/" + this.props.id;
+        const blogHref = "/blog/" + this.props.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
 
         return (
             <a className="blogPost" href={blogHref}>
