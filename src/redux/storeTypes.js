@@ -1,5 +1,6 @@
 export default [
 	"BLOGS",
 	"PROVIDERS",
-	"CATEGORIES"
+	"CATEGORIES",
+	"SUBCATEGORIES",
 ]

@@ -326,6 +326,9 @@ a.blogPost:visited, a.blogPost:link {
     }
 }
 @media (max-width: 1000px) {
+    .btn-group, .btn-group-vertical {
+        display: block;
+    }
     img.header {
       background-image: url(https://via.placeholder.com/728x90.png);
       width: 728px;

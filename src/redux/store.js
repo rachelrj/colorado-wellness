@@ -120,6 +120,7 @@ initialState[STORETYPES[1]] = [{
         'long': 145.033853
     },
     'categories': [0],
+    'subcategories': [1,2,3,4,5,6,7,8,9],
     'ABN': 123456789,
     'imgSource': '../img/addiction-solutions-victoria-logo.svg'
 }, {
@@ -134,6 +135,7 @@ initialState[STORETYPES[1]] = [{
         'long': 145.029884
     },
     'categories': [0],
+    'subcategories': [2],
     'ABN': 123456789,
     'imgSource': '../img/placeholder.png'
 }, {
@@ -148,13 +150,54 @@ initialState[STORETYPES[1]] = [{
         'long': 145.029884
     },
     'categories': [0],
+    'subcategories': [3,5,8,9],
     'ABN': 123456789,
     'imgSource': '../img/bobson.jpg'
 }];
 
-initialState[STORETYPES[2]] = [
-    'addiction'
-    
-]
+initialState[STORETYPES[2]] = {
+    0: 'addiction',
+};
+
+initialState[STORETYPES[3]] = [
+    {
+        'id': 1,
+        'name': 'treatment',
+        'mainCat': 0
+    },{
+        'id': 2,
+        'name': 'rehabilitation',
+        'mainCat': 0,
+
+    },{
+        'id': 3,
+        'name': 'counselling',
+        'mainCat': 0,
+    },{
+        'id': 4,
+        'name': 'programs',
+        'mainCat': 0,
+    },{
+        'id': 5,
+        'name': 'family support',
+        'mainCat': 0,
+    },{
+        'id': 6,
+        'name': 'recovery',
+        'mainCat': 0,
+    },{
+        'id': 7,
+        'name': 'detox',
+        'mainCat': 0,
+    },{
+        'id': 8,
+        'name': 'aftercare',
+        'mainCat': 0,
+    },{
+        'id': 9,
+        'name': 'medicine',
+        'mainCat': 0,
+    }
+];
 
 export default createStore(reducer, initialState);
