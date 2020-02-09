@@ -55,11 +55,13 @@ class AddictionServices extends React.Component {
             if(component.categories.includes(0)) {
                 if(!this.state.subCategories.length || 
                     this.state.subCategories.some(r=> component.subcategories.includes(r))){
+                    const href = "/drug-alcohol-treatment-rehabilitation-support-aftercare/" + component.id;
                     listings.push(
                         <Listing    key={component.id}
                                     name={component.name}
                                     description={component.description}
                                     img={component.imgSource}
+                                    href={href}
                         />
                     )                    
                 }

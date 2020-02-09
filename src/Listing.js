@@ -4,9 +4,7 @@ import DOMPurify from 'dompurify';
 
 
 class Listing extends React.Component {
-    state = {
 
-    }
 
     componentDidMount() {
 
@@ -29,7 +27,7 @@ class Listing extends React.Component {
                     <h2>{this.props.name}</h2>
                     <div className="listingContentDescription" dangerouslySetInnerHTML={{__html: clean}}>
                     </div>
-                    <a src="url" className="readMore">Learn More About {this.props.name} ></a>
+                    <a href={this.props.href} className="readMore">Learn More About {this.props.name} ></a>
                 </div>
             </div>
         );

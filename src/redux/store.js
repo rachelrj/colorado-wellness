@@ -18,6 +18,7 @@ initialState[STORETYPES[0]] = [{
         'addiction',
         'recovery'
     ],
+    'provider': 1,
 
 },{
     'id': 2,
@@ -37,6 +38,7 @@ initialState[STORETYPES[0]] = [{
         'coping',
         'baseball',
     ],
+    'provider': 3,
 },{
     'id': 3,
     'title':'The Benefits of Face-to-Face and Online Health Coaching',
@@ -54,6 +56,7 @@ initialState[STORETYPES[0]] = [{
         'coping',
         'baseball',
     ],
+    'provider': 3,
 },{
     'id': 4,
     'title':'Be patient and supportive - you dont need to understand my depression',
@@ -71,6 +74,7 @@ initialState[STORETYPES[0]] = [{
         'coping',
         'baseball',
     ],
+    'provider': 3,
 },{
     'id': 5,
     'title':'8 Year Sober and Still Growing',
@@ -88,6 +92,7 @@ initialState[STORETYPES[0]] = [{
         'coping',
         'baseball',
     ],
+    'provider': 3,
 },{
     'id': 6,
     'title':'How to Avoid the Trap of Family Roles',
@@ -105,6 +110,7 @@ initialState[STORETYPES[0]] = [{
         'coping',
         'baseball',
     ],
+    'provider': 3,
 }];
 
 
@@ -114,6 +120,7 @@ initialState[STORETYPES[1]] = [{
     'description': '<p>My name is Jason Bowman and I am the CEO at Addiction Solutions Victoria (ASV).</p><p>At ASV, we offer personalised and affordable recovery support packages delivered in the privacy and safety of peoples own homes. These packages provide people seeking support to substance misuse or addiction access to <a href="https://www.asvrehabmelbourne.org.au/about-us/asv-team-rehab-at-home-melbourne">experienced staff</a> and <a href="https://www.asvrehabmelbourne.org.au/about-us/why-asv-rehab-melbourne">evidenced based approaches</a> and provide all participants authentic opportunity at positive change.</p><p>ASV Incorporated is a <a href="https://www.consumer.vic.gov.au/">registered not-for-profit organisation</a> governed by a Board of committed family members, community members and people in recovery.</p>',
     'phone': '03 8374 7648',
     'email': 'jason@asvrehabmelbourne.org.au',
+    'website': 'http://www.asvrehabmelbourne.org.au',
     'address': '1227-1229 Malvern Road, Malvern, VIC 3144',
     'location': {
         'lat': -37.851785,
@@ -122,22 +129,24 @@ initialState[STORETYPES[1]] = [{
     'categories': [0],
     'subcategories': [1,2,3,4,5,6,7,8,9],
     'ABN': 123456789,
-    'imgSource': '../img/addiction-solutions-victoria-logo.svg'
+    'imgSource': '../img/addiction-solutions-victoria-logo.svg',
+    'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
+    'Example: Membership in Association/Society', 'Example: Endorsement']
 }, {
     'id': 2,
     'name': 'Test Solutions',
     'description': '<p>Cupcake ipsum dolor sit amet. Tootsie roll fruitcake pie fruitcake chocolate cake carrot cake ice cream marzipan. Jelly beans cheesecake tart danish bear claw soufflé bear claw pudding chocolate bar. Donut bear claw chupa chups marzipan sugar plum donut.</p><p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>',
     'phone': '03 1234 4678',
     'email': 'test@test.org.au',
-    'address': '11 Brougham St., Kew, VIC 3101',
+    'website': 'test.com',
     'location': {
-        'lat': -37.805913,
-        'long': 145.029884
     },
     'categories': [0],
     'subcategories': [2],
     'ABN': 123456789,
-    'imgSource': '../img/placeholder.png'
+    'imgSource': '../img/placeholder.png',
+    'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
+    'Example: Membership in Association/Society', 'Example: Endorsement']
 }, {
     'id': 3,
     'name': 'Bobson Dugnutt',
@@ -145,6 +154,7 @@ initialState[STORETYPES[1]] = [{
     'phone': '03 1234 4678',
     'email': 'test@test.org.au',
     'address': '11 Brougham St., Kew, VIC 3101',
+    'website': 'https://thedragonfriends.fandom.com/wiki/Bobson_Dugnutt',
     'location': {
         'lat': -37.805913,
         'long': 145.029884
@@ -152,7 +162,9 @@ initialState[STORETYPES[1]] = [{
     'categories': [0],
     'subcategories': [3,5,8,9],
     'ABN': 123456789,
-    'imgSource': '../img/bobson.jpg'
+    'imgSource': '../img/bobson.jpg',
+    'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
+    'Example: Membership in Association/Society', 'Example: Endorsement']
 }];
 
 initialState[STORETYPES[2]] = {

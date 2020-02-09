@@ -55,7 +55,7 @@ class BlogPost extends React.Component {
             <a className="blogPost" href={blogHref}>
                 <img className="blogPostImg" src={this.props.imgSrc}/>
                 <h3>{this.props.title}</h3>
-                <a className="authorName" href="/blog">{this.props.name}</a>
+                <a className="authorName" href={blogHref}>{this.props.name}</a>
                 <p className="date">{dateString}</p>
                 <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
                 <a className="readMore" href={blogHref}>Read More ></a>

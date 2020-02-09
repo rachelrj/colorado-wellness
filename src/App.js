@@ -4,6 +4,7 @@ import Homepage from './Homepage';
 import Blog from './Blog';
 import AddictionServices from './AddictionServices';
 import UnderConstruction from './UnderConstruction';
+import ServiceProvider from './Provider';
 import {Provider} from "react-redux";
 import store from "./redux/store";
 
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path='/blog/:blogTitle' component={Blog}/>
             <Route exact path='/drug-alcohol-treatment-rehabilitation-support-aftercare' component={AddictionServices}/>
             <Route exact path='/under-construction' component={UnderConstruction}/>
+            <Route path='/drug-alcohol-treatment-rehabilitation-support-aftercare/:providerId' component={ServiceProvider}/>
           </Switch>
         </Provider>
       </div>

@@ -182,6 +182,19 @@ a.blogPost:visited, a.blogPost:link {
     height: 50px;
     float:right;
 }
+.providerSocialImg {
+    display: inline-block;
+    height: 50px;
+    float: none;
+}
+.listingPicture{
+    display: block;
+    margin: auto;
+}
+.socialBlock {
+    display: inline-block;
+    padding: 20px;
+}
 #phone, #email {
     padding-left: 10px;
 }
@@ -273,6 +286,9 @@ a.blogPost:visited, a.blogPost:link {
 }
 #tessst {
     filter: brightness(0.8);
+}
+.leaflet-container{
+    height: 300px;
 }
 @media (min-width: 1000px) {
     img.header {
