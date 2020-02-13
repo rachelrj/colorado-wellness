@@ -24,6 +24,9 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
 }
+.blogPostContent {
+    width: 100%;
+}
 .blogPagePost  li {
     clear: both;
     float: left;
