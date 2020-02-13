@@ -17,19 +17,6 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
 }
-.construction {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-}
-.construc-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -100;
-    opacity: 40%;
-}
 .blogPagePost  li {
     clear: both;
     float: left;
@@ -284,23 +271,27 @@ a.blogPost:visited, a.blogPost:link {
     text-shadow: #000 1px 0 10px;
     cursor: pointer;
 }
-#tessst {
-    filter: brightness(0.8);
-}
 .leaflet-container{
     height: 300px;
 }
 @media (min-width: 1000px) {
-    img.header {
+    div.header {
       width: 970px;
       height: 375px;
+          margin: 0 auto;
     }
-    img.mainHeader {
+    div.mainHeader {
         background-image: url(./img/health_wellness_970x375.jpg);
     }
-    img.headerUnderConstruction {
-        background-image: url(./img/under-construction.png);
-        background-size: 970px 250px;
+    div.headerUnderConstruction {
+        background-image: url(./img/work-in-progress_970x450.jpg);
+        background-size: 970px 450px;
+        width: 970px;
+        height: 450px;
+    }
+    div.addictionHeader {
+        background-image: url(./img/recovery_970x375.jpg);
+        background-size: 970px 375px;
     }
 }
 @media (min-width: 801px) {
@@ -347,16 +338,23 @@ a.blogPost:visited, a.blogPost:link {
     .btn-group, .btn-group-vertical {
         display: block;
     }
-    img.header {
-      width: 728px;
-      height: 281px;
+    div.header {
+        width: 728px;
+        height: 281px;
+        margin: 0 auto;
     }
-    img.mainHeader {
+    div.mainHeader {
         background-image: url(./img/health_wellness_728x281.jpg);
     }
-    img.headerUnderConstruction {
-        background-image: url(./img/under-construction.png);
-        background-size: 728px 90px;
+    div.headerUnderConstruction {
+        width: 728px;
+        height: 338px;
+        background-image: url(./img/work-in-progress_728x338.jpg);
+        background-size: 728px 338px;
+    }
+    div.addictionHeader {
+        background-image: url(./img/recovery_728x281.jpg);
+        background-size: 728px 281px;
     }
     .listingDiv {
         width: 400px;
@@ -382,16 +380,23 @@ a.blogPost:visited, a.blogPost:link {
     h1.blogPageBlogTitle {
         font-size: 1.25em;
     }
-    img.header {
+    div.header {
       width: 320px;
       height: 124px;
+        margin: 0 auto;
     }
-    img.mainHeader {
+    div.mainHeader {
         background-image: url(./img/health_wellness_320x124.jpg);
     }
-    img.headerUnderConstruction {
-        background-image: url(./img/under-construction.png);
-        background-size: 320px 50px;
+    div.headerUnderConstruction {
+        width: 320px;
+        height: 149px;
+        background-image: url(./img/work-in-progress_320x149.jpg);
+        background-size: 320px 149px;
+    }
+    div.addictionHeader {
+        background-image: url(./img/recovery_320x124.jpg);
+        background-size: 320px 124px;
     }
     h1 {
         font-size: 3em;

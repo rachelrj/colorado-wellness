@@ -5,9 +5,9 @@ import BlogPost from './BlogPost';
 import Footer from './Footer';
 import Header from './Header';
 import blog from './img/blog-icon-optimized.png';
-import img from './img/change.jpeg';
-import art from './img/art.png';
-import fitness from './img/fitness.jpeg';
+import img from './img/change_600x300.jpg';
+import hollistic from './img/hollistic_600x300.jpg';
+import fitness from './img/fitness_600x300.jpg';
 import { Provider } from 'react-redux';
 import store from "./redux/store";
 import getComponents from "./redux/reducer";
@@ -109,7 +109,7 @@ class Homepage extends React.Component {
                         <a href="/under-construction">
                         <div className="listingDiv">
                             <div class="overlay"></div>
-                            <img src={art} className="serviceImg" width="600px" id="tessst"/>
+                            <img src={hollistic} className="serviceImg" width="600px"/>
                             <div className="centered">Holistic Practices, Healing, Treatment and Psychotherapy</div>
                         </div>
                         </a>

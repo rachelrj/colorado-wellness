@@ -40,7 +40,7 @@ class Header extends React.Component {
             </Navbar>
             {
                 this.props.additionalClass &&
-                    <img className={classes}/>
+                    <div className={classes}/>
             }
             </React.Fragment>
         );
