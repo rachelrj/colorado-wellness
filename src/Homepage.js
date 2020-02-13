@@ -46,7 +46,7 @@ class Homepage extends React.Component {
         });
         let newMonth = n;
         if(newMonth == 0) {newMonth = 12}
-        if (!blogs.length) {
+        if (blogs.length < 2) {
             this.props.blogs.map((blog, index) => {
                 if((newMonth) == blog.month) {
                     blogs.push(

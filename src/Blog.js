@@ -108,24 +108,34 @@ class Blog extends React.Component {
                         </div>
                         <h1 className="blogPageBlogTitle">{article.title}</h1>
                             <p className="blogDate">{dateString}</p>
-                            <div className="blogAuthor">
-                                <span className="blogAuthorPicture">
-                                    <img src={article.authorImgSource}/>
-                                </span>
-                                <a className="authorName" href="url">{article.authorName}</a>
-                            </div>
+                            <a className="authorName">written by {article.authorName}</a>
+                            {article.authorImgSource &&
+                                <div className="blogAuthor">
+                                    <span className="blogAuthorPicture">
+                                        <img src={article.authorImgSource}/>
+                                    </span>
+                                </div>
+                            }
                             <div className="blogPagePost" dangerouslySetInnerHTML={{__html: clean}}></div>  
                     </div>
                     <div className="moreBlogsPanel">
                         <h2 className="moreBlogsPost">More Blog Posts</h2>
-                        <h3>Jan, 2020</h3>
-                        <div>
-                        {otherPostsJan}
-                        </div>
-                        <h3>Feb, 2020</h3>
-                        <div>
-                        {otherPostsFeb}
-                        </div>
+                        {
+                            otherPostsJan.length>0 &&
+                            <div>
+                            <h3>Jan, 2020</h3>
+                            
+                            {otherPostsJan}
+                            </div>
+                        }
+                        {
+                            otherPostsFeb.length>0 &&
+                            <div>
+                            <h3>Feb, 2020</h3>
+                            
+                            {otherPostsFeb}
+                            </div>
+                        }
                         <p className="writeABlog">Have a health and wellness topic that you'd like to share with the community? Contact us to find out how you can contribute.
                             <a className="readMore">Write a Blog Post ></a>
                         </p>

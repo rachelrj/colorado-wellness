@@ -7,7 +7,7 @@ let initialState = {};
 initialState[STORETYPES[0]] = [{
     'id': 1,
     'title':'What are Triggers?',
-    'content': '<p>A trigger is any form of stimuli that initiates the desire to engage in addictive behaviour.</p><p>At <a href="https://www.asvrehabmelbourne.org.au/our-program/drug-rehab-alcohol-rehab">ASV</a>, many of our clients state that stopping drinking or using is one thing and staying stopped, another.</p><p>Effective, evidenced based addiction treatment provides the individual the opportunity, within a safe, supportable and substance free environment, to begin to identify the underlying psychological and emotional issues fuelling the addictive behaviours. The purpose of an effective treatment process is to motivate internal change, providing the individual a realistic and sustainable opportunity at recovery.</p><p>Triggers are associated with a behaviour, memory or situation that relates in some way to prior substance abuse behaviours. As someone struggles with addiction, the people they interact with, the places they spend their time and in some situations, the things they do become strongly associated with their addictive behaviour.</p><p>Moving into treatment and recovery, it helps to reduce exposure to these triggers as much as possible. This may require changing relationships, moving to a different side of town or making a career change.</p><img src="../img/woman-displeased.jpg"/><p>Triggers prompt cravings, which are strong desires for a certain substance and can lead to relapse.</p><p>Learning how to identify triggers and developing strategies to manage cravings is a vital part of recovery from addiction.</p><p>Common triggers in addiction include:</p><ul><li>Stress</li><li>Financial Insecurity</li><li>Locations associated with using/drinking</li><li>People associated with using/drinking</li><li>Romances</li><li>Resentment</li></ul>',
+    'content': '<p>A trigger is any form of stimuli that initiates the desire to engage in addictive behaviour.</p><p>At <a href="https://www.asvrehabmelbourne.org.au/our-program/drug-rehab-alcohol-rehab">ASV</a>, many of our clients state that stopping drinking or using is one thing and staying stopped, another.</p><img src="../img/woman-displeased.jpg"/><p>Effective, evidenced based addiction treatment provides the individual the opportunity, within a safe, supportable and substance free environment, to begin to identify the underlying psychological and emotional issues fuelling the addictive behaviours. The purpose of an effective treatment process is to motivate internal change, providing the individual a realistic and sustainable opportunity at recovery.</p><p>Triggers are associated with a behaviour, memory or situation that relates in some way to prior substance abuse behaviours. As someone struggles with addiction, the people they interact with, the places they spend their time and in some situations, the things they do become strongly associated with their addictive behaviour.</p><p>Moving into treatment and recovery, it helps to reduce exposure to these triggers as much as possible. This may require changing relationships, moving to a different side of town or making a career change.</p><p>Triggers prompt cravings, which are strong desires for a certain substance and can lead to relapse.</p><p>Learning how to identify triggers and developing strategies to manage cravings is a vital part of recovery from addiction.</p><p>Common triggers in addiction include:</p><ul><li>Stress</li><li>Financial Insecurity</li><li>Locations associated with using/drinking</li><li>People associated with using/drinking</li><li>Romances</li><li>Resentment</li></ul>',
     'authorName': 'Jason Bowen',
     'authorImgSource': '../img/placeholder.png',
     'img': '../img/woman-displeased.jpg',
@@ -22,95 +22,20 @@ initialState[STORETYPES[0]] = [{
 
 },{
     'id': 2,
-    'title':'10 Intention Setting Journal Prompts for January',
+    'title':'5 Intention Setting Journal Prompts for January',
     'content': 
-    '<p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home weve ever known. The sky calls to us dream of the minds eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p><p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the minds eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home weve ever known the carbon in our apple pies concept of the number one.</p><p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>',
-    'authorName': 'Bobson Dugnutt',
-    'authorImgSource': '../img/bobson.jpg',
-    'img': 'https://via.placeholder.com/200x100.png',
-    'month': 2,
-    'day': 5,
-    'year': 2020,
-    'categories': [
-        'mindfulness',
-        'self-identity',
-        'anxiety',
-        'coping',
-        'baseball',
-    ],
-    'provider': 3,
-},{
-    'id': 3,
-    'title':'The Benefits of Face-to-Face and Online Health Coaching',
-    'content': 
-    '<p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home weve ever known. The sky calls to us dream of the minds eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p><p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the minds eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home weve ever known the carbon in our apple pies concept of the number one.</p><p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>',
-    'authorName': 'Bobson Dugnutt',
-    'authorImgSource': '../img/bobson.jpg',
-    'month': 1,
-    'day': 5,
-    'year': 2020,
-    'categories': [
-        'mindfulness',
-        'self-identity',
-        'anxiety',
-        'coping',
-        'baseball',
-    ],
-    'provider': 3,
-},{
-    'id': 4,
-    'title':'Be patient and supportive - you dont need to understand my depression',
-    'content': 
-    '<p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home weve ever known. The sky calls to us dream of the minds eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p><p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the minds eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home weve ever known the carbon in our apple pies concept of the number one.</p><p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>',
-    'authorName': 'Bobson Dugnutt',
-    'authorImgSource': '../img/bobson.jpg',
-    'month': 1,
-    'day': 10,
-    'year': 2020,
-    'categories': [
-        'mindfulness',
-        'self-identity',
-        'anxiety',
-        'coping',
-        'baseball',
-    ],
-    'provider': 3,
-},{
-    'id': 5,
-    'title':'8 Year Sober and Still Growing',
-    'content': 
-    '<p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home weve ever known. The sky calls to us dream of the minds eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p><p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the minds eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home weve ever known the carbon in our apple pies concept of the number one.</p><p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>',
-    'authorName': 'Bobson Dugnutt',
-    'authorImgSource': '../img/bobson.jpg',
+    '<p>Creating a daily intention journal should be a consideration if you\'re planning on improving your health and wellness in 2020. Why? You are 42 percent more likely to achieve a goal if you write it down! This statistic was determined in <a href="https://www.dominican.edu/dominicannews/study-highlights-strategies-for-achieving-goals"> an academic study</a> by psychology professor Dr. Gail Matthews. Moreover, its difficult to stick to a long-term, large-scale goal. On the other hand, if you set smaller, attainable goals, you’ll be far more likely to stay motivated over time.</p><img src="../img/journaling.jpg"/><p>Convinced yet? If so, here are a few prompts for your journal-writing New Year\'s resolution:</p><p><strong>1) What have you been complaining most about lately? How can you change this?</strong></p><p>Personally, I\'ve been shocked and scared about the current environmental disasters - just recently, the California fires, the Amazon rainforest burning, and the Australian bushfires. I\'ve felt a bit hopeless in the midst of the catastophes. There are steps I can personally take (besides donating or becoming a fire-fighter!). One thing I\'ve starting on my own to improve my ecological footprint is <a href="https://www.melbourne.vic.gov.au/residents/sustainability-at-home/Pages/home-composting.aspx"/>at home composting</a>.</p><p><strong>2) What might be the next step towards accomplishing a career goal? What can you do now?</strong></p><p>Maybe you have your eye on a promotion within the next two years. Or want to discuss boosting your salary at your next quarterly review. What examples might you give your boss to warrant that raise or promotion? Could you read a book related to your career, or a book about leadership in general? Or is there a new skill you could start learning? Or maybe just today, smile and have a chat with a co-worker that you wouldn\'t normally. Nothing is too small!</p><p><strong>3) Have you tried meditation? How does it make you feel?</strong></p><p>Have you incorporated mediation into your daily routine? If so, write a journal entry about how you felt after your daily meditation. Do you feel more clear-headed? Has your outlook on the day improved? If you aren\'t a daily meditator, try a short morning mediation. The <a href="https://www.calm.com/">calm app</a> has a few free mediations to try.</p><p><strong>4) Is there someone you\'ve been meaning to catch up with? Meaning to call?</strong></p><p>Are there important friends or family of yours that you haven\'t spoken to in over a year? I am one that is guilty of losing touch with friends. There are so many ways that relationships can deteriorate. Don\'t let it be because of lack of effort! So today, give that friend a call. Or at least shoot that person a message to show that you are thinking of him or her!</p><p><strong>5) How can you practice \'everyday creativity\' today? Report your mood.</strong></p><p>Focus on creativity today. How can you express yourself at work? Or at home? <a href="https://www.tandfonline.com/doi/abs/10.1080/17439760.2016.1257049">A recent study</a> has shown that spending time on creative goals during a day is associated with higher activated positive affect on that day. Some ideas for your creative endeavour include: painting a picture, writing a poem, planning a surprise, or even rearranging/tidying your living space!</p></br><p>So, instead of the standard \'lose five kilo\' goal that you set every year, do something more intentional for your New Year\'s resolution. Grab a nice journal that gets your motivational juices flowing at the store today. Set those small intentions that will lead to meaningful changes over time.</p>',
+    'authorName': 'Rachel Joyce',
+    'img': '../img/journaling.jpg',
     'month': 1,
     'day': 20,
     'year': 2020,
     'categories': [
         'mindfulness',
         'self-identity',
-        'anxiety',
-        'coping',
-        'baseball',
+        'journaling',
+        'resolutions',
     ],
-    'provider': 3,
-},{
-    'id': 6,
-    'title':'How to Avoid the Trap of Family Roles',
-    'content': 
-    '<p>Cosmic fugue cosmos venture quasar Sea of Tranquility courage of our questions? From which we spring are creatures of the cosmos hundreds of thousands network of wormholes the sky calls to us the only home weve ever known. The sky calls to us dream of the minds eye intelligent beings invent the universe citizens of distant epochs made in the interiors of collapsing stars. Paroxysm of global death network of wormholes Drake Equation the sky calls to us vastness is bearable only through love a very small stage in a vast cosmic arena.</p><p>Hydrogen atoms dispassionate extraterrestrial observer ship of the imagination not a sunrise but a galaxyrise white dwarf something incredible is waiting to be known. Descended from astronomers courage of our questions descended from astronomers dream of the minds eye take root and flourish the carbon in our apple pies. Extraordinary claims require extraordinary evidence citizens of distant epochs bits of moving fluff the only home weve ever known the carbon in our apple pies concept of the number one.</p><p>A mote of dust suspended in a sunbeam trillion paroxysm of global death hydrogen atoms another world white dwarf. Vanquish the impossible gathered by gravity emerged into consciousness made in the interiors of collapsing stars kindling the energy hidden in matter finite but unbounded. Invent the universe realm of the galaxies kindling the energy hidden in matter citizens of distant epochs two ghostly white figures in coveralls and helmets are soflty dancing rich in heavy atoms.</p>',
-    'authorName': 'Bobson Dugnutt',
-    'authorImgSource': '../img/bobson.jpg',
-    'month': 1,
-    'day': 30,
-    'year': 2020,
-    'categories': [
-        'mindfulness',
-        'self-identity',
-        'anxiety',
-        'coping',
-        'baseball',
-    ],
-    'provider': 3,
 }];
 
 

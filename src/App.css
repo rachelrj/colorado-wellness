@@ -80,6 +80,7 @@ hr {
     text-decoration: none;
     color: dodgerblue;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 .blogAuthor {
     float: left;
@@ -101,8 +102,6 @@ hr {
 }
 .blogPagePost img {
     float: right;
-    max-width: 300px;
-    max-height: 300px;
 }
 .readMore, .readMoreBlog {
     display: block;
@@ -140,6 +139,7 @@ a.blogPost:visited, a.blogPost:link {
     display: block;
     font-weight: bold;
     text-align: center;
+    margin: 0;
 }
 .footer {
     height: 100px;
@@ -440,6 +440,10 @@ a.blogPost:visited, a.blogPost:link {
     }
     .mainBlogContent{
         width: 75%;
+    }
+    .blogPagePost img {
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 @media (max-width: 600px) {
