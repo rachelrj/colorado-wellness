@@ -81,7 +81,7 @@ class Homepage extends React.Component {
 
         return (
             <Provider store = {store}>
-                <Header/>
+                <Header additionalClass="mainHeader"/>
                 <h1>Victoria Health & Wellness Collective</h1>
                 <div className="bodyHolder">
                     <div className="description">

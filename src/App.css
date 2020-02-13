@@ -292,13 +292,15 @@ a.blogPost:visited, a.blogPost:link {
 }
 @media (min-width: 1000px) {
     img.header {
-      background-image: url(https://via.placeholder.com/970x250.png);
       width: 970px;
       height: 250px;
     }
+    img.mainHeader {
+        background-image: url(https://via.placeholder.com/970x250.png);
+    }
     img.headerUnderConstruction {
-      width: 970px;
-      height: 250px;
+        background-image: url(./img/under-construction.png);
+        background-size: 970px 250px;
     }
 }
 @media (min-width: 801px) {
@@ -346,13 +348,15 @@ a.blogPost:visited, a.blogPost:link {
         display: block;
     }
     img.header {
-      background-image: url(https://via.placeholder.com/728x90.png);
       width: 728px;
       height: 90px;
     }
+    img.mainHeader {
+        background-image: url(https://via.placeholder.com/728x90.png);
+    }
     img.headerUnderConstruction {
-      width: 728px;
-      height: 90px;
+        background-image: url(./img/under-construction.png);
+        background-size: 728px 90px;
     }
     .listingDiv {
         width: 400px;
@@ -378,14 +382,16 @@ a.blogPost:visited, a.blogPost:link {
     h1.blogPageBlogTitle {
         font-size: 1.25em;
     }
-    img.headerUnderConstruction {
+    img.header {
       width: 320px;
       height: 50px;
     }
-    img.header {
-      background-image: url(https://via.placeholder.com/320x50.png);
-      width: 320px;
-      height: 50px;
+    img.mainHeader {
+        background-image: url(https://via.placeholder.com/320x50.png);
+    }
+    img.headerUnderConstruction {
+        background-image: url(./img/under-construction.png);
+        background-size: 320px 50px;
     }
     h1 {
         font-size: 3em;

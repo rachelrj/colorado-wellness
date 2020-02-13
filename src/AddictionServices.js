@@ -70,7 +70,7 @@ class AddictionServices extends React.Component {
 
         return (
             <Provider store = {store}>
-                <Header/>
+                <Header additionalClass="mainHeader"/>
                 <div className="bodyHolder">
                                 <h1>Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare</h1>
                 <div className="description">

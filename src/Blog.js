@@ -100,7 +100,7 @@ class Blog extends React.Component {
         return (
             <Provider store = {store}>
             <div className="blogPage">
-                <Header/>
+                <Header additionalClass="mainHeader"/>
                 <div className="bodyHolder">
                     <div className="mainBlogContent">
                         <div className="categories">

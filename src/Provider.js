@@ -77,6 +77,7 @@ class ServiceProvider extends React.Component {
 
         return (
             <Provider store = {store}>
+                <Header/>
                 <div className="bodyHolder">
                 <br/>
                 <h1>{this.listing.name}</h1>

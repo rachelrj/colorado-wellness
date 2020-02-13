@@ -21,9 +21,7 @@ class UnderConstruction extends React.Component {
 
         return (
             <div>
-                <a className="headerLink" href="/">
-                    <img className="headerUnderConstruction" src={img}/>
-                </a>                
+                <Header additionalClass="headerUnderConstruction"/>             
                 <h1>Victoria Health & Wellness Collective</h1>
                 <div className="bodyHolder">
                     <div className="construction">
