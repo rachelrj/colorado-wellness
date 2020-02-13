@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import Listing from './Listing';
 import BlogPost from './BlogPost';
 import Footer from './Footer';
@@ -31,6 +30,7 @@ class Homepage extends React.Component {
             if((n+1) == blog.month) {
                 blogs.push(
                     <BlogPost   
+                                key={blog.id}
                                 id={blog.id}
                                 title={blog.title}
                                 name={blog.authorName}
@@ -51,6 +51,7 @@ class Homepage extends React.Component {
                 if((newMonth) == blog.month) {
                     blogs.push(
                         <BlogPost   
+                                    key={blog.id}
                                     id={blog.id}
                                     title={blog.title}
                                     name={blog.authorName}
@@ -94,21 +95,21 @@ class Homepage extends React.Component {
                         <hr/>
                         <a href="/drug-alcohol-treatment-rehabilitation-support-aftercare">
                         <div className="listingDiv">
-                            <div class="overlay"></div>
+                            <div className="overlay"></div>
                             <img src={img} className="serviceImg" width="600px"/>
                             <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare</div>
                         </div>
                         </a>
                         <a href="/under-construction">
                         <div className="listingDiv">
-                            <div class="overlay"></div>
+                            <div className="overlay"></div>
                             <img src={fitness} className="serviceImg" width="600px"/>
                             <div className="centered">Physical Fitness and Nutrition</div>
                         </div>
                         </a>
                         <a href="/under-construction">
                         <div className="listingDiv">
-                            <div class="overlay"></div>
+                            <div className="overlay"></div>
                             <img src={hollistic} className="serviceImg" width="600px"/>
                             <div className="centered">Holistic Practices, Healing, Treatment and Psychotherapy</div>
                         </div>

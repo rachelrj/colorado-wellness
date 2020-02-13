@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,10 +54,10 @@ class BlogPost extends React.Component {
             <a className="blogPost" href={blogHref}>
                 <img className="blogPostImg" src={this.props.imgSrc}/>
                 <h3>{this.props.title}</h3>
-                <a className="authorName" href={blogHref}>{this.props.name}</a>
+                <p className="authorName">{this.props.name}</p>
                 <p className="date">{dateString}</p>
                 <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
-                <a className="readMore" href={blogHref}>Read More ></a>
+                <p className="readMore" href={blogHref}>Read More ></p>
             </a>
         );
     }

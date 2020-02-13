@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import Footer from './Footer';
 import Header from './Header';
 import { Provider } from 'react-redux';
@@ -38,7 +37,7 @@ class ServiceProvider extends React.Component {
 
         this.creds = [];
         this.listing.creds.map((cred, index) => {
-            this.creds.push(<div>{cred}</div>);
+            this.creds.push(<div key={index}>{cred}</div>);
         });
         this.featuredArticles = this.findBlogs();
     }
@@ -49,7 +48,7 @@ class ServiceProvider extends React.Component {
             if(blog.provider == this.listing.id) {
                 let blogHref = "/blog/" + blog.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
                 blogs.push(
-                <div>
+                <div key={index}>
                     <a href={blogHref}>{blog.title}</a>
                 </div>
                 )

@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import blog from './img/blog-icon-optimized.png';
 import facebook from './img/facebook.png';
 import linkedin from './img/linkedin.png';

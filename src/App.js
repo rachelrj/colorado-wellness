@@ -10,8 +10,7 @@ import store from "./redux/store";
 
 import {
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 class App extends React.Component {

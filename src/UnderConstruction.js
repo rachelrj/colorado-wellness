@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import Footer from './Footer';
 import Header from './Header';
 

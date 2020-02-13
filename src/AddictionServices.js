@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import Listing from './Listing';
 import Footer from './Footer';
 import Header from './Header';
@@ -31,32 +30,24 @@ class AddictionServices extends React.Component {
     }
 
     render() {
-        let active = 2;
-        let items = [];
-        for (let number = 1; number <= 5; number++) {
-            items.push(
-                <Pagination.Item key={number} active={number === active}>
-                    {number}
-                </Pagination.Item>,
-            );
-        };
-        let subCats = [];
+        this.subCats = [];
         this.props.subCats.map((component, index) => {
             if(component.mainCat === 0) {
-                subCats.push(
-                <ToggleButton value={component.id} variant="outline-primary" size="lg">
+                this.subCats.push(
+                <ToggleButton key={component.id} value={component.id} variant="outline-primary" size="lg">
                     {component.name}
                 </ToggleButton>
                 );
             }
         });
-        let listings = [];
+
+        this.listings = [];
         this.props.providers.map((component, index) => {
             if(component.categories.includes(0)) {
                 if(!this.state.subCategories.length || 
                     this.state.subCategories.some(r=> component.subcategories.includes(r))){
                     const href = "/drug-alcohol-treatment-rehabilitation-support-aftercare/" + component.id;
-                    listings.push(
+                    this.listings.push(
                         <Listing    key={component.id}
                                     name={component.name}
                                     description={component.description}
@@ -78,12 +69,9 @@ class AddictionServices extends React.Component {
                     <p>The platform provides an opportunity for relevant and authoritative health and wellness organisations providing treatment and support to individuals and families impacted by addiction an opportunity to introduce themselves and their organisations</p>
                 </div>
                 <ToggleButtonGroup type="checkbox" onChange={this.handleChange.bind(this)}>
-                    {subCats}
+                    {this.subCats}
                 </ToggleButtonGroup>
-                    {listings}
-                </div>
-                <div className="paginationContainer">
-                    <Pagination>{items}</Pagination>
+                    {this.listings}
                 </div>
                 <Footer/>
             </Provider>

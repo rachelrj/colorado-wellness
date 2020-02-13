@@ -81,6 +81,7 @@ hr {
     color: dodgerblue;
     font-weight: bold;
     margin-bottom: 15px;
+    text-align: center;
 }
 .blogAuthor {
     float: left;

@@ -1,5 +1,4 @@
 import React from 'react';
-import {default as config} from './config';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
 
