@@ -293,10 +293,10 @@ a.blogPost:visited, a.blogPost:link {
 @media (min-width: 1000px) {
     img.header {
       width: 970px;
-      height: 250px;
+      height: 375px;
     }
     img.mainHeader {
-        background-image: url(https://via.placeholder.com/970x250.png);
+        background-image: url(./img/health_wellness_970x375.jpg);
     }
     img.headerUnderConstruction {
         background-image: url(./img/under-construction.png);
@@ -349,10 +349,10 @@ a.blogPost:visited, a.blogPost:link {
     }
     img.header {
       width: 728px;
-      height: 90px;
+      height: 281px;
     }
     img.mainHeader {
-        background-image: url(https://via.placeholder.com/728x90.png);
+        background-image: url(./img/health_wellness_728x281.jpg);
     }
     img.headerUnderConstruction {
         background-image: url(./img/under-construction.png);
@@ -384,10 +384,10 @@ a.blogPost:visited, a.blogPost:link {
     }
     img.header {
       width: 320px;
-      height: 50px;
+      height: 124px;
     }
     img.mainHeader {
-        background-image: url(https://via.placeholder.com/320x50.png);
+        background-image: url(./img/health_wellness_320x124.jpg);
     }
     img.headerUnderConstruction {
         background-image: url(./img/under-construction.png);
