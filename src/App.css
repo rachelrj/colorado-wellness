@@ -2,6 +2,13 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+form {
+    max-width: 600px;
+    margin: auto;
+}
+#formBasicText {
+    height: 200px;
+}
 p {
     text-align: left;
 }
@@ -294,6 +301,10 @@ a.blogPost:visited, a.blogPost:link {
         background-image: url(./img/recovery_970x375.jpg);
         background-size: 970px 375px;
     }
+    div.joinCollective {
+        background-image: url(./img/join-collective_970x375.jpg);
+        background-size: 970px 375px;
+    }
 }
 @media (min-width: 801px) {
     h1 {
@@ -357,6 +368,10 @@ a.blogPost:visited, a.blogPost:link {
         background-image: url(./img/recovery_728x281.jpg);
         background-size: 728px 281px;
     }
+    div.joinCollective {
+        background-image: url(./img/join-collective_728x281.jpg);
+        background-size: 728px 281px;
+    }
     .listingDiv {
         width: 400px;
     }
@@ -397,6 +412,10 @@ a.blogPost:visited, a.blogPost:link {
     }
     div.addictionHeader {
         background-image: url(./img/recovery_320x124.jpg);
+        background-size: 320px 124px;
+    }
+    div.joinCollective {
+        background-image: url(./img/join-collective_320x124.jpg);
         background-size: 320px 124px;
     }
     h1 {
