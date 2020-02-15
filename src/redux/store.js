@@ -53,7 +53,7 @@ initialState[STORETYPES[1]] = [{
         'long': 145.033853
     },
     'categories': [0],
-    'subcategories': [1,2,3,4,5,6,7,8,9],
+    'subcategories': [1,2,3,4,5,6,7,8,9,10],
     'ABN': 123456789,
     'imgSource': '../img/addiction-solutions-victoria-logo.svg',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
@@ -133,7 +133,11 @@ initialState[STORETYPES[3]] = [
         'mainCat': 0,
     },{
         'id': 9,
-        'name': 'medicine',
+        'name': 'addiction medicine',
+        'mainCat': 0,
+    }, {
+        'id': 10,
+        'name': 'psychology',
         'mainCat': 0,
     }
 ];
