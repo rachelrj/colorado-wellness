@@ -26,6 +26,12 @@ class JoinCollective extends React.Component {
         this.setState({
             submitted: true
         })
+        fetch('/email', {
+            method: 'post',
+            body: JSON.stringify('')
+        }).then(function(response) {
+            return response.json();
+        });
     };
 
     render() {

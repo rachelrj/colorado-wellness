@@ -4,7 +4,22 @@ import STORETYPES from './storeTypes';
 
 let initialState = {};
 
-initialState[STORETYPES[0]] = [{
+initialState[STORETYPES[0]] = [
+// {
+//     'id': 3,
+//     'title': 'Could You Get More Out of Therapy from a New Approach?',
+//     'authorName': 'Rachel Joyce',
+//     'content': '<p>I don\'t know about you, but I tend to get confused about the different approaches to psychotherapy. Having a basic understanding of therapeutic strategies can help you in multiple ways. Knowing which practices work for you will help in choosing a therapist. You might look for a therapist that specializes in an approach that you are interested in. If you already are working with a therapist, you might be interested in trying a new approach. And with so many options, you might want to try multiple types, or ask your therapist for recommendations.</p><p>According to the <a href="https://www.apa.org/">American Psychological Association</a> there are five different theories, or categories, of psychotherapy.</p><p><strong>Psychoanalysis and psychodynamic therapies</strong></p><p>Psychoanalytic or psychodynamic psychotherapy draws on practices of analytical psychology and psychoanalysis. This approach will help you understand the underlying meaning of dreams, recurring thoughts, emotions, fantasies, and/or conflicts. This approach will also help explain any resistance to certain feelings. It relies heavily on your relationship with your therapist, because it explores the conscious and unconscious aspects of the therapeutic relationship. This practice requires that the patient trust his or her therapist and be open and honest when divulging information.</p>',
+//     'img': '',
+//     'month': 2,
+//     'day': 16,
+//     'year': 2020,
+//     'categories': [
+//         'therapy',
+//         'psychotherapy',
+//     ]
+// },
+{
     'id': 1,
     'title':'What are Triggers?',
     'content': '<p>A trigger is any form of stimuli that initiates the desire to engage in addictive behaviour.</p><p>At <a href="https://www.asvrehabmelbourne.org.au/our-program/drug-rehab-alcohol-rehab">ASV</a>, many of our clients state that stopping drinking or using is one thing and staying stopped, another.</p><p>Effective, evidenced based addiction treatment provides the individual the opportunity, within a safe, supportable and substance free environment, to begin to identify the underlying psychological and emotional issues fuelling the addictive behaviours. The purpose of an effective treatment process is to motivate internal change, providing the individual a realistic and sustainable opportunity at recovery.</p><img src="../img/woman-displeased.jpg"/><p>Triggers are associated with a behaviour, memory or situation that relates in some way to prior substance abuse behaviours. As someone struggles with addiction, the people they interact with, the places they spend their time and in some situations, the things they do become strongly associated with their addictive behaviour.</p><p>Moving into treatment and recovery, it helps to reduce exposure to these triggers as much as possible. This may require changing relationships, moving to a different side of town or making a career change.</p><p>Triggers prompt cravings, which are strong desires for a certain substance and can lead to relapse.</p><p>Learning how to identify triggers and developing strategies to manage cravings is a vital part of recovery from addiction.</p><p>Common triggers in addiction include:</p><ul><li>Stress</li><li>Financial Insecurity</li><li>Locations associated with using/drinking</li><li>People associated with using/drinking</li><li>Romances</li><li>Resentment</li></ul>',

@@ -6,6 +6,7 @@ import Header from './Header';
 import blog from './img/blog-icon-optimized.png';
 import img from './img/change_600x300.jpg';
 import hollistic from './img/hollistic_600x300.jpg';
+import therapy from './img/therapy_600x300.jpg';
 import fitness from './img/fitness_600x300.jpg';
 import { Provider } from 'react-redux';
 import store from "./redux/store";
@@ -46,7 +47,7 @@ class Homepage extends React.Component {
         });
         let newMonth = n;
         if(newMonth == 0) {newMonth = 12}
-        if (blogs.length < 2) {
+        if (blogs.length < 3) {
             this.props.blogs.map((blog, index) => {
                 if((newMonth) == blog.month) {
                     blogs.push(
@@ -93,6 +94,13 @@ class Homepage extends React.Component {
                     <div className="listingsDiv">
                         <h2>Professional Services</h2>
                         <hr/>
+                        <a href="/under-construction">
+                        <div className="listingDiv">
+                            <div className="overlay"></div>
+                            <img src={therapy} className="serviceImg" width="600px"/>
+                            <div className="centered">Behavioral, Cognative, Humanistic and Psychodynamic Therapies</div>
+                        </div>
+                        </a>
                         <a href="/drug-alcohol-treatment-rehabilitation-support-aftercare">
                         <div className="listingDiv">
                             <div className="overlay"></div>
@@ -111,7 +119,7 @@ class Homepage extends React.Component {
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={hollistic} className="serviceImg" width="600px"/>
-                            <div className="centered">Holistic Practices, Healing, Treatment and Psychotherapy</div>
+                            <div className="centered">Holistic Practices and Healing</div>
                         </div>
                         </a>
                     </div>
