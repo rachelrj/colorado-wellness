@@ -31,6 +31,7 @@ class Header extends React.Component {
                   <Nav.Link href="/blog/What-are-Triggers">Blog</Nav.Link>
                   <NavDropdown title="Professional Services" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/drug-alcohol-treatment-rehabilitation-support-aftercare">Addiction</NavDropdown.Item>
+                    <NavDropdown.Item href="/under-construction">Therapy</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Fitness and Nutrition</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Holistic Practices</NavDropdown.Item>
                   </NavDropdown>
