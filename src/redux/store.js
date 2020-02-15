@@ -5,20 +5,20 @@ import STORETYPES from './storeTypes';
 let initialState = {};
 
 initialState[STORETYPES[0]] = [
-// {
-//     'id': 3,
-//     'title': 'Could You Get More Out of Therapy from a New Approach?',
-//     'authorName': 'Rachel Joyce',
-//     'content': '<p>I don\'t know about you, but I tend to get confused about the different approaches to psychotherapy. Having a basic understanding of therapeutic strategies can help you in multiple ways. Knowing which practices work for you will help in choosing a therapist. You might look for a therapist that specializes in an approach that you are interested in. If you already are working with a therapist, you might be interested in trying a new approach. And with so many options, you might want to try multiple types, or ask your therapist for recommendations.</p><p>According to the <a href="https://www.apa.org/">American Psychological Association</a> there are five different theories, or categories, of psychotherapy.</p><p><strong>Psychoanalysis and psychodynamic therapies</strong></p><p>Psychoanalytic or psychodynamic psychotherapy draws on practices of analytical psychology and psychoanalysis. This approach will help you understand the underlying meaning of dreams, recurring thoughts, emotions, fantasies, and/or conflicts. This approach will also help explain any resistance to certain feelings. It relies heavily on your relationship with your therapist, because it explores the conscious and unconscious aspects of the therapeutic relationship. This practice requires that the patient trust his or her therapist and be open and honest when divulging information.</p>',
-//     'img': '',
-//     'month': 2,
-//     'day': 16,
-//     'year': 2020,
-//     'categories': [
-//         'therapy',
-//         'psychotherapy',
-//     ]
-// },
+{
+    'id': 3,
+    'title': 'Could You Get More Out of Therapy from a New Approach?',
+    'authorName': 'Rachel Joyce',
+    'content': '<p>I don\'t know about you, but I tend to get confused about the different approaches to psychotherapy. Having a basic understanding of therapeutic strategies can help you in multiple ways. Knowing which practices work for you will help in choosing a therapist. You might look for a therapist that specializes in an approach that you are interested in. If you already are working with a therapist, you might be interested in trying a new approach. And with so many options, you might want to try multiple types, or ask your therapist for recommendations.</p><p>According to the <a href="https://www.apa.org/">American Psychological Association</a> there are five different theories, or categories, of psychotherapy.</p><p><strong>Psychoanalysis and psychodynamic therapies</strong></p><p>Psychoanalytic or psychodynamic psychotherapy draws on practices of analytical psychology and psychoanalysis. This approach will help you understand the underlying meaning of dreams, recurring thoughts, emotions, fantasies, and/or conflicts. This approach will also help explain any resistance to certain feelings. It relies heavily on your relationship with your therapist, because it explores the conscious and unconscious aspects of the therapeutic relationship. This practice requires that the patient trust his or her therapist and be open and honest when divulging information.</p><p>tbd</p><p>tbd</p><p>tbd</p><p>tbd</p><p>tbd</p><p>tbd</p>',
+    'img': '../img/therapy-approaches.jpg',
+    'month': 2,
+    'day': 16,
+    'year': 2020,
+    'categories': [
+        'therapy',
+        'psychotherapy',
+    ]
+},
 {
     'id': 1,
     'title':'What are Triggers?',
