@@ -5,6 +5,7 @@ import { Provider, connect } from 'react-redux';
 import store from "./redux/store";
 import getComponents from "./redux/reducer";
 import DOMPurify from 'dompurify'; 
+import STORETYPES from './redux/storeTypes';
 
 class Blog extends React.Component {
 
@@ -95,6 +96,32 @@ class Blog extends React.Component {
             }
         });
 
+        let providerLink;
+
+        if (article.provider) {
+            if (article.providerCat === STORETYPES[1]) {
+                providerLink = "/drug-alcohol-treatment-rehabilitation-support-aftercare";
+            }
+            providerLink = providerLink + "/" + article.provider;
+        }
+
+        let authorImg;
+        if (providerLink && article.authorImgSource) {
+            authorImg = <a href={providerLink}><div className="blogAuthor">
+                                    <span className="blogAuthorPicture">
+                                        <img src={article.authorImgSource}/>
+                                    </span>
+                                </div></a>
+        } else if (article.authorImgSource){
+            authorImg = <div className="blogAuthor">
+                        <span className="blogAuthorPicture">
+                            <img src={article.authorImgSource}/>
+                        </span>
+                    </div>
+        }
+
+
+
 
         return (
             <Provider store = {store}>
@@ -107,14 +134,8 @@ class Blog extends React.Component {
                         </div>
                         <h1 className="blogPageBlogTitle">{article.title}</h1>
                             <p className="blogDate">{dateString}</p>
-                            <a className="authorName">written by {article.authorName}</a>
-                            {article.authorImgSource &&
-                                <div className="blogAuthor">
-                                    <span className="blogAuthorPicture">
-                                        <img src={article.authorImgSource}/>
-                                    </span>
-                                </div>
-                            }
+                            <a className="authorName" href={providerLink} >written by {article.authorName}</a>
+                            {authorImg}
                             <div className="blogPagePost" dangerouslySetInnerHTML={{__html: clean}}></div>  
                     </div>
                     <div className="moreBlogsPanel">
