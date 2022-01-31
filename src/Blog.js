@@ -100,7 +100,7 @@ class Blog extends React.Component {
 
         if (article.provider) {
             if (article.providerCat === STORETYPES[1]) {
-                providerLink = "/drug-alcohol-treatment-rehabilitation-support-aftercare";
+                providerLink = "/colorado-fitness";
             }
             providerLink = providerLink + "/" + article.provider;
         }

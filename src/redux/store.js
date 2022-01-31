@@ -20,23 +20,6 @@ initialState[STORETYPES[0]] = [
     ]
 },
 {
-    'id': 1,
-    'title':'What are Triggers?',
-    'content': '<p>A trigger is any form of stimuli that initiates the desire to engage in addictive behaviour.</p><p>At <a href="https://www.asvrehabmelbourne.org.au/our-program/drug-rehab-alcohol-rehab">ASV</a>, many of our clients state that stopping drinking or using is one thing and staying stopped, another.</p><p>Effective, evidenced based addiction treatment provides the individual the opportunity, within a safe, supportable and substance free environment, to begin to identify the underlying psychological and emotional issues fuelling the addictive behaviours. The purpose of an effective treatment process is to motivate internal change, providing the individual a realistic and sustainable opportunity at recovery.</p><img src="../img/woman-displeased.jpg"/><p>Triggers are associated with a behaviour, memory or situation that relates in some way to prior substance abuse behaviours. As someone struggles with addiction, the people they interact with, the places they spend their time and in some situations, the things they do become strongly associated with their addictive behaviour.</p><p>Moving into treatment and recovery, it helps to reduce exposure to these triggers as much as possible. This may require changing relationships, moving to a different side of town or making a career change.</p><p>Triggers prompt cravings, which are strong desires for a certain substance and can lead to relapse.</p><p>Learning how to identify triggers and developing strategies to manage cravings is a vital part of recovery from addiction.</p><p>Common triggers in addiction include:</p><ul><li>Stress</li><li>Financial Insecurity</li><li>Locations associated with using/drinking</li><li>People associated with using/drinking</li><li>Romances</li><li>Resentment</li></ul>',
-    'authorName': 'Jason Bowen',
-    'authorImgSource': '../img/jason-bowman-addiction-solutions.jpg',
-    'img': '../img/woman-displeased.jpg',
-    'month': 2,
-    'day': 3,
-    'year': 2020,
-    'categories': [
-        'addiction',
-        'recovery'
-    ],
-    'provider': 1,
-    'providerCat': STORETYPES[1],
-
-},{
     'id': 2,
     'title':'5 Intention Setting Journal Prompts for January',
     'content': 
@@ -50,6 +33,23 @@ initialState[STORETYPES[0]] = [
         'mindfulness',
         'self-identity',
         'journaling',
+        'resolutions',
+    ],
+},
+{
+    'id': 1,
+    'title':'An Example by F45',
+    'content': 
+    '<p>This is an example of an article that F45 might write about the 80 day challenge. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah.</p>',
+    'authorName': 'F45 Central Boulder',
+    'month': 2,
+    'day': 1,
+    'year': 2022,
+    'img': '../img/f45-boulder.jpeg',
+    'categories': [
+        'body comp',
+        'hiit',
+        'strength',
         'resolutions',
     ],
 }];
