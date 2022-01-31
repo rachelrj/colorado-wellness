@@ -57,20 +57,21 @@ initialState[STORETYPES[0]] = [
 
 initialState[STORETYPES[1]] = [{
     'id': 1,
-    'name': 'Addiction Solutions Victoria',
-    'description': '<p>My name is Jason Bowman and I am the CEO at Addiction Solutions Victoria (ASV).</p><p>At ASV, we offer personalised and affordable recovery support packages delivered in the privacy and safety of peoples own homes. These packages provide people seeking support to substance misuse or addiction access to <a href="https://www.asvrehabmelbourne.org.au/about-us/asv-team-rehab-at-home-melbourne">experienced staff</a> and <a href="https://www.asvrehabmelbourne.org.au/about-us/why-asv-rehab-melbourne">evidenced based approaches</a> and provide all participants authentic opportunity at positive change.</p><p>ASV Incorporated is a <a href="https://www.consumer.vic.gov.au/">registered not-for-profit organisation</a> governed by a Board of committed family members, community members and people in recovery.</p>',
-    'phone': '03 8374 7648',
-    'email': 'jason@asvrehabmelbourne.org.au',
-    'website': 'http://www.asvrehabmelbourne.org.au',
-    'address': '1227-1229 Malvern Road, Malvern, VIC 3144',
+    'name': 'F45 Boulder',
+    'description': '<p>Cupcake ipsum dolor sit amet. Tootsie roll fruitcake pie fruitcake chocolate cake carrot cake ice cream marzipan. Jelly beans cheesecake tart danish bear claw soufflé bear claw pudding chocolate bar. Donut bear claw chupa chups marzipan sugar plum donut.</p><p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>',
+    'phone': '12345678910',
+    'email': 'email@email.com',
+    'website': 'https://www.twentyninthstreet.com/Directory/Details/619048',
+    'address': '1750 29th St Suite 2020, Boulder, CO 80301',
     'location': {
-        'lat': -37.851785,
-        'long': 145.033853
+        'lat': 40.017520,
+        'long': -105.254830
     },
+    'reviews': '<br>Review by Meghan<br><br>Review by Rachel<br><br>Review #3<br><br>',
     'categories': [0],
-    'subcategories': [1,2,3,4,5,6,7,8,9,10],
+    'subcategories': [2,3,4,5,9,10],
     'ABN': 123456789,
-    'imgSource': '../img/addiction-solutions-victoria-logo.svg',
+    'imgSource': '../img/f45-boulder.jpeg',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
     'Example: Membership in Association/Society', 'Example: Endorsement']
 }, {
@@ -115,44 +116,44 @@ initialState[STORETYPES[2]] = {
 initialState[STORETYPES[3]] = [
     {
         'id': 1,
-        'name': 'treatment',
+        'name': 'Yoga',
         'mainCat': 0
     },{
         'id': 2,
-        'name': 'rehabilitation',
+        'name': 'HIIT',
         'mainCat': 0,
 
     },{
         'id': 3,
-        'name': 'counselling',
+        'name': 'Stretch',
         'mainCat': 0,
     },{
         'id': 4,
-        'name': 'programs',
+        'name': 'Weight Loss',
         'mainCat': 0,
     },{
         'id': 5,
-        'name': 'family support',
+        'name': 'Nutrition',
         'mainCat': 0,
     },{
         'id': 6,
-        'name': 'recovery',
+        'name': 'Recovery',
         'mainCat': 0,
     },{
         'id': 7,
-        'name': 'detox',
+        'name': 'Supplements',
         'mainCat': 0,
     },{
         'id': 8,
-        'name': 'aftercare',
+        'name': 'Aerial',
         'mainCat': 0,
     },{
         'id': 9,
-        'name': 'addiction medicine',
+        'name': 'Strength',
         'mainCat': 0,
     }, {
         'id': 10,
-        'name': 'psychology',
+        'name': 'Body Composition',
         'mainCat': 0,
     }
 ];

@@ -39,7 +39,7 @@ class JoinCollective extends React.Component {
         return (
             <div>
                 <Header additionalClass="joinCollective"/>             
-                <h1>Victoria Health & Wellness Collective</h1>
+                <h1>Colorado Health & Wellness Collective</h1>
                 <div className="bodyHolder">
                 <p>Let's put a pin in that. Flesh that out but what's the real problem we're trying to solve here?. The last person we talked to said this would be ready cannibalize. Usabiltiy. Sacred cow. Throughput this is our north star design and window-licker, so circle back around. Timeframe one-sheet. Imagineer turn the ship nor get six alpha pups in here for a focus group, yet nail it down and guerrilla marketing. Performance review circle back around this is a no-brainer we need to socialize the comms with the wider stakeholder community for come up with something buzzworthy, but you gotta smoke test your hypothesis.</p>
                 
@@ -52,7 +52,7 @@ class JoinCollective extends React.Component {
                             </Form.Group>
                             <Form.Group controlId="formBasicText">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control size="lg"  type="textarea" placeholder="Please provide us with more details about what you would bring to the collective." />
+                                <Form.Control size="lg"  type="textarea" placeholder="I have no idea. Maybe this is for people that want to help or write a guest blog?" />
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Submit

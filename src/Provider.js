@@ -60,7 +60,7 @@ class ServiceProvider extends React.Component {
 
     render() {
 
-        var clean = DOMPurify.sanitize(this.listing.description);
+        var clean = DOMPurify.sanitize(this.listing.reviews);
 
         const position = [this.state.lat, this.state.lng];
 
@@ -83,7 +83,7 @@ class ServiceProvider extends React.Component {
                 <div className="listingPicture">
                     <img src={this.listing.imgSource}/>
                 </div>
-                <h2>About</h2>
+                <h2>Reviews</h2>
                 <div dangerouslySetInnerHTML={{__html: clean}}></div>
                 <h2>Contact</h2>
                 <div>

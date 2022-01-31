@@ -85,30 +85,16 @@ class Homepage extends React.Component {
         return (
             <Provider store = {store}>
                 <Header additionalClass="mainHeader"/>
-                <h1>Victoria Health & Wellness Collective</h1>
+                <h1>Colorado Health & Wellness Collective</h1>
                 <div className="bodyHolder">
                     <div className="description">
                         <p>Cupcake ipsum dolor sit amet. Tootsie roll fruitcake pie fruitcake chocolate cake carrot cake ice cream marzipan. Jelly beans cheesecake tart danish bear claw soufflé bear claw pudding chocolate bar. Donut bear claw chupa chups marzipan sugar plum donut.</p>
                         <p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>
                     </div>
                     <div className="listingsDiv">
-                        <h2>Professional Services</h2>
+                        <h2>Reviews of Services</h2>
                         <hr/>
-                        <a href="/under-construction">
-                        <div className="listingDiv">
-                            <div className="overlay"></div>
-                            <img src={therapy} className="serviceImg" width="600px"/>
-                            <div className="centered">Behavioral, Cognative, Humanistic and Psychodynamic Therapies</div>
-                        </div>
-                        </a>
-                        <a href="/drug-alcohol-treatment-rehabilitation-support-aftercare">
-                        <div className="listingDiv">
-                            <div className="overlay"></div>
-                            <img src={img} className="serviceImg" width="600px"/>
-                            <div className="centered">Drug and Alcohol Treatment, Rehabilitation, Support, & Aftercare</div>
-                        </div>
-                        </a>
-                        <a href="/under-construction">
+                        <a href="/colorado-fitness">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={fitness} className="serviceImg" width="600px"/>
@@ -143,3 +129,4 @@ const mapStateToProps = state => {
   }
 };
 export default connect(mapStateToProps)(Homepage);
+

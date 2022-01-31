@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Homepage from './Homepage';
 import Blog from './Blog';
-import AddictionServices from './AddictionServices';
+import FitnessServices from './FitnessServices';
 import UnderConstruction from './UnderConstruction';
 import ServiceProvider from './Provider';
 import JoinCollective from './JoinCollective';
@@ -23,9 +23,9 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={Homepage}/>
             <Route path='/blog/:blogTitle' component={Blog}/>
-            <Route exact path='/drug-alcohol-treatment-rehabilitation-support-aftercare' component={AddictionServices}/>
+            <Route exact path='/colorado-fitness' component={FitnessServices}/>
             <Route exact path='/under-construction' component={UnderConstruction}/>
-            <Route path='/drug-alcohol-treatment-rehabilitation-support-aftercare/:providerId' component={ServiceProvider}/>
+            <Route path='/colorado-fitness/:providerId' component={ServiceProvider}/>
             <Route path='/join-collective' component={JoinCollective}/>
           </Switch>
         </Provider>

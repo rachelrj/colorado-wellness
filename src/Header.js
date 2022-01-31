@@ -30,10 +30,12 @@ class Header extends React.Component {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/blog/What-are-Triggers">Blog</Nav.Link>
                   <NavDropdown title="Professional Services" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/drug-alcohol-treatment-rehabilitation-support-aftercare">Addiction</NavDropdown.Item>
+                    <NavDropdown.Item href="/colorado-fitness">Fitness</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Therapy</NavDropdown.Item>
-                    <NavDropdown.Item href="/under-construction">Fitness and Nutrition</NavDropdown.Item>
-                    <NavDropdown.Item href="/under-construction">Holistic Practices</NavDropdown.Item>
+                    <NavDropdown.Item href="/under-construction">Nutrition</NavDropdown.Item>
+                    <NavDropdown.Item href="/under-construction">Wellness</NavDropdown.Item>
+                    <NavDropdown.Item href="/under-construction">Apparel</NavDropdown.Item>
+                    <NavDropdown.Item href="/under-construction">Holistic</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/join-collective">Join the Collective</Nav.Link>
                 </Nav>

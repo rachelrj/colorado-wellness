@@ -300,8 +300,8 @@ a.blogPost:visited, a.blogPost:link {
         width: 970px;
         height: 450px;
     }
-    div.addictionHeader {
-        background-image: url(./img/recovery_970x375.jpg);
+    div.fitnessHeader {
+        background-image: url(./img/fitness-equipment-dark-background.jpeg);
         background-size: 970px 375px;
     }
     div.joinCollective {
@@ -367,8 +367,8 @@ a.blogPost:visited, a.blogPost:link {
         background-image: url(./img/work-in-progress_728x338.jpg);
         background-size: 728px 338px;
     }
-    div.addictionHeader {
-        background-image: url(./img/recovery_728x281.jpg);
+    div.fitnessHeader {
+        background-image: url(./img/fitness-equipment-dark-background.jpeg);
         background-size: 728px 281px;
     }
     div.joinCollective {
@@ -413,8 +413,8 @@ a.blogPost:visited, a.blogPost:link {
         background-image: url(./img/work-in-progress_320x149.jpg);
         background-size: 320px 149px;
     }
-    div.addictionHeader {
-        background-image: url(./img/recovery_320x124.jpg);
+    div.fitnessHeader {
+        background-image: url(./img/fitness-equipment-dark-background.jpeg);
         background-size: 320px 124px;
     }
     div.joinCollective {
