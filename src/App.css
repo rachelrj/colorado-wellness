@@ -24,9 +24,6 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
 }
-.blogPostContent {
-    width: 100%;
-}
 .blogPagePost  li {
     clear: both;
     float: left;
@@ -44,6 +41,9 @@ hr {
   height: 200px;
   padding-left: 50px;
   margin-top: 50px;
+}
+.fourhundredpxheight {
+    height: 400px;
 }
 .listingPicture {
     flex: 1;
@@ -102,6 +102,15 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
     float: left;
+    width: 100%;
+}
+.blockDiv {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.green {
+    color: green;
 }
 .blogAuthorPicture > img {
     height: 150px;
@@ -182,7 +191,8 @@ a.blogPost:visited, a.blogPost:link {
 }
 .providerSocialImg {
     display: inline-block;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     float: none;
 }
 .listingPicture{
@@ -330,12 +340,15 @@ a.blogPost:visited, a.blogPost:link {
     .mainBlogContent{
         width: 75%;
     }
-    .blogDiv, .moreBlogsPanel {
+    .blogDiv, .moreBlogsPanel, .reviewDiv {
         display: inline-block;
         float: left;
     }
     .blogDiv {
         width: 40%;
+    }
+    .reviewDiv {
+        width: 50%;
     }
     .moreBlogsPanel {
         width: 25%;
@@ -394,6 +407,9 @@ a.blogPost:visited, a.blogPost:link {
     .copyRight {
         margin-top: 30px;
     }
+    .reviewDiv {
+        width: 50%;
+    }
 }
 @media (max-width: 800px) {
     h1.blogPageBlogTitle {
@@ -445,11 +461,13 @@ a.blogPost:visited, a.blogPost:link {
     .blogDiv, .moreBlogsPanel {
         visibility: visible;
         display: inline-block;
-        display: inline-block;
         float: left;
     }
     .blogDiv {
         width: 40%;
+    }
+    .reviewDiv {
+        width: 50%;
     }
     .moreBlogsPanel {
         width: 25%;
@@ -479,7 +497,7 @@ a.blogPost:visited, a.blogPost:link {
     .listingContentContact {
         flex-wrap: wrap;
     }
-    .blogDiv, .moreBlogsPanel {
+    .blogDiv, .moreBlogsPanel, .reviewDiv {
         width: 100%;
         clear: both;
         margin-top: 50px;

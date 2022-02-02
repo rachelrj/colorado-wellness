@@ -42,16 +42,17 @@ initialState[STORETYPES[0]] = [
     'content': 
     '<p>This is an example of an article that F45 might write about the 80 day challenge. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah.</p>',
     'authorName': 'F45 Central Boulder',
+    'img': '../img/f45-boulder-long.jpeg',
     'month': 2,
     'day': 1,
     'year': 2022,
-    'img': '../img/f45-boulder.jpeg',
     'categories': [
         'body comp',
         'hiit',
         'strength',
         'resolutions',
     ],
+    'provider': 1,
 }];
 
 
@@ -71,7 +72,8 @@ initialState[STORETYPES[1]] = [{
     'categories': [0],
     'subcategories': [2,3,4,5,9,10],
     'ABN': 123456789,
-    'imgSource': '../img/f45-boulder.jpeg',
+    'imgSource': '../img/f45-boulder.png',
+    'headerSource': '../img/f45-boulder-long.jpeg',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
     'Example: Membership in Association/Society', 'Example: Endorsement']
 }, {
@@ -110,7 +112,7 @@ initialState[STORETYPES[1]] = [{
 }];
 
 initialState[STORETYPES[2]] = {
-    0: 'addiction',
+    0: 'fitness',
 };
 
 initialState[STORETYPES[3]] = [
@@ -157,5 +159,22 @@ initialState[STORETYPES[3]] = [
         'mainCat': 0,
     }
 ];
+
+initialState[STORETYPES[4]] = [
+    {
+        'id': 1,
+        'name': 'Meghan Kallok',
+        'provider': 1,
+        'rating': 10,
+        'review': '<p>Aenean rhoncus ultrices nulla nec rutrum. Aliquam hendrerit mollis massa, eu varius justo auctor at. Proin dignissim vulputate euismod. Ut in est non dui ultricies consectetur eu non mauris. Cras ornare libero justo, ut posuere metus feugiat a. Donec ut mauris sed eros posuere accumsan eget eget urna. Vestibulum eu nunc sit amet felis hendrerit maximus. Donec ultrices porttitor massa, varius venenatis turpis finibus et. Morbi eu sodales enim. Curabitur ut laoreet ex, eget varius neque. Etiam at risus in mauris euismod pellentesque et non lectus. In rutrum tempor arcu vitae rhoncus. Pellentesque et fringilla tortor. Praesent congue facilisis massa, in semper nisi semper et. Vestibulum ultricies erat id diam auctor finibus.</p>',
+    },{
+        'id': 1,
+        'name': 'Rachel Joyce',
+        'provider': 1,
+        'rating': 10,
+        'review': '<p>Aenean rhoncus ultrices nulla nec rutrum. Aliquam hendrerit mollis massa, eu varius justo auctor at. Proin dignissim vulputate euismod. Ut in est non dui ultricies consectetur eu non mauris. Cras ornare libero justo, ut posuere metus feugiat a. Donec ut mauris sed eros posuere accumsan eget eget urna. Vestibulum eu nunc sit amet felis hendrerit maximus. Donec ultrices porttitor massa, varius venenatis turpis finibus et. Morbi eu sodales enim. Curabitur ut laoreet ex, eget varius neque. Etiam at risus in mauris euismod pellentesque et non lectus. In rutrum tempor arcu vitae rhoncus. Pellentesque et fringilla tortor. Praesent congue facilisis massa, in semper nisi semper et. Vestibulum ultricies erat id diam auctor finibus.</p>',
+    },
+];
+
 
 export default createStore(reducer, initialState);

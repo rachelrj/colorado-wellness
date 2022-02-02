@@ -1,5 +1,4 @@
 import React from 'react';
-import blog from './img/blog-icon-optimized.png';
 import facebook from './img/facebook.png';
 import linkedin from './img/linkedin.png';
 import email from './img/email-icon-optimized.png';
@@ -27,7 +26,6 @@ class Footer extends React.Component {
                 <div className="socialDiv">
                 <img className="socialImg" id="phone" src={phone}/>
                 <img className="socialImg" id="email" src={email}/>
-                <img className="socialImg" src={blog}/>
                 <img className="socialImg" src={facebook}/>
                 <img className="socialImg" src={linkedin}/>
                 </div>

@@ -3,8 +3,6 @@ import Listing from './Listing';
 import BlogPost from './BlogPost';
 import Footer from './Footer';
 import Header from './Header';
-import blog from './img/blog-icon-optimized.png';
-import img from './img/change_600x300.jpg';
 import hollistic from './img/hollistic_600x300.jpg';
 import therapy from './img/therapy_600x300.jpg';
 import fitness from './img/fitness_600x300.jpg';
@@ -92,7 +90,7 @@ class Homepage extends React.Component {
                         <p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>
                     </div>
                     <div className="listingsDiv">
-                        <h2>Reviews of Services</h2>
+                        <h2>Reviews</h2>
                         <hr/>
                         <a href="/colorado-fitness">
                         <div className="listingDiv">
@@ -110,7 +108,7 @@ class Homepage extends React.Component {
                         </a>
                     </div>
                     <div className="blogDiv">
-                        <h2>Recent Blog Posts</h2>
+                        <h2>Blog Posts</h2>
                         <hr/>
                         {blogs}
                     </div>

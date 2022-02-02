@@ -8,8 +8,9 @@ import {connect} from "react-redux";
 import DOMPurify from 'dompurify'; 
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import phone from './img/phone-512.png';
-import email from './img/email-icon-optimized.png';
-import website from './img/blog-icon-optimized.png';
+import email from './img/email.png';
+import website from './img/www.jpeg'
+import Review from './Review';
 
 class ServiceProvider extends React.Component {
 
@@ -40,6 +41,7 @@ class ServiceProvider extends React.Component {
             this.creds.push(<div key={index}>{cred}</div>);
         });
         this.featuredArticles = this.findBlogs();
+        this.reviews = this.findReviews();
     }
 
     findBlogs() {
@@ -57,10 +59,21 @@ class ServiceProvider extends React.Component {
         return blogs;
     }
 
+    findReviews() {
+        let reviews = [];
+        this.props.reviews.map((review, index) => {
+            if(review.provider == this.listing.id) {
+                reviews.push(
+                <Review key={review.id} review={review} />
+                )
+            }
+        })
+        return reviews;
+    }
 
     render() {
 
-        var clean = DOMPurify.sanitize(this.listing.reviews);
+        var clean = DOMPurify.sanitize(this.reviews);
 
         const position = [this.state.lat, this.state.lng];
 
@@ -80,34 +93,37 @@ class ServiceProvider extends React.Component {
                 <div className="bodyHolder">
                 <br/>
                 <h1>{this.listing.name}</h1>
-                <div className="listingPicture">
-                    <img src={this.listing.imgSource}/>
-                </div>
-                <h2>Reviews</h2>
-                <div dangerouslySetInnerHTML={{__html: clean}}></div>
-                <h2>Contact</h2>
                 <div>
-                    <div className="socialBlock">
-                    <a href={telHref}>
-                         <img className="providerSocialImg" src={phone}/>
-                         <div>{this.listing.phone}</div>
-                    </a>
+                    <img className="fourhundredpxheight" src={this.listing.headerSource}/>
+                </div>
+                <div className="blockDiv">
+                <h2>Reviews</h2>
+                    <div>
+                        {this.reviews}
                     </div>
-                    <div className="socialBlock">
-                    <a href={emailHref}>
-                        <img className="providerSocialImg" src={email}/>
-                        <div>{this.listing.email}</div>
-                    </a>
-                    </div>
-                    <div className="socialBlock">
-                    <a href={this.listing.website} target="_blank">
-                         <img className="providerSocialImg" src={website}/>
-                         <div>{webDisplayAddress}</div>
-                    </a>
-                    </div>
+                </div>
+                <div className="blockDiv">
+                    <h2>Contact</h2>
+                    <div>
+                        <div className="socialBlock">
+                        <a href={telHref}>
+                             <img className="providerSocialImg" src={phone}/>
+                        </a>
+                        </div>
+                        <div className="socialBlock">
+                        <a href={emailHref}>
+                            <img className="providerSocialImg" src={email}/>
+                        </a>
+                        </div>
+                        <div className="socialBlock">
+                        <a href={this.listing.website} target="_blank">
+                             <img className="providerSocialImg" src={website}/>
+                        </a>
+                        </div>
+                     </div>
                  </div>
                 { this.listing.location.lat && 
-                    <div>
+                    <div className="blockDiv">
                     <h2>Location</h2>
                     <Map center={position} zoom={this.state.zoom}>
                         <TileLayer
@@ -144,6 +160,7 @@ const mapStateToProps = state => {
   return {
     providers: components.PROVIDERS,
     blogs: components.BLOGS,
+    reviews: components.REVIEWS,
   }
 };
 export default connect(mapStateToProps)(ServiceProvider);

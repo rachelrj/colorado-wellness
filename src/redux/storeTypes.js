@@ -3,4 +3,5 @@ export default [
 	"PROVIDERS",
 	"CATEGORIES",
 	"SUBCATEGORIES",
+	"REVIEWS",
 ]
