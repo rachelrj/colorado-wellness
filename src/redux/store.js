@@ -59,10 +59,10 @@ initialState[STORETYPES[0]] = [
 initialState[STORETYPES[1]] = [{
     'id': 1,
     'name': 'F45 Boulder',
-    'description': '<p>Cupcake ipsum dolor sit amet. Tootsie roll fruitcake pie fruitcake chocolate cake carrot cake ice cream marzipan. Jelly beans cheesecake tart danish bear claw soufflé bear claw pudding chocolate bar. Donut bear claw chupa chups marzipan sugar plum donut.</p><p>Candy lemon drops croissant danish jelly beans. Lollipop soufflé muffin sesame snaps bonbon chocolate bar jelly-o chocolate cake. Liquorice cookie chocolate marzipan. Cookie candy brownie sesame snaps.</p>',
-    'phone': '12345678910',
-    'email': 'email@email.com',
-    'website': 'https://www.twentyninthstreet.com/Directory/Details/619048',
+    'description': '<p>F45 Training is a global fitness community specializing in innovative, high-intensity group workouts that are fast, fun, and results-driven.</p><p>F45 is specifically designed to provide a functional full-body workout while improving energy levels, metabolic rate, strength, and endurance.</p><p>F45 is one of the most time-efficient ways of training. We aim to burn up to 750 calories per 45-minute session.</p>',
+    'phone': '13034953377',
+    'email': 'centralboulder@f45training.com',
+    'website': 'https://f45training.com/centralboulder/home',
     'address': '1750 29th St Suite 2020, Boulder, CO 80301',
     'location': {
         'lat': 40.017520,
@@ -74,7 +74,7 @@ initialState[STORETYPES[1]] = [{
     'ABN': 123456789,
     'imgSource': '../img/f45-boulder.png',
     'headerSource': '../img/f45-boulder-long.jpeg',
-    'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
+    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
     'Example: Membership in Association/Society', 'Example: Endorsement']
 }, {
     'id': 2,
@@ -172,7 +172,7 @@ initialState[STORETYPES[4]] = [
         'name': 'Rachel Joyce',
         'provider': 1,
         'rating': 10,
-        'review': '<p>Aenean rhoncus ultrices nulla nec rutrum. Aliquam hendrerit mollis massa, eu varius justo auctor at. Proin dignissim vulputate euismod. Ut in est non dui ultricies consectetur eu non mauris. Cras ornare libero justo, ut posuere metus feugiat a. Donec ut mauris sed eros posuere accumsan eget eget urna. Vestibulum eu nunc sit amet felis hendrerit maximus. Donec ultrices porttitor massa, varius venenatis turpis finibus et. Morbi eu sodales enim. Curabitur ut laoreet ex, eget varius neque. Etiam at risus in mauris euismod pellentesque et non lectus. In rutrum tempor arcu vitae rhoncus. Pellentesque et fringilla tortor. Praesent congue facilisis massa, in semper nisi semper et. Vestibulum ultricies erat id diam auctor finibus.</p>',
+        'review': '<p>I\'ve taken over one hundred classes at F45 and I\'ve grown an opinion about the experience. Prove me wrong if you can, but I think that F45CB is the best workout in Boulder. I\'ll tell you why I think so:</p><ol><li>Time - You\'ll get a challenging workout, every. single. time. in under an hour</li><li>Variation - The workouts are different each day. Some days you\'ll improve your cardio, some days you\'ll build strength. Some days, both.</li><li>Inclusiveness - At F45CB, you don\'t have to be ultra fit to complete the workout. You push yourself wherever your fitness level is at. And, even if you\'re at the peak of your performance, you still can challenge yourself.</li><li>Professionalism - The intructors will walk around to correct your form, encourage you, and guide you through the workout. They\'ll also challenge you to push yourself if you\'re able.</li><li>Price - F45CB is obviously much cheaper than a personal trainer. And with an F45 membership, you can hit the gym every day and also do the challenge app workouts at home.</li></ol></p><p>And finally, I have to mention the staff at F45 Central Boulder. They definitely foster an uplifting environment. You\'ll find enthusiasm, motivation, and positive vibes. I feel that I\'ve found a community through my F45CB membership.</p>',
     },
 ];
 
