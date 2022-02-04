@@ -94,7 +94,7 @@ class ServiceProvider extends React.Component {
                 <br/>
                 <h1>{this.listing.name}</h1>
                 <div>
-                    <img className="fourhundredpxheight" src={this.listing.headerSource}/>
+                    <img className="providerBanner" src={this.listing.headerSource}/>
                 </div>
                 <div className="blockDiv">
                 <h2>Reviews</h2>

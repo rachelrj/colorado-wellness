@@ -42,8 +42,8 @@ hr {
   padding-left: 50px;
   margin-top: 50px;
 }
-.fourhundredpxheight {
-    height: 400px;
+.providerBanner {
+    width: 600px;
 }
 .listingPicture {
     flex: 1;
@@ -511,6 +511,9 @@ a.blogPost:visited, a.blogPost:link {
     }
 }
 @media (max-width: 500px) {
+    .providerBanner {
+        width: 300px;
+    }
     .socialImg {
         display:inline;
         height: 35px;

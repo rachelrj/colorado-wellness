@@ -143,7 +143,7 @@ class Blog extends React.Component {
                         {
                             otherPostsJan.length>0 &&
                             <div>
-                            <h3>Jan, 2020</h3>
+                            <h3>Jan, 2022</h3>
                             
                             {otherPostsJan}
                             </div>
@@ -151,7 +151,7 @@ class Blog extends React.Component {
                         {
                             otherPostsFeb.length>0 &&
                             <div>
-                            <h3>Feb, 2020</h3>
+                            <h3>Feb, 2022</h3>
                             
                             {otherPostsFeb}
                             </div>

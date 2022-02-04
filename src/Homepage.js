@@ -96,14 +96,14 @@ class Homepage extends React.Component {
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={fitness} className="serviceImg" width="600px"/>
-                            <div className="centered">Physical Fitness and Nutrition</div>
+                            <div className="centered">Physical Fitness</div>
                         </div>
                         </a>
                         <a href="/under-construction">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={hollistic} className="serviceImg" width="600px"/>
-                            <div className="centered">Holistic Practices and Healing</div>
+                            <div className="centered">Holistic Practices</div>
                         </div>
                         </a>
                     </div>
