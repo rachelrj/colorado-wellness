@@ -13,12 +13,6 @@ class JoinCollective extends React.Component {
         };
     }
 
-    componentDidMount() {
-    }
-
-    getBlogPosts() {
-    }
-
     handleSubmit(event) {
         const form = event.currentTarget;
         event.preventDefault();
@@ -45,7 +39,7 @@ class JoinCollective extends React.Component {
                 
                     {
                         !this.state.submitted &&
-                            <Form onSubmit={this.handleSubmit.bind(this)}>
+                            <Form onSubmit={this.handleSubmit.bind(this)} className="join-collective-form">
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control size="lg" type="email" placeholder="Enter email" />

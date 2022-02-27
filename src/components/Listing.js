@@ -3,16 +3,6 @@ import DOMPurify from 'dompurify';
 
 
 class Listing extends React.Component {
-
-
-    componentDidMount() {
-
-    }
-
-    getData() {
-
-    }
-
     render() {
 
         var clean = DOMPurify.sanitize(this.props.description);

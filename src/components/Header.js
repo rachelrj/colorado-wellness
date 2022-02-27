@@ -4,18 +4,6 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 
 
 class Header extends React.Component {
-    state = {
-
-    }
-
-    componentDidMount() {
-
-    }
-
-    getData() {
-
-    }
-
     render() {
 
         const classes = "header " + this.props.additionalClass;
@@ -39,6 +27,15 @@ class Header extends React.Component {
                   </NavDropdown>
                   <Nav.Link href="/join-collective">Join the Collective</Nav.Link>
                 </Nav>
+                <Form className="d-flex nav-form">
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+                </Form>
                </Navbar.Collapse>
             </Navbar>
             {

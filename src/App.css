@@ -2,7 +2,7 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-form {
+.join-collective-form {
     max-width: 600px;
     margin: auto;
 }
@@ -203,8 +203,11 @@ a.blogPost:visited, a.blogPost:link {
     display: inline-block;
     padding: 20px;
 }
-#phone, #email {
+#email {
     padding-left: 10px;
+}
+#instagram {
+    padding-right: 10px;
 }
 .moreBlogsPanel {
     text-align: left;

@@ -11,16 +11,12 @@ import {connect} from "react-redux";
 
 class FitnessServices extends React.Component {
 
-
     constructor(props) {
         super(props);
 
         this.state = {
             subCategories: []
         };
-    }
-
-    componentDidMount() {
     }
 
     handleChange(val) {

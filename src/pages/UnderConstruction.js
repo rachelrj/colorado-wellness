@@ -4,16 +4,6 @@ import Header from '../components/Header';
 
 class UnderConstruction extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
-    componentDidMount() {
-    }
-
-    getBlogPosts() {
-    }
-
     render() {
 
         return (

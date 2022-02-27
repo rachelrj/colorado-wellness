@@ -14,7 +14,7 @@ import { getMonthString, convertTitleToUrl } from '../helpers';
 class BlogPost extends React.Component {
 
     render() {
-        let dateString = getMonthString(this.props.month) + this.props.day + ', ' + this.props.year;
+        let dateString = getMonthString(this.props.month) + " " + this.props.day + ', ' + this.props.year;
 
         var clean = DOMPurify.sanitize(this.props.content);
 
