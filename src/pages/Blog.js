@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import { Provider, connect } from 'react-redux';
-import store from "./redux/store";
-import getComponents from "./redux/reducer";
+import store from "../redux/store";
+import getComponents from "../redux/reducer";
 import DOMPurify from 'dompurify'; 
-import STORETYPES from './redux/storeTypes';
-import getMonthString from './helpers';
+import STORETYPES from '../redux/storeTypes';
+import getMonthString from '../helpers';
 
 class Blog extends React.Component {
 

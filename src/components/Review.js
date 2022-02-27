@@ -1,5 +1,5 @@
 import React from 'react';
-import getComponents from "./redux/reducer";
+import getComponents from "../redux/reducer";
 import {connect} from "react-redux";
 import DOMPurify from 'dompurify'; 
 

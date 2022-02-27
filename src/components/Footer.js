@@ -1,8 +1,8 @@
 import React from 'react';
-import facebook from './img/facebook.png';
-import linkedin from './img/linkedin.png';
-import email from './img/email-icon-optimized.png';
-import phone from './img/phone-512.png';
+import facebook from '../img/facebook.png';
+import linkedin from '../img/linkedin.png';
+import email from '../img/email-icon-optimized.png';
+import phone from '../img/phone-512.png';
 
 
 

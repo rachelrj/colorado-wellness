@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Homepage from './Homepage';
-import Blog from './Blog';
-import FitnessServices from './FitnessServices';
-import UnderConstruction from './UnderConstruction';
-import ServiceProvider from './Provider';
-import JoinCollective from './JoinCollective';
+import Homepage from './pages/Homepage';
+import Blog from './pages/Blog';
+import FitnessServices from './pages/FitnessServices';
+import UnderConstruction from './pages/UnderConstruction';
+import ServiceProvider from './pages/Provider';
+import JoinCollective from './pages/JoinCollective';
 import {Provider} from "react-redux";
 import store from "./redux/store";
 

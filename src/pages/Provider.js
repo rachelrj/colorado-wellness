@@ -1,16 +1,16 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import { Provider } from 'react-redux';
-import store from "./redux/store";
-import getComponents from "./redux/reducer";
+import store from "../redux/store";
+import getComponents from "../redux/reducer";
 import {connect} from "react-redux";
 import DOMPurify from 'dompurify'; 
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
-import phone from './img/phone-512.png';
-import email from './img/email.png';
-import website from './img/www.jpeg'
-import Review from './Review';
+import phone from '../img/phone-512.png';
+import email from '../img/email.png';
+import website from '../img/www.jpeg'
+import Review from '../components/Review';
 
 class ServiceProvider extends React.Component {
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import Listing from './Listing';
-import BlogPost from './BlogPost';
-import Footer from './Footer';
-import Header from './Header';
-import hollistic from './img/hollistic_600x300.jpg';
-import therapy from './img/therapy_600x300.jpg';
-import fitness from './img/fitness_600x300.jpg';
+import Listing from '../components/Listing';
+import BlogPost from '../components/BlogPost';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import hollistic from '../img/hollistic_600x300.jpg';
+import therapy from '../img/therapy_600x300.jpg';
+import fitness from '../img/fitness_600x300.jpg';
 import { Provider } from 'react-redux';
-import store from "./redux/store";
-import getComponents from "./redux/reducer";
-import STORETYPES from "./redux/storeTypes";
+import store from "../redux/store";
+import getComponents from "../redux/reducer";
+import STORETYPES from "../redux/storeTypes";
 import {connect} from "react-redux";
 
 class Homepage extends React.Component {
