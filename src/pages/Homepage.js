@@ -4,68 +4,35 @@ import BlogPost from '../components/BlogPost';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import hollistic from '../img/hollistic_600x300.jpg';
-import therapy from '../img/therapy_600x300.jpg';
 import fitness from '../img/fitness_600x300.jpg';
 import { Provider } from 'react-redux';
 import store from "../redux/store";
 import getComponents from "../redux/reducer";
-import STORETYPES from "../redux/storeTypes";
 import {connect} from "react-redux";
+import { getBlogPosts } from '../helpers';
 
 class Homepage extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
-    componentDidMount() {
-    }
-
     getBlogPosts() {
-        let blogs = [];
-        var d = new Date();
-        var n = d.getMonth();
-        this.props.blogs.map((blog, index) => {
-            if((n+1) == blog.month) {
-                blogs.push(
-                    <BlogPost   
-                                key={blog.id}
-                                id={blog.id}
-                                title={blog.title}
-                                name={blog.authorName}
-                                day={blog.day}
-                                month={blog.month}
-                                year={blog.year}
-                                content={blog.content}
-                                categories={blog.categories}
-                                imgSrc={blog.img}
-                    />
-                )
-            }
+        let blogs = getBlogPosts(this.props.blogs, 3)
+        let blogPosts = [];
+        blogs.map((blog) => {
+            blogPosts.push(
+                <BlogPost   
+                            key={blog.id}
+                            id={blog.id}
+                            title={blog.title}
+                            name={blog.authorName}
+                            day={blog.day}
+                            month={blog.month}
+                            year={blog.year}
+                            content={blog.content}
+                            categories={blog.categories}
+                            imgSrc={blog.img}
+                />
+            )
         });
-        let newMonth = n;
-        if(newMonth == 0) {newMonth = 12}
-        if (blogs.length < 3) {
-            this.props.blogs.map((blog, index) => {
-                if((newMonth) == blog.month) {
-                    blogs.push(
-                        <BlogPost   
-                                    key={blog.id}
-                                    id={blog.id}
-                                    title={blog.title}
-                                    name={blog.authorName}
-                                    day={blog.day}
-                                    month={blog.month}
-                                    year={blog.year}
-                                    content={blog.content}
-                                    categories={blog.categories}
-                                    imgSrc={blog.img}
-                        />
-                    )
-                }
-            });            
-        }
-        return blogs;
+        return blogPosts;
     }
 
     render() {

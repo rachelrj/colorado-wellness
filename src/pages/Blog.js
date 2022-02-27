@@ -6,7 +6,7 @@ import store from "../redux/store";
 import getComponents from "../redux/reducer";
 import DOMPurify from 'dompurify'; 
 import STORETYPES from '../redux/storeTypes';
-import { getMonthString, convertTitleToUrl } from '../helpers';
+import { getMonthString, convertTitleToUrl, getPastMonth } from '../helpers';
 
 class Blog extends React.Component {
 
@@ -42,19 +42,12 @@ class Blog extends React.Component {
     }
 
     getPastMonthTitleString(minus) {
-        const date = this.getPastMonth(minus);
+        const date = getPastMonth(minus);
         return getMonthString(date.getMonth()+1) + ", " + date.getFullYear();
     }
 
-    getPastMonth(minus) {
-        const x = new Date();
-        x.setDate(1);
-        x.setMonth(x.getMonth()-minus);
-        return x;
-    }
-
     getPostsForMonth(minus, currentPost) {
-        const date = this.getPastMonth(minus);
+        const date = getPastMonth(minus);
         const mm = date.getMonth() + 1;
         const yyyy = date.getFullYear();
 
