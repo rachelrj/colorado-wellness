@@ -6,14 +6,9 @@ import store from "./redux/store";
 import getComponents from "./redux/reducer";
 import DOMPurify from 'dompurify'; 
 import STORETYPES from './redux/storeTypes';
+import getMonthString from './helpers';
 
 class Blog extends React.Component {
-
-    componentDidMount() {
-    }
-
-    componentWillMount() {
-    }
 
     getBlogTitleParam() {
         const pathname = this.props.location.pathname;
@@ -22,51 +17,70 @@ class Blog extends React.Component {
     }
 
     getMostRecentArticle() {
-        let mostRecentArtcle;
+        let mostRecentArticle;
         this.props.blogs.map((blog, index) => {
-            if (!mostRecentArtcle) {
-                mostRecentArtcle = blog;
+            if (!mostRecentArticle) {
+                mostRecentArticle = blog;
             }
-            else if(blog.year >= mostRecentArtcle.year && 
-                blog.month >= mostRecentArtcle.month &&
-                blog.day >= mostRecentArtcle.day) {
-                mostRecentArtcle = blog;
+            else if((blog.year > mostRecentArticle.year) || 
+                (blog.year == mostRecentArticle.year && blog.month > mostRecentArticle.month) ||
+                (blog.year == mostRecentArticle.year && blog.month == mostRecentArticle.month && blog.day > mostRecentArticle.day)) {
+                mostRecentArticle = blog;
             }
         })
-        return mostRecentArtcle;
+        return mostRecentArticle;
     }
 
     getArticleByTitle(title) {
-        return this.props.blogs.filter(obj => {
-            return obj.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-') == title;
-        })[0]
+        if(title) {
+            return this.props.blogs.filter(obj => {
+                return obj.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-') == title;
+            })[0];
+        } else {
+            return this.getMostRecentArticle();
+        }
+    }
+
+    convertTitleToUrl(post) {
+        return post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
+    }
+
+    getPastMonthTitleString(minus) {
+        const date = this.getPastMonth(minus);
+        return getMonthString(date.getMonth()+1) + ", " + date.getFullYear();
+    }
+
+    getPastMonth(minus) {
+        const x = new Date();
+        x.setDate(1);
+        x.setMonth(x.getMonth()-minus);
+        return x;
+    }
+
+    getPostsForMonth(minus, currentPost) {
+        const date = this.getPastMonth(minus);
+        const mm = date.getMonth() + 1;
+        const yyyy = date.getFullYear();
+
+        let otherPosts = [];
+
+        this.props.blogs.map((post, index) => {
+            if(post.month == mm && post.id != currentPost.id) {
+                const blogHref = "/blog/" + this.convertTitleToUrl(post);
+                otherPosts.push(
+                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
+                )
+            }
+        });
+
+        return otherPosts;
     }
 
     render() {
         const articleTitle = this.getBlogTitleParam();
         const article = this.getArticleByTitle(articleTitle);
 
-
-        let dateString = '';
-        switch(article.month) {
-          case 1:
-            dateString = dateString + 'Jan ';
-            break;
-          case 2:
-            dateString = dateString + 'Feb ';
-            break;
-          case 3:
-            dateString = dateString + 'March ';
-            break;          
-          case 4:
-            dateString = dateString + 'April ';
-            break;
-          case 5:
-            dateString = dateString + 'May ';
-          default:
-            break;
-        }
-        dateString = dateString + article.day + ', ' + article.year;
+        let dateString = getMonthString(article.month) + " " + article.day + ', ' + article.year;
 
         var clean = DOMPurify.sanitize(article.content);
 
@@ -79,22 +93,9 @@ class Blog extends React.Component {
             )
         });
 
-        //Fix this
-        let otherPostsJan = [];
-        let otherPostsFeb = [];
-        this.props.blogs.map((post, index) => {
-            if(post.month == 1 && article.id != post.id) {
-                const blogHref = "/blog/" + post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
-                otherPostsJan.push(
-                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
-                )
-            } else if (post.month == 2 && article.id != post.id) {
-                const blogHref = "/blog/" + post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
-                otherPostsFeb.push(
-                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
-                )  
-            }
-        });
+        let otherPostsCurrentMonth = this.getPostsForMonth(0, article);
+        let otherPostsCurrentMonthMinusOne = this.getPostsForMonth(1, article);
+        let otherPostsCurrentMonthMinusTwo = this.getPostsForMonth(2, article);
 
         let providerLink;
 
@@ -141,19 +142,27 @@ class Blog extends React.Component {
                     <div className="moreBlogsPanel">
                         <h2 className="moreBlogsPost">More Blog Posts</h2>
                         {
-                            otherPostsJan.length>0 &&
+                            otherPostsCurrentMonthMinusTwo.length>0 &&
                             <div>
-                            <h3>Jan, 2022</h3>
+                            <h3>{this.getPastMonthTitleString(2)}</h3>
                             
-                            {otherPostsJan}
+                            {otherPostsCurrentMonthMinusTwo}
                             </div>
                         }
                         {
-                            otherPostsFeb.length>0 &&
+                            otherPostsCurrentMonthMinusOne.length>0 &&
                             <div>
-                            <h3>Feb, 2022</h3>
+                            <h3>{this.getPastMonthTitleString(1)}</h3>
                             
-                            {otherPostsFeb}
+                            {otherPostsCurrentMonthMinusOne}
+                            </div>
+                        }
+                        {
+                            otherPostsCurrentMonth.length>0 &&
+                            <div>
+                            <h3>{this.getPastMonthTitleString(0)}</h3>
+                            
+                            {otherPostsCurrentMonth}
                             </div>
                         }
                         <p className="writeABlog">Have a health and wellness topic that you'd like to share with the community? Contact us to find out how you can contribute.

@@ -22,6 +22,7 @@ class App extends React.Component {
         <Provider store = {store}>
           <Switch>
             <Route exact path='/' component={Homepage}/>
+            <Route path='/blog' component={Blog}/>
             <Route path='/blog/:blogTitle' component={Blog}/>
             <Route exact path='/colorado-fitness' component={FitnessServices}/>
             <Route exact path='/under-construction' component={UnderConstruction}/>
