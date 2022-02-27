@@ -8,47 +8,17 @@ import {
   useParams
 } from "react-router-dom";
 import DOMPurify from 'dompurify'; 
+import { getMonthString, convertTitleToUrl } from '../helpers';
 
 
 class BlogPost extends React.Component {
-    state = {
-
-    }
-
-    componentDidMount() {
-
-    }
-
-    getData() {
-
-    }
 
     render() {
-
-        let dateString = '';
-        switch(this.props.month) {
-          case 1:
-            dateString = dateString + 'Jan ';
-            break;
-          case 2:
-            dateString = dateString + 'Feb ';
-            break;
-          case 3:
-            dateString = dateString + 'March ';
-            break;          
-          case 4:
-            dateString = dateString + 'April ';
-            break;
-          case 5:
-            dateString = dateString + 'May ';
-          default:
-            break;
-        }
-        dateString = dateString + this.props.day + ', ' + this.props.year;
+        let dateString = getMonthString(this.props.month) + this.props.day + ', ' + this.props.year;
 
         var clean = DOMPurify.sanitize(this.props.content);
 
-        const blogHref = "/blog/" + this.props.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
+        const blogHref = "/blog/" + convertTitleToUrl(this.props);
 
         return (
             <a className="blogPost" href={blogHref}>

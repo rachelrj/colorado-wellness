@@ -6,7 +6,7 @@ import store from "../redux/store";
 import getComponents from "../redux/reducer";
 import DOMPurify from 'dompurify'; 
 import STORETYPES from '../redux/storeTypes';
-import getMonthString from '../helpers';
+import { getMonthString, convertTitleToUrl } from '../helpers';
 
 class Blog extends React.Component {
 
@@ -34,15 +34,11 @@ class Blog extends React.Component {
     getArticleByTitle(title) {
         if(title) {
             return this.props.blogs.filter(obj => {
-                return obj.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-') == title;
+                return convertTitleToUrl(obj) == title;
             })[0];
         } else {
             return this.getMostRecentArticle();
         }
-    }
-
-    convertTitleToUrl(post) {
-        return post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
     }
 
     getPastMonthTitleString(minus) {
@@ -66,7 +62,7 @@ class Blog extends React.Component {
 
         this.props.blogs.map((post, index) => {
             if(post.month == mm && post.id != currentPost.id) {
-                const blogHref = "/blog/" + this.convertTitleToUrl(post);
+                const blogHref = "/blog/" + convertTitleToUrl(post);
                 otherPosts.push(
                     <a className="readMoreBlog" href={blogHref}>{post.title}</a>
                 )
