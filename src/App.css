@@ -352,6 +352,8 @@ a.blogPost:visited, a.blogPost:link {
     }
     .reviewDiv {
         width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .moreBlogsPanel {
         width: 25%;
