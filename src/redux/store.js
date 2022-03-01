@@ -105,7 +105,25 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/bobson.jpg',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
     'Example: Membership in Association/Society', 'Example: Endorsement']
-}];
+},{
+    'id': 4,
+    'name': 'Movement Boulder',
+    'description': '<p>Movement is located in the heart of Boulder. Our lead climbing and top rope terrain include the nationally renowned Grey Wall and creative, challenging boulder problems. Built in 2009, our flagship facility measures 22,000 square feet, with 66 independent anchors, over 100 bouldering problems, and 30-40 foot walls.</p>',
+    'phone': '13034431505',
+    'email': 'boulder@movementgyms.com',
+    'website': 'https://movementgyms.com/',
+    'address': '2845 Valmont Road Boulder, CO 80301',
+    'location': {
+        'lat': 40.029815,
+        'long': -105.257220
+    },
+    'categories': [0],
+    'subcategories': [1,3,4],
+    'imgSource': '../img/movement-climbing.png',
+    'headerSource': '../img/movement-climbing-yoga-fitness.jpeg',
+    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
+        'Example: Membership in Association/Society', 'Example: Endorsement']
+}, ];
 
 initialState[STORETYPES[2]] = {
     0: 'fitness',
@@ -159,8 +177,8 @@ initialState[STORETYPES[4]] = [
         'id': 2,
         'name': 'Rachel Joyce',
         'provider': 1,
-        'rating': 9.5,
-        'review': '<p>I\'ve taken over one hundred classes at F45 and I\'ve grown an opinion about the experience. Prove me wrong if you can, but I think that F45CB is the best workout in Boulder. I\'ll tell you why I think so:</p><ol><li>Time - You\'ll get a challenging workout, every. single. time. in under an hour</li><li>Variation - The workouts are different each day. Some days you\'ll improve your cardio, some days you\'ll build strength. Some days, both.</li><li>Inclusiveness - At F45CB, you don\'t have to be ultra fit to complete the workout. You push yourself wherever your fitness level is at. And, even if you\'re at the peak of your performance, you still can challenge yourself.</li><li>Professionalism - The intructors will walk around to correct your form, encourage you, and guide you through the workout. They\'ll also challenge you to push yourself if you\'re able.</li><li>Price - F45CB is obviously much cheaper than a personal trainer. And with an F45 membership, you can hit the gym every day and also do the challenge app workouts at home.</li></ol></p><p>And finally, I have to mention the staff at F45 Central Boulder. They definitely foster an uplifting environment. You\'ll find enthusiasm, motivation, and positive vibes. I feel that I\'ve found a community through my F45CB membership.</p><p>Update: I decided to dock one half point because, since F45s are individual franchises, you cannot use your membership at other F45 gyms. It\'s a bummer that I cannot work out in person while I travel.<p>',
+        'rating': 9,
+        'review': '<p>I\'ve taken over one hundred classes at F45 and I\'ve grown an opinion about the experience. Prove me wrong if you can, but I think that F45CB is the best workout in Boulder. I\'ll tell you why I think so:</p><ol><li>Time - You\'ll get a challenging workout, every. single. time. in under an hour</li><li>Variation - The workouts are different each day. Some days you\'ll improve your cardio, some days you\'ll build strength. Some days, both.</li><li>Inclusiveness - At F45CB, you don\'t have to be ultra fit to complete the workout. You push yourself wherever your fitness level is at. And, even if you\'re at the peak of your performance, you still can challenge yourself.</li><li>Professionalism - The intructors will walk around to correct your form, encourage you, and guide you through the workout. They\'ll also challenge you to push yourself if you\'re able.</li><li>Price - F45CB is obviously much cheaper than a personal trainer. And with an F45 membership, you can hit the gym every day and also do the challenge app workouts at home. The unlimited membership is $40/week.</li></ol></p><p>And finally, I have to mention the staff at F45 Central Boulder. They definitely foster an uplifting environment. You\'ll find enthusiasm, motivation, and positive vibes. I feel that I\'ve found a community through my F45CB membership.</p><p>Update: I decided to dock one point because, since F45s are individual franchises, you cannot use your membership at other F45 gyms. Also, there are only about six in person classes each day.<p>',
     },{
         'id': 3,
         'name': 'Rachel Joyce',
@@ -173,7 +191,13 @@ initialState[STORETYPES[4]] = [
         'provider': 2,
         'rating': 'X',
         'review': '<p>Aenean rhoncus ultrices nulla nec rutrum. Aliquam hendrerit mollis massa, eu varius justo auctor at. Proin dignissim vulputate euismod. Ut in est non dui ultricies consectetur eu non mauris. Cras ornare libero justo, ut posuere metus feugiat a. Donec ut mauris sed eros posuere accumsan eget eget urna. Vestibulum eu nunc sit amet felis hendrerit maximus. Donec ultrices porttitor massa, varius venenatis turpis finibus et. Morbi eu sodales enim. Curabitur ut laoreet ex, eget varius neque. Etiam at risus in mauris euismod pellentesque et non lectus. In rutrum tempor arcu vitae rhoncus. Pellentesque et fringilla tortor. Praesent congue facilisis massa, in semper nisi semper et. Vestibulum ultricies erat id diam auctor finibus.</p>',
-    },
+    },{
+        'id': 5,
+        'name': 'Ankit Prakash',
+        'provider': 4,
+        'rating': 7,
+        'review': '<p>Q: How long have you been a member?</p><p>A: Almost since I moved here. Since 2015ish.</p><br/><p>Q: How is the variation of climbing terrain?</p><p>A: It\'s okay. There is a decent amount of variety, but I wouldn\'t say a lot.</p><br/><p>Q: Have you done any of the yoga or the fitness classes?</p><p>A: Yes. The yoga was kind mediocre. I\'ve taken climbing training classes and a head stand class that were pretty cool.</p><br/><p>Q: What do you pay for a membership?</p><p>A: I think it\'s $85/month now.</p><br/><p>Q: Is it the best indoor climbing gym in Boulder?</p><p>A: I\'ve been to The Spot and BRC and yeah, I think its the better of the three.</p><br/><p>Q: Is there anything else about Movement that you\'d comment on?</p><p>A: Parking can be a pain when it\'s busy.</p>',
+    }
 ];
 
 
