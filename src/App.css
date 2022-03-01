@@ -314,7 +314,7 @@ a.blogPost:visited, a.blogPost:link {
         height: 450px;
     }
     div.fitnessHeader {
-        background-image: url(./img/fitness-equipment-dark-background.jpeg);
+        background-image: url(./img/fitness-header.jpg);
         background-size: 970px 375px;
     }
     div.joinCollective {
@@ -386,7 +386,7 @@ a.blogPost:visited, a.blogPost:link {
         background-size: 728px 338px;
     }
     div.fitnessHeader {
-        background-image: url(./img/fitness-equipment-dark-background.jpeg);
+        background-image: url(./img/fitness-header.jpg);
         background-size: 728px 281px;
     }
     div.joinCollective {
@@ -435,7 +435,7 @@ a.blogPost:visited, a.blogPost:link {
         background-size: 320px 149px;
     }
     div.fitnessHeader {
-        background-image: url(./img/fitness-equipment-dark-background.jpeg);
+        background-image: url(./img/fitness-header.jpg);
         background-size: 320px 124px;
     }
     div.joinCollective {

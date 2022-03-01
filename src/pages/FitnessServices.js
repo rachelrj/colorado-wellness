@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from "../redux/store";
 import getComponents from "../redux/reducer";
 import STORETYPES from "../redux/storeTypes";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 
 class FitnessServices extends React.Component {
 
