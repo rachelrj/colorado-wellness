@@ -30,7 +30,7 @@ class ServiceProvider extends React.Component {
         var clean = DOMPurify.sanitize(this.listing.review);
 
         return(
-            <div className="reviewDiv">
+            <div className="review">
                 <h2>{this.listing.name}</h2>
                 <h3 className={this.color}>{this.listing.rating}/10</h3>
                 <p dangerouslySetInnerHTML={{__html: clean}}></p>

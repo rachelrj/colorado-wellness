@@ -98,7 +98,7 @@ class ServiceProvider extends React.Component {
                 </div>
                 <div className="blockDiv">
                 <h2>Reviews</h2>
-                    <div>
+                    <div id="reviewContainer">
                         {this.reviews}
                     </div>
                 </div>
