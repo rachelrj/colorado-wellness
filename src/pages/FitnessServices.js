@@ -59,7 +59,7 @@ class FitnessServices extends React.Component {
             <Provider store = {store}>
                 <Header additionalClass="fitnessHeader"/>
                 <div className="bodyHolder">
-                                <h1>Fitness Gyms & Memberships</h1>
+                                <h1>Fitness Memberships & Events</h1>
                 <div className="description">
                     <p>The Health and Wellness relevant service directory allows users to search, find, learn about, review, interact with and engage appropriate fitness services. The directory aims to match people with services that will benefit their fitness journey and to give open and honest feedback regarding our experiences.</p>
                 </div>

@@ -17,7 +17,7 @@ class Header extends React.Component {
                 <Nav className="mr-auto">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/blog/An-Example-by-F45">Blog</Nav.Link>
-                  <NavDropdown title="Professional Services" id="basic-nav-dropdown">
+                  <NavDropdown title="Health and Wellness" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/colorado-fitness">Fitness</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Therapy</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Nutrition</NavDropdown.Item>
