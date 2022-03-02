@@ -1,5 +1,7 @@
 export function convertTitleToUrl(post) {
-  return post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
+  if (post && post.title) {
+    return post.title.replace(/[.,\/#!$%?\^&\*;:{}=\-_`~()]/g,"").split(' ').join('-');
+  }
 }
 
 export function getPastMonth(minus) {

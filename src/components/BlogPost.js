@@ -21,14 +21,18 @@ class BlogPost extends React.Component {
         const blogHref = "/blog/" + convertTitleToUrl(this.props);
 
         return (
-            <a className="blogPost" href={blogHref}>
-                <img className="blogPostImg" src={this.props.imgSrc}/>
-                <h3>{this.props.title}</h3>
-                <p className="authorName">{this.props.name}</p>
-                <p className="date">{dateString}</p>
-                <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
-                <p className="readMore" href={blogHref}>Read More ></p>
-            </a>
+            <React.Fragment>
+              {this.props &&
+                <a className="blogPost" href={blogHref}>
+                    <img className="blogPostImg" src={this.props.imgSrc}/>
+                    <h3>{this.props.title}</h3>
+                    <p className="authorName">{this.props.name}</p>
+                    <p className="date">{dateString}</p>
+                    <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
+                    <p className="readMore" href={blogHref}>Read More ></p>
+                </a>
+              }
+            </React.Fragment>
         );
     }
 }

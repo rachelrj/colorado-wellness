@@ -12,10 +12,10 @@ class ServiceProvider extends React.Component {
     }
 
     getColor() {
-        if(this.listing.rating >= 8) {
+        if(this.listing && this.listing.rating >= 8) {
             return "green";
         }
-        else if(this.listing.rating >=5) {
+        else if(this.listing && this.listing.rating >=6) {
             return "orange"
         }
         else {
@@ -27,23 +27,18 @@ class ServiceProvider extends React.Component {
     render() {
 
         this.color = this.getColor();
-        var clean = DOMPurify.sanitize(this.listing.review);
+        if (!!this.listing) {
+            var clean = DOMPurify.sanitize(this.listing.review);
+        }
 
         return(
             <div className="review">
-                <h2>{this.listing.name}</h2>
-                <h3 className={this.color}>{this.listing.rating}/10</h3>
-                <p dangerouslySetInnerHTML={{__html: clean}}></p>
+                <h2>{(!!this.listing) && this.listing.name}</h2>
+                <h3 className={this.color}>{(!!this.listing) && this.listing.rating}/10</h3>
+                { (!!clean) && <p dangerouslySetInnerHTML={{__html: clean}}></p>}
             </div>
         )
     }
 }
 
-const mapStateToProps = state => {
-  const components = getComponents(state);
-  return {
-    providers: components.PROVIDERS,
-    reviews: components.REVIEWS,
-  }
-};
-export default connect(mapStateToProps)(ServiceProvider);
+export default ServiceProvider;

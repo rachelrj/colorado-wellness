@@ -122,6 +122,12 @@ hr {
 .green {
     color: green;
 }
+.orange {
+    color: orange;
+}
+.red {
+    color: red;
+}
 .blogAuthorPicture > img {
     height: 150px;
     border-radius: 50%;

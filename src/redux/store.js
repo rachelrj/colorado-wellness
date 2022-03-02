@@ -182,7 +182,7 @@ initialState[STORETYPES[4]] = [
         'id': 3,
         'name': 'Rachel Joyce',
         'provider': 2,
-        'rating': 8,
+        'rating': 7.5,
         'review': '<p>I\'ll admit this at the beginning of my review: I am not a yoga person. If you want a review from a yogi, I would check out Meghan\'s or another person\'s review. Nonetheless, I was a CorePower member for over a year.</p><p>When I went to CorePower, I went mostly to their Yoga Sculpt class. I tried hot yoga in the Hot Power Fusion class and <a target="_blank" href="https://booksavenue.co/2014/08/08/man-posts-absolutely-captivating-ad-for-used-yoga-mat-on-craigslist/">felt like this individual</a>. It wasn\'t for me.</p><p>The Yoga Sculpt classes are high intensity. It uses light weights, poses and movements to build lean muscle and cardio. The website claims this class is for all skill levels. I once took a moderately fit friend to this class and she walked out halfway through; she was exhausted. So take that for what it\'s worth.</p><p>There are multiple studios in Boulder and classes run all day. You\'ll certainly be able to find classes that fit into your schedule.</p><p>The classes depend heavily on the instructor. A highly skilled instructor with a great playlist will run a bomb class. And I mostly had great instructors during the time I attended CorePower classes.</p>',
     },{
         'id': 4,
