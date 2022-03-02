@@ -69,7 +69,7 @@ initialState[STORETYPES[1]] = [{
         'long': -105.254830
     },
     'categories': [0],
-    'subcategories': [2,3,5,9,10],
+    'subcategories': [2,3,5,9],
     'imgSource': '../img/f45-boulder.png',
     'headerSource': '../img/f45-boulder-long.jpeg',
     'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
@@ -89,20 +89,19 @@ initialState[STORETYPES[1]] = [{
     'creds': ['20+ Years in Practice']
 }, {
     'id': 3,
-    'name': 'Bobson Dugnutt',
-    'description': '<p>Bobsons name appears to have been drawn from a list of fake American-sounding names for baseball players that appeared in the Japanese SNES game Fighting Baseball.</p>',
-    'phone': '03 1234 4678',
-    'email': 'test@test.org.au',
-    'address': '11 Brougham St., Kew, VIC 3101',
-    'website': 'https://thedragonfriends.fandom.com/wiki/Bobson_Dugnutt',
+    'name': 'Parkrun Boulder',
+    'description': '<p>A free, fun, and friendly weekly 5k community event. Walk, jog, run, volunteer or spectate – it\'s up to you! Register ahead of the run to recieve a barcode which tracks your time. The event takes place at East Boulder Community Center every Saturday at 9am in the winter and 8am in the summer.</p>',
+    'email': 'southbouldercreek@parkrun.com',
+    'address': '5660 Sioux Dr, Boulder, CO 80303',
+    'website': 'https://www.parkrun.us/southbouldercreek/',
     'location': {
-        'lat': -37.805913,
-        'long': 145.029884
+        'lat': 39.993032,
+        'long': -105.218904
     },
     'categories': [0],
-    'subcategories': [3,5,8,9],
-    'ABN': 123456789,
-    'imgSource': '../img/bobson.jpg',
+    'subcategories': [10],
+    'imgSource': '../img/parkrun.png',
+    'headerSource': '../img/parkrun-header.png',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
     'Example: Membership in Association/Society', 'Example: Endorsement']
 },{
@@ -161,7 +160,7 @@ initialState[STORETYPES[3]] = [
         'mainCat': 0,
     }, {
         'id': 10,
-        'name': 'Body Composition',
+        'name': 'Running',
         'mainCat': 0,
     }
 ];
@@ -197,6 +196,12 @@ initialState[STORETYPES[4]] = [
         'provider': 4,
         'rating': 7,
         'review': '<p>Q: How long have you been a member?</p><p>A: Almost since I moved here. Since 2015ish.</p><br/><p>Q: How is the variation of climbing terrain?</p><p>A: It\'s okay. There is a decent amount of variety, but I wouldn\'t say a lot.</p><br/><p>Q: Have you done any of the yoga or the fitness classes?</p><p>A: Yes. The yoga was kind mediocre. I\'ve taken climbing training classes and a head stand class that were pretty cool.</p><br/><p>Q: What do you pay for a membership?</p><p>A: I think it\'s $85/month now.</p><br/><p>Q: Is it the best indoor climbing gym in Boulder?</p><p>A: I\'ve been to The Spot and BRC and yeah, I think its the better of the three.</p><br/><p>Q: Is there anything else about Movement that you\'d comment on?</p><p>A: Parking can be a pain when it\'s busy.</p>',
+    },{
+        'id': 6,
+        'name': 'Rachel Joyce',
+        'provider': 3,
+        'rating': 10,
+        'review': '<p>I never heard of Parkruns until 2021! I was looking for a race that a friend and I could sign up for and happened upon the South Boulder Creek Parkrun. I\'m so glad that we tried it out. Jen and I have been running the Parkrun every week that we can.</p><p>Parkruns are completely free and also timed. Just register and show up. The system tracks all of your races. So you can view your times online afterward. There are Parkruns all over the country and even the World. It\'s all volunteer based. Volunteers will debrief you on the course, direct you, and record your time.</p><p>I\'ll also note that the community at the South Boulder Creek Parkrun is inclusive, friendly and upbeat. Don\'t be scared to show up. The community warmly welcomes all new runners. You can run a 16 minute 5k or a 45 minute 5k, or anything inbetween. (I believe you can even walk the course if you like). I highly recommend attending these runs if you enjoy run clubs or running events.</p>',
     }
 ];
 
