@@ -21,7 +21,6 @@ class Header extends React.Component {
                     <NavDropdown.Item href="/colorado-fitness">Fitness</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Therapy</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Nutrition</NavDropdown.Item>
-                    <NavDropdown.Item href="/under-construction">Wellness</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Apparel</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Holistic</NavDropdown.Item>
                   </NavDropdown>

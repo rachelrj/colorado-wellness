@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import {configure, shallow, mount } from 'enzyme';
 
 
-describe('Review ', () => {
+describe('BlogPost ', () => {
 	configure({adapter: new Adapter()});
 
 	const blog = {
