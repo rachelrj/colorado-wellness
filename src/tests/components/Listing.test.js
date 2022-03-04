@@ -1,15 +1,11 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import { expect } from 'chai';
 import Listing from '../../components/Listing';
-import Adapter from 'enzyme-adapter-react-16';
 import {configure, shallow, mount } from 'enzyme';
 
 
 describe('Listing ', () => {
-	configure({adapter: new Adapter()});
-
-    const listing = {
+	const listing = {
         'id': 2,
         'name': 'CorePower',
         'description': 'CorePower Yoga shares the transformative power of yoga with every mind, every body, everywhere.',
@@ -37,14 +33,9 @@ describe('Listing ', () => {
                                 img={listing.imgSource}
                                 href={href}/>);
 
-        expect((wrapper.find('h2')).text()).to.equal(listing.name);
-        
+        expect((wrapper.find('h2')).text()).to.equal(listing.name);        
         expect(wrapper.find('img').prop('src')).to.equal(listing.imgSource);
-
         expect(wrapper.text()).to.contain('CorePower Yoga shares the transformative power of yoga with every mind, every body, everywhere.');
-
         expect((wrapper.find('a')).at(0).props().href).to.equal(href);
-
     });
-
 });

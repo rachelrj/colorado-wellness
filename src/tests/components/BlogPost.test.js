@@ -1,14 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import { expect } from 'chai';
 import BlogPost from '../../components/BlogPost';
-import Adapter from 'enzyme-adapter-react-16';
 import {configure, shallow, mount } from 'enzyme';
 
 
 describe('BlogPost ', () => {
-	configure({adapter: new Adapter()});
-
 	const blog = {
     'id': 3,
     'title': 'Sample Blog Title',
@@ -39,15 +35,9 @@ describe('BlogPost ', () => {
                             categories={blog.categories}/>);
 
         expect((wrapper.find('h3')).text()).to.equal('Sample Blog Title');
-
         expect((wrapper.find('.authorName')).text()).to.equal('Rachel Joyce');
-
         expect(wrapper.text()).to.contain('Holy shit what a great blog post.');
-
         expect((wrapper.find('.date')).text()).to.equal('Feb 10, 2022');
-
         expect((wrapper.find('a')).at(0).props().href).to.equal('/blog/Sample-Blog-Title');
-
     });
-
 });
