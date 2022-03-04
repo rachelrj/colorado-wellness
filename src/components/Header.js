@@ -16,7 +16,7 @@ class Header extends React.Component {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/blog/An-Example-by-F45">Blog</Nav.Link>
+                  <Nav.Link href="/blog/What-Is-Red-Light-Therapy">Blog</Nav.Link>
                   <NavDropdown title="Health and Wellness" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/colorado-fitness">Fitness</NavDropdown.Item>
                     <NavDropdown.Item href="/under-construction">Therapy</NavDropdown.Item>

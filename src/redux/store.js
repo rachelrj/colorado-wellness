@@ -38,21 +38,20 @@ initialState[STORETYPES[0]] = [
 },
 {
     'id': 1,
-    'title':'An Example by F45',
+    'title':'What Is Red Light Therapy',
     'content': 
-    '<p>This is an example of an article that F45 might write about the 80 day challenge. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah.</p>',
-    'authorName': 'F45 Central Boulder',
-    'img': '../img/f45-boulder-long.jpeg',
+    '<p>You may have heard of red light therapy as a treatment for your skin. Is it a fad? Does it really benefit your skin? What else is it supposedly good for?</p><p>Yes. Red light therapy is great for your skin. But when I asked my dermatologist at <a target="_blank" href="https://www.azealderm.com/">Azeal Dermatology Institute</a> she said it\'s like working out. You need to regularly go to red light therapy for it to be beneficial.</p><img src="../img/red-light-therapy.jpg"/><p>So what exactly is red light therapy?</p><p>First of all, this is NOT the same light as in a tanning booth. And it does NOT expose you to damaging UV rays. According to <a href="https://www.webmd.com/skin-problems-and-treatments/red-light-therapy" target="_blank">WebMD</a>, red light therapy helps the mitochondria in your cells make more energy. So, this is why experts believe that red light helps cells repair themselves and become healthier.</p><p>Red light therapy is also called photobiomodulation (PBM). And this is what it\'s been called at <a target="_blank" href="https://www.restore.com/locations/co-boulder-co006">Restore Hyper Wellness</a> where I\'ve received the treatment.</p><p>There have been hundreds of clinical studies and thousands of laboratory studies conducted. According to <a href="https://www.healthline.com/health/red-light-therapy#evidenced--based-benefits" target="_blank">Healthline</a>, these are some of the evidence-based benefits: <ul><li>Promotes wound healing</li><li>Improves hair growth in people with androgenic alopecia</li><li>Helps for the short-term treatment of carpal tunnel syndrome</li><li>Stimulates healing of slow-healing wounds</li><li>Reduces psoriasis lesions</li><li>Aids with short-term relief of pain and morning stiffness in people with rheumatoid arthritis</li><li>Reduces some of the side effects of cancer treatments</li><li>Improves skin complexion and builds collagen</li><li>Helps to mend sun damage</li><li>Prevents recurring cold sores from herpes simplex virus infections</li><li>Helps diminish scars</li><li>Relieves pain and inflammation</li></ul><p id="endP">Check with your doctor or provider before trying red light therapy. If you do, send us a message and let us know how you feel afterwards. I know I feel quite warm and refreshed!</p>',
+    'authorName': 'Rachel Joyce',
+    'img': '../img/red-light-therapy.jpg',
     'month': 1,
     'day': 31,
     'year': 2022,
     'categories': [
-        'body comp',
-        'hiit',
-        'strength',
-        'resolutions',
+        'red light',
+        'pbm',
+        'restorative',
+        'skin health',
     ],
-    'provider': 1,
 }];
 
 

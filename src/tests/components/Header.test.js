@@ -18,7 +18,7 @@ describe('Review ', () => {
         expect((wrapper.find('.nav-link').first()).props().href).to.equal('/');
         expect((wrapper.find('.nav-link').last()).text()).to.equal('Join the Collective');
         expect((wrapper.find('.nav-link').last()).props().href).to.equal('/join-collective');
-        expect((wrapper.find({ href: '/blog/An-Example-by-F45' }))).to.exist;
+        expect((wrapper.find({ href: '/blog/What-Is-Red-Light-Therapy' }))).to.exist;
         expect((wrapper.find('.dropdown-toggle').first()).text()).to.equal('Health and Wellness');
         expect((wrapper.find({ href: '/colorado-fitness' }))).to.exist;
         expect((wrapper.find({ href: '/under-construction' }))).to.exist;

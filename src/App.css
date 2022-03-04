@@ -34,11 +34,6 @@ hr {
   flex: 0 0 calc(50% - 20px);
   padding: 20px;
 }
-.blogPagePost  li {
-    clear: both;
-    float: left;
-    display: block;
-}
 .serviceImg {
     width: 600px;
     filter: brightness(50%);
@@ -138,6 +133,17 @@ hr {
 }
 .blogPagePost img {
     float: right;
+}
+.blogPagePost li {
+    clear: both;
+    float: left;
+    display: block;
+    display: list-item;
+}
+.blogPagePost #endP {
+    float: left;
+    clear: both;
+    margin-top: 10px;
 }
 .readMore, .readMoreBlog {
     display: block;
