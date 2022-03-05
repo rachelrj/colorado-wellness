@@ -320,6 +320,11 @@ a.blogPost:visited, a.blogPost:link {
 .leaflet-container{
     height: 300px;
 }
+.description {
+    font-size: 1.25em;
+    font-style: oblique;
+    color: darkslategrey;
+}
 @media (min-width: 1000px) {
     div.header {
       width: 970px;
