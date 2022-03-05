@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { getPastMonth, convertTitleToUrl, getMonthString, getBlogPosts } from '../helpers';
+import { getPastMonth, convertTitleToUrl, getMonthString, getBlogPosts, shuffle } from '../helpers';
 
 
 describe('get past month ', () => {   
@@ -144,3 +144,28 @@ describe('get blog posts ', () => {
         expect(posts.length).to.equal(2);
     });
 });
+
+describe('shuffle ', () => {  
+
+    let array = [1, 2, 3];
+
+    it('shuffles ', () => {
+        let numSameOrderAsStart = 0;
+        expect(checkOrder(array)).to.be.true;
+        for(let x = 0; x < 3; x++) {
+            shuffle(array);
+            if(checkOrder(array)) {
+                numSameOrderAsStart++;
+            }
+        }
+        expect(numSameOrderAsStart).to.be.at.most(2);
+    });
+
+    function checkOrder(array) {
+        if(array[0] === 1 && array[1] === 2 && array[2] === 3) {
+            return true;
+        }
+        return false;
+    }
+});
+

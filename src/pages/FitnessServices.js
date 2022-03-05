@@ -8,6 +8,7 @@ import store from "../redux/store";
 import getComponents from "../redux/reducer";
 import STORETYPES from "../redux/storeTypes";
 import { connect } from "react-redux";
+import { shuffle } from '../helpers';
 
 class FitnessServices extends React.Component {
 
@@ -38,6 +39,7 @@ class FitnessServices extends React.Component {
         });
 
         this.listings = [];
+        shuffle(this.props.providers);
         this.props.providers.map((component, index) => {
             if(component.categories.includes(0)) {
                 if(!this.state.subCategories.length || 

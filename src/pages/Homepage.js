@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import hollistic from '../img/hollistic_600x300.jpg';
 import fitness from '../img/fitness_600x300.jpg';
+import exercise from '../img/exercise-apparel_600x300.jpg'
 import nutrition from '../img/shutterstock_1513976642.jpg'
 import { Provider } from 'react-redux';
 import store from "../redux/store";
@@ -51,7 +52,7 @@ class Homepage extends React.Component {
         return (
             <Provider store = {store}>
                 <Header additionalClass="mainHeader"/>
-                <h1>Colorado Health & Wellness Collective</h1>
+                <h1>Colorado Health & Wellness</h1>
                 <div className="bodyHolder">
                     <div className="description">
                     <p>There are so many opportunities nowadays for workout options, wellness practices, fitness groups, gym memberships, healing modalities, exercise apparel, beauty services, and nutrition advising. The Colorado Health and Wellness collective is a repository that grew from a group of people in the Boulder/Denver area who wanted to try it all!</p>
@@ -81,6 +82,13 @@ class Homepage extends React.Component {
                             <div className="overlay"></div>
                             <img src={nutrition} className="serviceImg" width="600px"/>
                             <div className="centered">Nutrition</div>
+                        </div>
+                        </a>
+                        <a href="/under-construction">
+                        <div className="listingDiv">
+                            <div className="overlay"></div>
+                            <img src={exercise} className="serviceImg" width="600px"/>
+                            <div className="centered">Apparel & Equipment</div>
                         </div>
                         </a>
                     </div>
