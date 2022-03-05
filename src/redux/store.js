@@ -38,7 +38,7 @@ initialState[STORETYPES[0]] = [
 },
 {
     'id': 1,
-    'title':'What Is Red Light Therapy',
+    'title':'Red Light for your Skin',
     'content': 
     '<p>You may have heard of red light therapy as a treatment for your skin. Is it a fad? Does it really benefit your skin? What else is it supposedly good for?</p><p>Yes. Red light therapy is great for your skin. But when I asked my dermatologist at <a target="_blank" href="https://www.azealderm.com/">Azeal Dermatology Institute</a> she said it\'s like working out. You need to regularly go to red light therapy for it to be beneficial.</p><img src="../img/red-light-therapy.jpg"/><p>So what exactly is red light therapy?</p><p>First of all, this is NOT the same light as in a tanning booth. And it does NOT expose you to damaging UV rays. According to <a href="https://www.webmd.com/skin-problems-and-treatments/red-light-therapy" target="_blank">WebMD</a>, red light therapy helps the mitochondria in your cells make more energy. So, this is why experts believe that red light helps cells repair themselves and become healthier.</p><p>Red light therapy is also called photobiomodulation (PBM). And this is what it\'s been called at <a target="_blank" href="https://www.restore.com/locations/co-boulder-co006">Restore Hyper Wellness</a> where I\'ve received the treatment.</p><p>There have been hundreds of clinical studies and thousands of laboratory studies conducted. According to <a href="https://www.healthline.com/health/red-light-therapy#evidenced--based-benefits" target="_blank">Healthline</a>, these are some of the evidence-based benefits: <ul><li>Promotes wound healing</li><li>Improves hair growth in people with androgenic alopecia</li><li>Helps for the short-term treatment of carpal tunnel syndrome</li><li>Stimulates healing of slow-healing wounds</li><li>Reduces psoriasis lesions</li><li>Aids with short-term relief of pain and morning stiffness in people with rheumatoid arthritis</li><li>Reduces some of the side effects of cancer treatments</li><li>Improves skin complexion and builds collagen</li><li>Helps to mend sun damage</li><li>Prevents recurring cold sores from herpes simplex virus infections</li><li>Helps diminish scars</li><li>Relieves pain and inflammation</li></ul><p id="endP">Check with your doctor or provider before trying red light therapy. If you do, send us a message and let us know how you feel afterwards. I know I feel quite warm and refreshed!</p>',
     'authorName': 'Rachel Joyce',
@@ -58,7 +58,7 @@ initialState[STORETYPES[0]] = [
 initialState[STORETYPES[1]] = [{
     'id': 1,
     'name': 'F45 Boulder',
-    'description': '<p>F45 Training is a global fitness community specializing in innovative, high-intensity group workouts that are fast, fun, and results-driven.</p><p>F45 is specifically designed to provide a functional full-body workout while improving energy levels, metabolic rate, strength, and endurance.</p><p>F45 is one of the most time-efficient ways of training. We aim to burn up to 750 calories per 45-minute session.</p>',
+    'description': '<p>F45 Training is a global fitness community specializing in innovative, high-intensity group workouts that are fast, fun, and results-driven.</p><p>It is specifically designed to provide a functional full-body workout while improving energy levels, metabolic rate, strength, and endurance.</p><p>F45 is one of the most time-efficient ways of training. We aim to burn up to 750 calories per 45-minute session.</p>',
     'phone': '13034953377',
     'email': 'centralboulder@f45training.com',
     'website': 'https://f45training.com/centralboulder/home',
@@ -72,7 +72,8 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/f45-boulder.png',
     'headerSource': '../img/f45-boulder-long.jpeg',
     'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
-    'Example: Membership in Association/Society', 'Example: Endorsement']
+    'Example: Membership in Association/Society', 'Example: Endorsement'],
+    'city': ['Boulder'],
 }, {
     'id': 2,
     'name': 'CorePower',
@@ -85,7 +86,10 @@ initialState[STORETYPES[1]] = [{
     'categories': [0],
     'subcategories': [1,3,6,9],
     'imgSource': '../img/corepower.png',
-    'creds': ['20+ Years in Practice']
+    'headerSource': '../img/corepower-boulder.jpg',
+    'creds': ['20+ Years in Practice'],
+    'city': ['Boulder'],
+
 }, {
     'id': 3,
     'name': 'Parkrun Boulder',
@@ -102,11 +106,12 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/parkrun.png',
     'headerSource': '../img/parkrun-header.png',
     'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
-    'Example: Membership in Association/Society', 'Example: Endorsement']
+    'Example: Membership in Association/Society', 'Example: Endorsement'],
+    'city': ['Boulder'],
 },{
     'id': 4,
     'name': 'Movement Boulder',
-    'description': '<p>Movement is located in the heart of Boulder. Our lead climbing and top rope terrain include the nationally renowned Grey Wall and creative, challenging boulder problems. Built in 2009, our flagship facility measures 22,000 square feet, with 66 independent anchors, over 100 bouldering problems, and 30-40 foot walls.</p>',
+    'description': '<p>Movement is one climbing gym located in the heart of Boulder. The lead climbing and top rope terrain include the nationally renowned Grey Wall and creative, challenging boulder problems. Built in 2009, thier flagship facility measures 22,000 square feet, with 66 independent anchors, over 100 bouldering problems, and 30-40 foot walls.</p>',
     'phone': '13034431505',
     'email': 'boulder@movementgyms.com',
     'website': 'https://movementgyms.com/',
@@ -120,7 +125,27 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/movement-climbing.png',
     'headerSource': '../img/movement-climbing-yoga-fitness.jpeg',
     'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
-        'Example: Membership in Association/Society', 'Example: Endorsement']
+        'Example: Membership in Association/Society', 'Example: Endorsement'],
+    'city': ['Boulder'],
+},{
+    'id': 5,
+    'name': 'The Spot Boulder',
+    'description': '<p>Rock climbing in Boulder, Denver, Golden, and Louisville. When you join the Spot Fam, you join a community of supportive climbers across 4 gyms. You’ll unlock 70,000 sq. ft. of unlimited climbing, free Intro to Bouldering and Intro to Ropes classes during your first 3 months, gear discounts, guest passes and so much more.</p>',
+    'phone': '13033798806',
+    'email': 'marketing@thespotgym.com',
+    'website': 'https://www.thespotgym.com/',
+    'address': '3240 Prairie Ave, Boulder, CO 80301',
+    'location': {
+        'lat': 40.0217577,
+        'long': -105.250571
+    },
+    'categories': [0],
+    'subcategories': [4],
+    'imgSource': '../img/the-spot.png',
+    'headerSource': '../img/the-spot-boulder.png',
+    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
+        'Example: Membership in Association/Society', 'Example: Endorsement'],
+    'city': ['Boulder'],
 }, ];
 
 initialState[STORETYPES[2]] = {
@@ -201,6 +226,12 @@ initialState[STORETYPES[4]] = [
         'provider': 3,
         'rating': 10,
         'review': '<p>I never heard of Parkruns until 2021! I was looking for a race that a friend and I could sign up for and happened upon the South Boulder Creek Parkrun. I\'m so glad that we tried it out. Jen and I have been running the Parkrun every week that we can.</p><p>Parkruns are completely free and also timed. Just register and show up. The system tracks all of your races. So you can view your times online afterward. There are Parkruns all over the country and even the World. It\'s all volunteer based. Volunteers will debrief you on the course, direct you, and record your time.</p><p>I\'ll also note that the community at the South Boulder Creek Parkrun is inclusive, friendly and upbeat. Don\'t be scared to show up. The community warmly welcomes all new runners. You can run a 16 minute 5k or a 45 minute 5k, or anything inbetween. (I believe you can even walk the course if you like). I highly recommend attending these runs if you enjoy run clubs or running events.</p>',
+    },{
+        'id': 7,
+        'name': 'John Doe',
+        'provider': 5,
+        'rating': 'X',
+        'review': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus convallis lectus auctor viverra. Pellentesque imperdiet ex augue, at ullamcorper nibh ornare non. Nam leo neque, molestie sit amet justo non, pharetra placerat justo. Donec lorem justo, accumsan vel bibendum in, ornare at ex. Cras purus mi, laoreet vitae metus vel, lacinia congue nunc. Praesent tempor dui ut leo vestibulum, eu aliquet massa sagittis. Maecenas a metus non lorem interdum elementum in id enim. Praesent sit amet rutrum tortor. In rhoncus pretium fermentum. Nunc eleifend sem quam, eu cursus nunc elementum quis. Pellentesque facilisis ipsum non nibh vulputate, ac rutrum sapien accumsan. Aliquam lorem augue, tempus id ornare id, commodo quis elit. Etiam elementum dignissim nibh.</p><p>Sed magna purus, convallis sed dictum quis, fringilla eu justo. Ut dictum tellus id lobortis finibus. Cras accumsan rhoncus massa vel pretium. Fusce et nunc turpis. Aenean bibendum nibh nisl, non facilisis nisi venenatis vitae. Ut euismod est in convallis scelerisque. Duis cursus, quam sit amet facilisis pretium, purus diam egestas est, sed rutrum dui ligula eget nibh. Proin eleifend justo eu lorem porta, euismod tempus velit vehicula. Aenean non arcu nec orci dignissim tincidunt. In at ultricies ipsum. Maecenas sit amet sem ex. Nullam egestas ligula id lectus elementum porta. Nam id aliquet nunc. Vestibulum lacus nibh, pulvinar eu tempor laoreet, eleifend et turpis. Cras eget tempus sapien.</p>',
     }
 ];
 
