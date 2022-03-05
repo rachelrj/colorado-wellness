@@ -94,7 +94,6 @@ describe('get month string ', () => {
 });
 
 describe('get blog posts ', () => {  
-
     var today = new Date();
     var dd = String(today.getDate());
     var mm = String(today.getMonth() + 1);
@@ -146,7 +145,6 @@ describe('get blog posts ', () => {
 });
 
 describe('shuffle ', () => {  
-
     let array = [1, 2, 3];
 
     it('shuffles ', () => {
