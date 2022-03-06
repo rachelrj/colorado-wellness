@@ -88,7 +88,6 @@ initialState[STORETYPES[1]] = [{
     'headerSource': '../img/corepower-boulder.jpg',
     'creds': ['20+ Years in Practice'],
     'city': ['Boulder'],
-
 }, {
     'id': 3,
     'name': 'Parkrun Boulder',
