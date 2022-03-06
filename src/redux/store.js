@@ -71,8 +71,7 @@ initialState[STORETYPES[1]] = [{
     'subcategories': [2,3,5,9],
     'imgSource': '../img/f45-boulder.png',
     'headerSource': '../img/f45-boulder-long.jpeg',
-    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
-    'Example: Membership in Association/Society', 'Example: Endorsement'],
+    'creds': ['5+ Years in Business'],
     'city': ['Boulder'],
 }, {
     'id': 2,
@@ -105,8 +104,6 @@ initialState[STORETYPES[1]] = [{
     'subcategories': [10],
     'imgSource': '../img/parkrun.png',
     'headerSource': '../img/parkrun-header.png',
-    'creds': ['Example: Number of Years in Practice', 'Example: University Trained Health Professional',
-    'Example: Membership in Association/Society', 'Example: Endorsement'],
     'city': ['Boulder'],
 },{
     'id': 4,
@@ -124,8 +121,6 @@ initialState[STORETYPES[1]] = [{
     'subcategories': [1,3,4],
     'imgSource': '../img/movement-climbing.png',
     'headerSource': '../img/movement-climbing-yoga-fitness.jpeg',
-    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
-        'Example: Membership in Association/Society', 'Example: Endorsement'],
     'city': ['Boulder'],
 },{
     'id': 5,
@@ -143,8 +138,6 @@ initialState[STORETYPES[1]] = [{
     'subcategories': [4],
     'imgSource': '../img/the-spot.png',
     'headerSource': '../img/the-spot-boulder.png',
-    'creds': ['5+ Years in Business', 'Example: University Trained Health Professional',
-        'Example: Membership in Association/Society', 'Example: Endorsement'],
     'city': ['Boulder'],
 }, ];
 

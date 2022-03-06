@@ -37,9 +37,11 @@ class ServiceProvider extends React.Component {
         };
 
         this.creds = [];
-        this.listing.creds.map((cred, index) => {
-            this.creds.push(<div key={index}>{cred}</div>);
-        });
+        if (this.listing.creds) {
+            this.listing.creds.map((cred, index) => {
+                this.creds.push(<div key={index}>{cred}</div>);
+            });
+        }
         this.featuredArticles = this.findBlogs();
         this.reviews = this.findReviews();
     }
@@ -76,12 +78,6 @@ class ServiceProvider extends React.Component {
         var clean = DOMPurify.sanitize(this.reviews);
 
         const position = [this.state.lat, this.state.lng];
-
-
-        const creds = [];
-        this.listing.creds.map((cred, index) => {
-            creds.push(<div>{cred}</div>);
-        });
 
         const telHref = "tel:" + this.listing.phone;
         const emailHref = "mailto:" + this.listing.email;
@@ -138,8 +134,13 @@ class ServiceProvider extends React.Component {
                     </Map>
                     </div>
                 }
-                <h2>Credentials/Qualifications</h2>
-                {this.creds}
+                {
+                    this.creds.length>0 &&
+                    <div>
+                        <h2>Credentials/Qualifications</h2>
+                        {this.creds}
+                    </div>
+                }
                 {
                     this.featuredArticles.length>0 &&
                     <div>

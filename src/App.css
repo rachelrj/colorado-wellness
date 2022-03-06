@@ -110,9 +110,10 @@ hr {
     width: 100%;
 }
 .blockDiv {
-    width: 100%;
+    width: 70%;
     display: block;
     clear: both;
+    margin: auto;
 }
 .green {
     color: green;
