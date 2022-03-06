@@ -33,6 +33,21 @@ export function getBlogPosts(blogs, numMonths) {
   return posts;
 }
 
+export function getMostRecentArticle(blogs) {
+    let mostRecentArticle;
+    blogs.map((blog, index) => {
+        if (!mostRecentArticle) {
+            mostRecentArticle = blog;
+        }
+        else if((blog.year > mostRecentArticle.year) || 
+            (blog.year == mostRecentArticle.year && blog.month > mostRecentArticle.month) ||
+            (blog.year == mostRecentArticle.year && blog.month == mostRecentArticle.month && blog.day > mostRecentArticle.day)) {
+            mostRecentArticle = blog;
+        }
+    })
+    return mostRecentArticle;
+}
+
 export function getMonthString(month) {
   const monthNames = ["Jan", "Feb", "March", "April", "May", "June",
     "July", "Aug", "Sept", "Oct", "Nov", "Dec"

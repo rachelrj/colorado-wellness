@@ -6,29 +6,20 @@ import store from "../redux/store";
 import getComponents from "../redux/reducer";
 import DOMPurify from 'dompurify'; 
 import STORETYPES from '../redux/storeTypes';
-import { getMonthString, convertTitleToUrl, getPastMonth } from '../helpers';
+import { getMonthString, convertTitleToUrl, getPastMonth, getMostRecentArticle } from '../helpers';
 
 class Blog extends React.Component {
 
     getBlogTitleParam() {
-        const pathname = this.props.location.pathname;
-        const pathNames = pathname.split('/');
-        return pathNames[pathNames.length-1];
+        if(this.props.location) {
+            const pathname = this.props.location.pathname;
+            const pathNames = pathname.split('/');
+            return pathNames[pathNames.length-1];
+        }
     }
 
     getMostRecentArticle() {
-        let mostRecentArticle;
-        this.props.blogs.map((blog, index) => {
-            if (!mostRecentArticle) {
-                mostRecentArticle = blog;
-            }
-            else if((blog.year > mostRecentArticle.year) || 
-                (blog.year == mostRecentArticle.year && blog.month > mostRecentArticle.month) ||
-                (blog.year == mostRecentArticle.year && blog.month == mostRecentArticle.month && blog.day > mostRecentArticle.day)) {
-                mostRecentArticle = blog;
-            }
-        })
-        return mostRecentArticle;
+        return getMostRecentArticle(this.props.blogs)
     }
 
     getArticleByTitle(title) {
@@ -57,7 +48,7 @@ class Blog extends React.Component {
             if(post.month == mm && post.id != currentPost.id) {
                 const blogHref = "/blog/" + convertTitleToUrl(post);
                 otherPosts.push(
-                    <a className="readMoreBlog" href={blogHref}>{post.title}</a>
+                    <a className="readMoreBlog" href={blogHref} key={post.id+"_posthref"}>{post.title}</a>
                 )
             }
         });
@@ -76,7 +67,7 @@ class Blog extends React.Component {
         let categories = [];
         article.categories.map((cat, index) => {
             categories.push(
-                <div className="category">
+                <div className="category" key={index+"_cat"}>
                     {cat}
                 </div>
             )

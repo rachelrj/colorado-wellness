@@ -14,5 +14,6 @@ describe('UnderConstruction ', () => {
 
         expect(wrapper.find('Header').props().additionalClass).to.equal('headerUnderConstruction');
         expect(wrapper.text()).to.contain('We are currently working on building the health and wellness directory');
+        expect(wrapper.find('Footer')).to.exist;        
     });
 });

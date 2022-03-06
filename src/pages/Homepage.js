@@ -21,16 +21,16 @@ class Homepage extends React.Component {
         blogs.map((blog) => {
             blogPosts.push(
                 <BlogPost   
-                            key={blog.id}
-                            id={blog.id}
-                            title={blog.title}
-                            name={blog.authorName}
-                            day={blog.day}
-                            month={blog.month}
-                            year={blog.year}
-                            content={blog.content}
-                            categories={blog.categories}
-                            imgSrc={blog.img}
+                    key={blog.id}
+                    id={blog.id}
+                    title={blog.title}
+                    name={blog.authorName}
+                    day={blog.day}
+                    month={blog.month}
+                    year={blog.year}
+                    content={blog.content}
+                    categories={blog.categories}
+                    imgSrc={blog.img}
                 />
             )
         });
@@ -38,15 +38,6 @@ class Homepage extends React.Component {
     }
 
     render() {
-        let listings = [];
-        this.props.providers.map((component, index) => {
-            listings.push(
-                <Listing    key={component.id}
-                            name={component.name}
-                            description={component.description}
-                />
-            )
-        });
         let blogs = this.getBlogPosts();
 
         return (
@@ -107,7 +98,6 @@ class Homepage extends React.Component {
 const mapStateToProps = state => {
   const components = getComponents(state);
   return {
-    providers: components.PROVIDERS,
     blogs: components.BLOGS
   }
 };
