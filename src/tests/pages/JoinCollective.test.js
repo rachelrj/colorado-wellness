@@ -4,11 +4,6 @@ import {configure, shallow, mount } from 'enzyme';
 
 
 describe('JoinCollective ', () => {  
-
-    const setState = jest.fn();
-    const useStateSpy = jest.spyOn(React, "useState")
-    useStateSpy.mockImplementation((init) => [init, setState]);
-
     afterEach(() => {
         jest.clearAllMocks();
     });

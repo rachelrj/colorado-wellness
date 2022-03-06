@@ -119,7 +119,7 @@ class ServiceProvider extends React.Component {
                      </div>
                  </div>
                 { this.listing.location.lat && 
-                    <div className="blockDiv">
+                    <div className="blockDiv mapDiv">
                     <h2>Location</h2>
                     <Map center={position} zoom={this.state.zoom}>
                         <TileLayer
