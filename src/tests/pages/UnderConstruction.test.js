@@ -5,7 +5,7 @@ import {configure, shallow, mount } from 'enzyme';
 
 
 describe('UnderConstruction ', () => {  
-    it('Renders review without crashing', () => {
+    it('Renders UnderConstruction without crashing', () => {
     	shallow(<UnderConstruction/>);
     });
 

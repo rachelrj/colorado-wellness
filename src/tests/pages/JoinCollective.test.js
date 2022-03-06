@@ -8,7 +8,7 @@ describe('JoinCollective ', () => {
         jest.clearAllMocks();
     });
 
-    it('Renders review without crashing', () => {
+    it('Renders joinCollective without crashing', () => {
     	shallow(<JoinCollective/>);
     });
 

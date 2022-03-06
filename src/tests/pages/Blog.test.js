@@ -68,7 +68,7 @@ describe('Blog ', () => {
 		"pathname": "colorado-wellness.herokuapp.com/blog/How-to-Get-More-Out-of-Therapy"
 	}
 
-    it('Renders review without crashing', () => {
+    it('Renders blog without crashing', () => {
     	shallow(<Blog store={store} location={location}/>);
     });
 

@@ -64,11 +64,11 @@ describe('Homepage ', () => {
       });
     });
 
-    it('Renders review without crashing', () => {
+    it('Renders homepage without crashing', () => {
     	shallow(<Homepage store={store}/>);
     });
 
-    it('Renders review without crashing', () => {
+    it('Renders correct information', () => {
     	let wrapper = mount(<Homepage store={store}/>);
 
         expect(wrapper.find('Header').props().additionalClass).to.equal('mainHeader');        

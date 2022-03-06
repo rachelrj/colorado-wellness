@@ -92,7 +92,7 @@ describe('Provider ', () => {
         jest.clearAllMocks();
     });
 
-    it('Renders review without crashing', () => {
+    it('Renders provider without crashing', () => {
     	shallow(<Provider store={store}/>);
     });
 
