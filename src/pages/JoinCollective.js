@@ -39,16 +39,16 @@ class JoinCollective extends React.Component {
                 
                     {
                         !this.state.submitted &&
-                            <Form onSubmit={this.handleSubmit.bind(this)} className="join-collective-form">
+                            <Form onSubmit={this.handleSubmit.bind(this)} className="join-collective-form" id="join-collective-form">
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control size="lg" type="email" placeholder="Enter email" />
                             </Form.Group>
                             <Form.Group controlId="formBasicText">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control size="lg"  type="textarea" placeholder="I have no idea. Maybe this is for people that want to help or write a guest blog?" />
+                                <Form.Control size="lg"  type="textarea" placeholder="Write something" />
                             </Form.Group>
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" id="submitForm">
                                 Submit
                             </Button>
                             </Form>
