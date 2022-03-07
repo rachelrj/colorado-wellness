@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import hollistic from '../img/hollistic_600x300.jpg';
 import fitness from '../img/fitness_600x300.jpg';
 import exercise from '../img/exercise-apparel_600x300.jpg'
-import nutrition from '../img/shutterstock_1513976642.jpg'
+import rec from '../img/recreational-sports.jpg'
 import { Provider } from 'react-redux';
 import store from "../redux/store";
 import getComponents from "../redux/reducer";
@@ -71,8 +71,8 @@ class Homepage extends React.Component {
                         <a href="/under-construction">
                         <div className="listingDiv">
                             <div className="overlay"></div>
-                            <img src={nutrition} className="serviceImg" width="600px"/>
-                            <div className="centered">Nutrition</div>
+                            <img src={rec} className="serviceImg" width="600px"/>
+                            <div className="centered">Rec Sports</div>
                         </div>
                         </a>
                         <a href="/under-construction">
