@@ -138,6 +138,22 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/the-spot.png',
     'headerSource': '../img/the-spot-boulder.png',
     'city': ['Boulder'],
+}, {
+    'id': 6,
+    'name': 'Runners Roost Run Club Boulder',
+    'description': '<p>Runners Roost Run Clubs are offered at all Roost locations, are free, and are open to all. The Boulder event takes place at the Runner\'s Roost on South Broadway every Wednesday. The 6-7 mile trail run starts at 5:30pm and the 5k road run starts at 6pm. There are also trail runs the first Sunday of every month at 9am.</p>',
+    'email': 'tricia.vieth@runnersroost.com',
+    'address': '629 S. Broadway, Suite E Boulder CO',
+    'website': 'https://runnersroost.com/runners-roost-boulder/',
+    'location': {
+        'lat': 39.983931,
+        'long': -105.249024
+    },
+    'categories': [0],
+    'subcategories': [10],
+    'imgSource': '../img/runners-roost.png',
+    'headerSource': '../img/runners-roost-run-club.jpeg',
+    'city': ['Boulder'],
 }, ];
 
 initialState[STORETYPES[2]] = {
@@ -198,7 +214,7 @@ initialState[STORETYPES[4]] = [
         'id': 3,
         'name': 'Rachel Joyce',
         'provider': 2,
-        'rating': 7.5,
+        'rating': 7,
         'review': '<p>I\'ll admit this at the beginning of my review: I am not a yoga person. If you want a review from a yogi, I would check out Meghan\'s or another person\'s review. Nonetheless, I was a CorePower member for over a year.</p><p>When I went to CorePower, I went mostly to their Yoga Sculpt class. I tried hot yoga in the Hot Power Fusion class and <a target="_blank" href="https://booksavenue.co/2014/08/08/man-posts-absolutely-captivating-ad-for-used-yoga-mat-on-craigslist/">felt like this individual</a>. It wasn\'t for me.</p><p>The Yoga Sculpt classes are high intensity. It uses light weights, poses and movements to build lean muscle and cardio. The website claims this class is for all skill levels. I once took a moderately fit friend to this class and she walked out halfway through; she was exhausted. So take that for what it\'s worth.</p><p>There are multiple studios in Boulder and classes run all day. You\'ll certainly be able to find classes that fit into your schedule.</p><p>The classes depend heavily on the instructor. A highly skilled instructor with a great playlist will run a bomb class. And I mostly had great instructors during the time I attended CorePower classes.</p>',
     },{
         'id': 4,
@@ -223,6 +239,12 @@ initialState[STORETYPES[4]] = [
         'name': 'John Doe',
         'provider': 5,
         'rating': 'X',
+        'review': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus convallis lectus auctor viverra. Pellentesque imperdiet ex augue, at ullamcorper nibh ornare non. Nam leo neque, molestie sit amet justo non, pharetra placerat justo. Donec lorem justo, accumsan vel bibendum in, ornare at ex. Cras purus mi, laoreet vitae metus vel, lacinia congue nunc. Praesent tempor dui ut leo vestibulum, eu aliquet massa sagittis. Maecenas a metus non lorem interdum elementum in id enim. Praesent sit amet rutrum tortor. In rhoncus pretium fermentum. Nunc eleifend sem quam, eu cursus nunc elementum quis. Pellentesque facilisis ipsum non nibh vulputate, ac rutrum sapien accumsan. Aliquam lorem augue, tempus id ornare id, commodo quis elit. Etiam elementum dignissim nibh.</p><p>Sed magna purus, convallis sed dictum quis, fringilla eu justo. Ut dictum tellus id lobortis finibus. Cras accumsan rhoncus massa vel pretium. Fusce et nunc turpis. Aenean bibendum nibh nisl, non facilisis nisi venenatis vitae. Ut euismod est in convallis scelerisque. Duis cursus, quam sit amet facilisis pretium, purus diam egestas est, sed rutrum dui ligula eget nibh. Proin eleifend justo eu lorem porta, euismod tempus velit vehicula. Aenean non arcu nec orci dignissim tincidunt. In at ultricies ipsum. Maecenas sit amet sem ex. Nullam egestas ligula id lectus elementum porta. Nam id aliquet nunc. Vestibulum lacus nibh, pulvinar eu tempor laoreet, eleifend et turpis. Cras eget tempus sapien.</p>',
+    }, {
+        'id': 8,
+        'name': 'Rachel Joyce',
+        'provider': 6,
+        'rating': 8,
         'review': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus convallis lectus auctor viverra. Pellentesque imperdiet ex augue, at ullamcorper nibh ornare non. Nam leo neque, molestie sit amet justo non, pharetra placerat justo. Donec lorem justo, accumsan vel bibendum in, ornare at ex. Cras purus mi, laoreet vitae metus vel, lacinia congue nunc. Praesent tempor dui ut leo vestibulum, eu aliquet massa sagittis. Maecenas a metus non lorem interdum elementum in id enim. Praesent sit amet rutrum tortor. In rhoncus pretium fermentum. Nunc eleifend sem quam, eu cursus nunc elementum quis. Pellentesque facilisis ipsum non nibh vulputate, ac rutrum sapien accumsan. Aliquam lorem augue, tempus id ornare id, commodo quis elit. Etiam elementum dignissim nibh.</p><p>Sed magna purus, convallis sed dictum quis, fringilla eu justo. Ut dictum tellus id lobortis finibus. Cras accumsan rhoncus massa vel pretium. Fusce et nunc turpis. Aenean bibendum nibh nisl, non facilisis nisi venenatis vitae. Ut euismod est in convallis scelerisque. Duis cursus, quam sit amet facilisis pretium, purus diam egestas est, sed rutrum dui ligula eget nibh. Proin eleifend justo eu lorem porta, euismod tempus velit vehicula. Aenean non arcu nec orci dignissim tincidunt. In at ultricies ipsum. Maecenas sit amet sem ex. Nullam egestas ligula id lectus elementum porta. Nam id aliquet nunc. Vestibulum lacus nibh, pulvinar eu tempor laoreet, eleifend et turpis. Cras eget tempus sapien.</p>',
     }
 ];
