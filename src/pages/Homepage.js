@@ -1,5 +1,4 @@
 import React from 'react';
-import Listing from '../components/Listing';
 import BlogPost from '../components/BlogPost';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
