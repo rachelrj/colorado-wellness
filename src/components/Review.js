@@ -33,8 +33,8 @@ class ServiceProvider extends React.Component {
 
         return(
             <div className="review">
-                <h2>{(!!this.listing) && this.listing.name}</h2>
-                <h3 className={this.color}>{(!!this.listing) && this.listing.rating}/10</h3>
+                <h3>{(!!this.listing) && this.listing.name}</h3>
+                <h4 className={this.color}>{(!!this.listing) && this.listing.rating}/10</h4>
                 { (!!clean) && <p dangerouslySetInnerHTML={{__html: clean}}></p>}
             </div>
         )
