@@ -229,6 +229,9 @@ a.blogPost:visited, a.blogPost:link {
     display: inline-block;
     padding: 20px;
 }
+.socialBlock a {
+    width: 110px
+}
 #email {
     padding-left: 10px;
 }

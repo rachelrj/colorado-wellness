@@ -2,11 +2,10 @@ import React from 'react';
 import Listing from '../components/Listing';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import { Pagination, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
+import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
 import { Provider } from 'react-redux';
 import store from "../redux/store";
 import getComponents from "../redux/reducer";
-import STORETYPES from "../redux/storeTypes";
 import { connect } from "react-redux";
 import { shuffle } from '../helpers';
 

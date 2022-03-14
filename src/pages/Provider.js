@@ -11,6 +11,7 @@ import phone from '../img/phone-512.png';
 import email from '../img/email.png';
 import website from '../img/www.jpeg'
 import Review from '../components/Review';
+import { Button } from 'react-bootstrap';
 
 class ServiceProvider extends React.Component {
 
@@ -92,32 +93,31 @@ class ServiceProvider extends React.Component {
                 <div>
                     <img className="providerBanner" src={this.listing.headerSource}/>
                 </div>
+                  <div className="blockDiv">
+                    <div>
+                      <div className="socialBlock">
+                        <Button href={telHref} variant="primary" size="lg">
+                          Call
+                        </Button>{' '}
+                      </div>
+                      <div className="socialBlock">
+                        <Button href={emailHref} variant="primary" size="lg">
+                          Email
+                        </Button>{' '}
+                      </div>
+                      <div className="socialBlock">
+                        <Button href={this.listing.website} variant="primary" size="lg">
+                          Website
+                        </Button>{' '}
+                      </div>
+                    </div>
+                  </div>
                 <div className="blockDiv">
                 <h2>Reviews</h2>
                     <div id="reviewContainer">
                         {this.reviews}
                     </div>
                 </div>
-                <div className="blockDiv">
-                    <h2>Contact</h2>
-                    <div>
-                        <div className="socialBlock">
-                        <a href={telHref}>
-                             <img className="providerSocialImg" src={phone}/>
-                        </a>
-                        </div>
-                        <div className="socialBlock">
-                        <a href={emailHref}>
-                            <img className="providerSocialImg" src={email}/>
-                        </a>
-                        </div>
-                        <div className="socialBlock">
-                        <a href={this.listing.website} target="_blank">
-                             <img className="providerSocialImg" src={website}/>
-                        </a>
-                        </div>
-                     </div>
-                 </div>
                 { this.listing.location.lat && 
                     <div className="blockDiv mapDiv">
                     <h2>Location</h2>
