@@ -15,6 +15,7 @@ p {
 h2 {
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
+    margin-top: 25px;
 }
 h3 {
     margin-block-start: 0.2em;
@@ -35,7 +36,7 @@ hr {
   padding: 20px;
 }
 .serviceImg {
-    width: 600px;
+    width: 440px;
     filter: brightness(50%);
     opacity: 0.8;
     border-radius: 25px;
@@ -163,10 +164,20 @@ hr {
     float: left;
 }
 .blogPost {
-    padding-top: 50px;
-    display: block;
+    padding-top: 25px;
+    display: inline-block;
     text-decoration: none;
-    height: 500px;
+    min-height: 320px;
+    max-height: 320px;
+    width: 300px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: double #004444;
+    margin: 5px;
+    vertical-align: bottom;
+    background: #fAfAfA;
+    box-shadow: 6px 8px #eeeeee;
+
 }
 a.blogPost:visited, a.blogPost:link {
   color: black;
@@ -175,10 +186,13 @@ a.blogPost:visited, a.blogPost:link {
     display: block;
     clear: both;
 }
+.blogPost > h3 {
+    font-size: 1.3rem
+}
 .date {
     font-weight: bold;
-    float: left;
-    margin-top: 5px;
+    margin: auto;
+    text-align: center;
 }
 .blogDate {
     width: 100%;
@@ -295,6 +309,9 @@ a.blogPost:visited, a.blogPost:link {
   border-radius: 25px;
   cursor: pointer;
 }
+a.reviewTile {
+    display: inline-block;
+}
 .listingDiv:hover .overlay {
   height: 100%;
   cursor: pointer;
@@ -305,11 +322,11 @@ a.blogPost:visited, a.blogPost:link {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    width: 600px;
+    width: 440px;
     cursor: pointer;
     margin-top:50px;
-    margin-left:15px;
-    margin-right:15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .centered {
     position: absolute;
@@ -331,26 +348,31 @@ a.blogPost:visited, a.blogPost:link {
 }
 @media (min-width: 1000px) {
     div.header {
-      width: 970px;
-      height: 461px;
       margin: 0 auto;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader, .bodyHolder {
+        width: 970px;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader {
+        height: 461px;
+    }
+    div.headerUnderConstruction, div.fitnessHeader, div.mainHeader, div.joinCollective {
+        background-size: 970px 461px;
     }
     div.mainHeader {
         background-image: url(./img/health-wellness-970.jpg);
     }
     div.headerUnderConstruction {
         background-image: url(./img/work-in-progress_970x450.jpg);
-        background-size: 970px 450px;
-        width: 970px;
-        height: 450px;
     }
     div.fitnessHeader {
         background-image: url(./img/fitness-header.jpg);
-        background-size: 970px 375px;
     }
     div.joinCollective {
         background-image: url(./img/join-collective_970x375.jpg);
-        background-size: 970px 375px;
+    }
+    .bodyHolder {
+        margin: auto;
     }
 }
 @media (min-width: 801px) {
@@ -384,10 +406,6 @@ a.blogPost:visited, a.blogPost:link {
     .moreBlogsPanel {
         width: 25%;
     }
-    .bodyHolder {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
     h1.blogPageBlogTitle {
         font-size: 2em;
         margin-top: 25px;
@@ -398,32 +416,37 @@ a.blogPost:visited, a.blogPost:link {
         display: block;
     }
     div.header {
-        width: 728px;
-        height: 310px;
         margin: 0 auto;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader, .bodyHolder {
+        width: 728px;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader {
+        height: 338px;
+    }
+    div.headerUnderConstruction, div.fitnessHeader, div.mainHeader, div.joinCollective {
+        background-size: 728px 338px;
     }
     div.mainHeader {
         background-image: url(./img/health-wellness-728.jpg);
     }
+    .bodyHolder {
+        margin: auto;
+    }
     div.headerUnderConstruction {
-        width: 728px;
-        height: 338px;
         background-image: url(./img/work-in-progress_728x338.jpg);
-        background-size: 728px 338px;
     }
     div.fitnessHeader {
         background-image: url(./img/fitness-header.jpg);
-        background-size: 728px 281px;
     }
     div.joinCollective {
         background-image: url(./img/join-collective_728x281.jpg);
-        background-size: 728px 281px;
     }
     .listingDiv {
-        width: 400px;
+        width: 350px;
     }
     .serviceImg {
-        width: 400px;
+        width: 350px;
     }
     .centered {
         font-size: 1.2em;
@@ -444,26 +467,31 @@ a.blogPost:visited, a.blogPost:link {
         font-size: 1.25em;
     }
     div.header {
-      width: 320px;
-      height: 180px;
-        margin: 0 auto;
+      margin: 0 auto;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader, .bodyHolder {
+        width: 320px;
+    }
+    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader {
+        height: 180px;
+    }
+    div.headerUnderConstruction, div.fitnessHeader, div.mainHeader, div.joinCollective {
+        background-size: 320px 149px;
     }
     div.mainHeader {
         background-image: url(./img/health-wellness-320.jpg);
     }
     div.headerUnderConstruction {
-        width: 320px;
-        height: 149px;
         background-image: url(./img/work-in-progress_320x149.jpg);
-        background-size: 320px 149px;
     }
     div.fitnessHeader {
         background-image: url(./img/fitness-header.jpg);
-        background-size: 320px 124px;
     }
     div.joinCollective {
         background-image: url(./img/join-collective_320x124.jpg);
-        background-size: 320px 124px;
+    }
+    .bodyHolder {
+        margin: auto;
     }
     h1 {
         font-size: 3em;
@@ -481,10 +509,6 @@ a.blogPost:visited, a.blogPost:link {
     }
     .listing {
         padding-left: 25px;
-    }
-    .bodyHolder {
-        margin-left: 30px;
-        margin-right: 30px;
     }
     .blogDiv, .moreBlogsPanel {
         visibility: visible;
@@ -534,10 +558,6 @@ a.blogPost:visited, a.blogPost:link {
     .listingsDiv, .mainBlogContent{
         width: 100%;
     }
-    .bodyHolder {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
     .mapDiv {
         width: 100%;
     }
@@ -555,7 +575,8 @@ a.blogPost:visited, a.blogPost:link {
         font-size: 1.5em;
     }
     .listingDiv {
-        width: 300px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .serviceImg {
         width: 300px;
@@ -588,10 +609,6 @@ a.blogPost:visited, a.blogPost:link {
         display: block;
         float: none;
         clear: both;
-    }
-    .bodyHolder {
-        margin-left: 10px;
-        margin-right: 10px;
     }
     .footer {
         padding-left: 20px;

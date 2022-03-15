@@ -42,51 +42,47 @@ class Homepage extends React.Component {
         return (
             <Provider store = {store}>
                 <Header additionalClass="mainHeader"/>
-                <h1>Colorado Health & Wellness</h1>
                 <div className="bodyHolder">
+                <h1>Awaken Your Well</h1>
                     <div className="description">
                     <p>There are so many opportunities nowadays for workout options, wellness practices, fitness groups, gym memberships, healing modalities, exercise apparel, beauty services, and nutrition advising. The Colorado Health and Wellness collective is a repository that grew from a group of people in the Boulder/Denver area who wanted to try it all!</p>
                     <p>We thought, why not share this information with others? There are places and practices on here that you may have extensive experience with, and others that you’ve never heard of. Get ours and others’ honest opinions to inform yourself on wellness communities or even to choose a new practice to start. We hope these reviews and blog posts will help you in some way on your journey. We wish you happiness, wellness and health!</p>
                     <p>And please… do let us know if you have any content to contribute to the collective.</p>
 
                     </div>
-                    <div className="listingsDiv">
                         <h2>Reviews</h2>
                         <hr/>
-                        <a href="/colorado-fitness">
+                        <a className="reviewTile" href="/colorado-fitness">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={fitness} className="serviceImg" width="600px"/>
                             <div className="centered">Physical Fitness</div>
                         </div>
                         </a>
-                        <a href="/under-construction">
+                        <a className="reviewTile" href="/under-construction">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={hollistic} className="serviceImg" width="600px"/>
                             <div className="centered">Holistic Practices</div>
                         </div>
                         </a>
-                        <a href="/under-construction">
+                        <a className="reviewTile" href="/under-construction">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={rec} className="serviceImg" width="600px"/>
                             <div className="centered">Rec Sports</div>
                         </div>
                         </a>
-                        <a href="/under-construction">
+                        <a className="reviewTile" href="/under-construction">
                         <div className="listingDiv">
                             <div className="overlay"></div>
                             <img src={exercise} className="serviceImg" width="600px"/>
                             <div className="centered">Apparel & Equipment</div>
                         </div>
                         </a>
-                    </div>
-                    <div className="blogDiv">
                         <h2>Blog Posts</h2>
                         <hr/>
                         {blogs}
-                    </div>
                 </div>
                 <Footer/>
             </Provider>
