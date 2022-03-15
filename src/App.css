@@ -477,6 +477,11 @@ a.reviewTile {
     }
     div.headerUnderConstruction, div.fitnessHeader, div.mainHeader, div.joinCollective {
         background-size: 320px 149px;
+        height: 149px;
+    }
+    div.mainHeader {
+        background-size: 320px 180px;
+        height: 180px;
     }
     div.mainHeader {
         background-image: url(./img/health-wellness-320.jpg);
