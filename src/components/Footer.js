@@ -17,7 +17,7 @@ class Footer extends React.Component {
                     <img className="socialImg" id="instagram" src={instagram}/>
 
                 </div>
-                <p className="copyRight">COPYRIGHT © 2022 HEALTH & WELLNESS COLLECTIVE COLORADO - ALL RIGHTS RESERVED.</p>
+                <p className="copyRight">COPYRIGHT © 2022 AWAKEN YOUR WELL - ALL RIGHTS RESERVED.</p>
             </div>
         );
     }

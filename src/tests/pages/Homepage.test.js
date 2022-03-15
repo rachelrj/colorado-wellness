@@ -72,7 +72,7 @@ describe('Homepage ', () => {
     	let wrapper = mount(<Homepage store={store}/>);
 
         expect(wrapper.find('Header').props().additionalClass).to.equal('mainHeader');        
-    	expect((wrapper.find('h1')).text()).to.equal('Colorado Health & Wellness');
+    	expect((wrapper.find('h1')).text()).to.equal('Awaken Your Well');
         expect(wrapper.find('BlogPost').length).to.equal(3);  
         expect((wrapper.find({ href: '/colorado-fitness' }))).to.exist;
         expect((wrapper.find({ href: '/under-construction' }))).to.exist;

@@ -28,8 +28,6 @@ class BlogPost extends React.Component {
                     <h3>{this.props.title}</h3>
                     <p className="authorName">{this.props.name}</p>
                     <p className="date">{dateString}</p>
-                    <div className="blogPostContent" dangerouslySetInnerHTML={{__html: clean}}></div>
-                    <p className="readMore" href={blogHref}>Read More ></p>
                 </a>
               }
             </React.Fragment>

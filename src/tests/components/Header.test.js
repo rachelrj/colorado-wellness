@@ -12,7 +12,7 @@ describe('Review ', () => {
     it('Renders correct information', () => {
     	let wrapper = mount(<Header/>);
 
-        expect((wrapper.find('.navbar-brand')).text()).to.equal('Health & Wellness Collective');
+        expect((wrapper.find('.navbar-brand')).text()).to.equal('Awaken Your Well');
         expect((wrapper.find('.navbar-brand')).props().href).to.equal('/');
         expect((wrapper.find('.nav-link').first()).text()).to.equal('Home');
         expect((wrapper.find('.nav-link').first()).props().href).to.equal('/');

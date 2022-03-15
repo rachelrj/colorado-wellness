@@ -12,7 +12,7 @@ describe('Footer ', () => {
     it('Renders correct information', () => {
     	let wrapper = mount(<Footer/>);
 
-        expect((wrapper.find('.copyRight')).text()).to.equal('COPYRIGHT © 2022 HEALTH & WELLNESS COLLECTIVE COLORADO - ALL RIGHTS RESERVED.');
+        expect((wrapper.find('.copyRight')).text()).to.equal('COPYRIGHT © 2022 AWAKEN YOUR WELL - ALL RIGHTS RESERVED.');
         expect((wrapper.find('.socialImg')).length).to.equal(4);
         expect((wrapper.find({ src: '../img/facebook.png' }))).to.exist;
         expect((wrapper.find({ src: '../img/linkedin.png' }))).to.exist;
