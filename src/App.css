@@ -356,14 +356,16 @@ a.reviewTile {
     div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader, .bodyHolder {
         width: 970px;
     }
-    div.header, div.mainHeader, div.headerUnderConstruction, div.fitnessHeader {
+    div.header, div.headerUnderConstruction, div.fitnessHeader {
         height: 461px;
     }
-    div.headerUnderConstruction, div.fitnessHeader, div.mainHeader, div.joinCollective {
+    div.headerUnderConstruction, div.fitnessHeader, div.joinCollective {
         background-size: 970px 461px;
     }
     div.mainHeader {
         background-image: url(./img/health-wellness-970.jpg);
+        height: 545px;
+        background-size: 970px 545px;
     }
     div.headerUnderConstruction {
         background-image: url(./img/work-in-progress_970x450.jpg);
