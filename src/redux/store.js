@@ -154,6 +154,23 @@ initialState[STORETYPES[1]] = [{
     'imgSource': '../img/runners-roost.png',
     'headerSource': '../img/runners-roost-run-club.jpeg',
     'city': ['Boulder'],
+},{
+    'id': 7,
+    'name': 'F45 West Highlands',
+    'description': '<p>F45 Training is a global fitness community specializing in innovative, high-intensity group workouts that are fast, fun, and results-driven.</p><p>It is specifically designed to provide a functional full-body workout while improving energy levels, metabolic rate, strength, and endurance.</p><p>F45 is one of the most time-efficient ways of training. We aim to burn up to 750 calories per 45-minute session.</p>',
+    'email': 'westhighland@f45training.com',
+    'address': '3460 W 38th Ave, Denver, CO 80211',
+    'phone': '13035290567',
+    'website': 'https://f45training.com/westhighland/home',
+    'location': {
+        'lat': 39.7694312,
+        'long': -105.0335319
+    },
+    'categories': [0],
+    'subcategories': [2,3,5,9],
+    'imgSource': '../img/f45-boulder.png',
+    'headerSource': '../img/f45-highlands-long.jpeg',
+    'city': ['Denver'],
 }, ];
 
 initialState[STORETYPES[2]] = {
@@ -246,6 +263,12 @@ initialState[STORETYPES[4]] = [
         'provider': 6,
         'rating': 8,
         'review': '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus convallis lectus auctor viverra. Pellentesque imperdiet ex augue, at ullamcorper nibh ornare non. Nam leo neque, molestie sit amet justo non, pharetra placerat justo. Donec lorem justo, accumsan vel bibendum in, ornare at ex. Cras purus mi, laoreet vitae metus vel, lacinia congue nunc. Praesent tempor dui ut leo vestibulum, eu aliquet massa sagittis. Maecenas a metus non lorem interdum elementum in id enim. Praesent sit amet rutrum tortor. In rhoncus pretium fermentum. Nunc eleifend sem quam, eu cursus nunc elementum quis. Pellentesque facilisis ipsum non nibh vulputate, ac rutrum sapien accumsan. Aliquam lorem augue, tempus id ornare id, commodo quis elit. Etiam elementum dignissim nibh.</p><p>Sed magna purus, convallis sed dictum quis, fringilla eu justo. Ut dictum tellus id lobortis finibus. Cras accumsan rhoncus massa vel pretium. Fusce et nunc turpis. Aenean bibendum nibh nisl, non facilisis nisi venenatis vitae. Ut euismod est in convallis scelerisque. Duis cursus, quam sit amet facilisis pretium, purus diam egestas est, sed rutrum dui ligula eget nibh. Proin eleifend justo eu lorem porta, euismod tempus velit vehicula. Aenean non arcu nec orci dignissim tincidunt. In at ultricies ipsum. Maecenas sit amet sem ex. Nullam egestas ligula id lectus elementum porta. Nam id aliquet nunc. Vestibulum lacus nibh, pulvinar eu tempor laoreet, eleifend et turpis. Cras eget tempus sapien.</p>',
+    }, {
+        'id': 9,
+        'name': 'Meghan Kallok',
+        'provider': 7,
+        'rating': 10,
+        'review': '<p>For those of you that are unfamilar with F45, I like to think of it as a functional HIIT class. The exercises mimic everyday movement and typically involve the use of full body and multiple muscle groups. To say that I am hooked is an understatement. The trainers, community, and variety in the workouts are unparalleled. Each day is a new and exciting workout alternating between strength, HIIT and hybrid.</p><p>F45 West Highlands in Denver has an energetic and engaging vibe. The trainers, and I mean all of them, bring the energy to push you past your comfort zone with each and every workout. That being said, they’re mindful of meeting everyone at their own unique fitness level and offer modifications or alternative movements that are safe in your body.</p><p>Not only does F45 provide a great total body workout that will whip you into shape, they dedicate time to educate the community on nutrition and fueling your body. Who wants to waste the hard work put in during training? They provide quarterly challenges to measure your body composition, talk about goals, and put together a nutrition and fitness plans to make those goals achievable.</p><p>If you are new to the area they always have a deal going - and I say go for it!!</p>',
     }
 ];
 
