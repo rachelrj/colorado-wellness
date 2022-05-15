@@ -1,0 +1,11 @@
+{
+ "setupFiles": ["<rootDir>/src/setupTests.js"],
+ "testRegex": "/*.test.js$",
+ "collectCoverage": true,
+ "coverageReporters": ["lcov"],
+ "coverageDirectory": "test-coverage",
+ "moduleDirectories": ["node_modules", "src"],
+ "coveragePathIgnorePatterns" : [
+    "<rootDir>/src/serviceWorker.js" 
+ ]
+}
